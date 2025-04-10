@@ -1,0 +1,27 @@
+<a href="https://wa.me/55{{ settings.whats_num_sticky }}" class="whatsapp-button-sticky" target="_blank"> 
+  {% render 'icones', icon: 'whatsapp' %}
+</a>
+    
+
+
+
+{%- if settings.show_sticky_whatsd == false-%}
+<style>
+@media screen and (min-width: 1000px) {
+ .whatsapp-button-sticky{
+    display: none !Important;
+ }
+}
+</style>
+{%- endif -%}
+
+
+{%- if settings.show_sticky_whatsm == false -%}
+<style>
+@media screen and (max-width: 1000px) {
+ .whatsapp-button-sticky{
+  display: none !Important;
+ }
+}
+</style>
+{%- endif -%}

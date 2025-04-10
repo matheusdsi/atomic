@@ -1,0 +1,79 @@
+<script src="{{ 'library-jq.js' | asset_url }}"></script>
+<div class="calculo-frete">
+  <div class="frete-form">
+    <input type="text" name="cep" data-mask="00000-000" id="campo-cep" placeholder="Digite seu CEP">
+    <button type="button" onclick="exibir()" class="buscaCep">{{ settings.fretebotaofrase }}</button>
+  </div>
+  <div class="cep-resultado"></div>
+
+  <div class="frete-resultado">
+    <table class="fc_table">
+      <thead style="font-size: 14px; line-height: 1.4;">
+        <tr class="fc_tt">
+          <th>Entrega</th>
+          <th>Prazo</th>
+          <th>Preço</th>
+        </tr>
+        {%- if settings.opcao_frete1 -%}
+          <tr style="border-bottom: 1px solid #ccc;">
+            <th>
+              <strong style="color: #494949;">{{ settings.frete1_nome }}</strong>
+            </th>
+            <th>{{ settings.frete1_prazo }}</th>
+            <th>
+              <strong style="color: var(--frete-buscar-precos);">{{ settings.frete1_preco }}</strong>
+            </th>
+          </tr>
+        {%- endif -%}
+
+        {%- if settings.opcao_frete2 -%}
+          <tr>
+            <th>
+              <strong style="color: #494949;">{{ settings.frete2_nome }}</strong>
+            </th>
+            <th>{{ settings.frete2_prazo }}</th>
+            <th>
+              <strong style="color: var(--frete-buscar-precos);">{{ settings.frete2_preco }}</strong>
+            </th>
+          </tr>
+        {%- endif -%}
+
+        {%- if settings.opcao_frete3 -%}
+          <tr>
+            <th>
+              <strong style="color: #494949;">{{ settings.frete3_nome }}</strong>
+            </th>
+            <th>{{ settings.frete3_prazo }}</th>
+            <th>
+              <strong style="color: var(--frete-buscar-precos);">{{ settings.frete3_preco }}</strong>
+            </th>
+          </tr>
+        {%- endif -%}
+
+        {%- if settings.opcao_frete4 -%}
+          <tr>
+            <th>
+              <strong style="color: #494949;">{{ settings.frete4_nome }}</strong>
+            </th>
+            <th>{{ settings.frete4_prazo }}</th>
+            <th>
+              <strong style="color: var(--frete-buscar-precos);">{{ settings.frete4_preco }}</strong>
+            </th>
+          </tr>
+        {%- endif -%}
+
+        {%- if settings.opcao_frete5 -%}
+          <tr>
+            <th>
+              <strong style="color: #494949;">{{ settings.frete5_nome }}</strong>
+            </th>
+            <th>{{ settings.frete5_prazo }}</th>
+            <th>
+              <strong style="color: var(--frete-buscar-precos);">{{ settings.frete5_preco }}</strong>
+            </th>
+          </tr>
+        {%- endif -%}
+      </thead>
+    </table>
+  </div>
+</div>

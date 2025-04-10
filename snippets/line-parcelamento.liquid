@@ -1,0 +1,45 @@
+{% if section.settings.enable-parcel != blank %}
+  {% assign vezes = settings.vezes-parcela %}
+
+{% if vezes == 12 %}
+{% assign juros = '1.' | append: settings.parceladoze %}
+{% elsif vezes == 11 %}
+{% assign juros = '1.' | append: settings.parcelaonze %}
+  {% elsif vezes == 10 %}
+{% assign juros = '1.' | append: settings.parceladez %}
+  {% elsif vezes == 9 %}
+{% assign juros = '1.' | append: settings.parcelanove %}
+  {% elsif vezes == 8 %}
+{% assign juros = '1.' | append: settings.parcelaoito %}
+  {% elsif vezes == 7 %}
+{% assign juros = '1.' | append: settings.parcelasete %}
+  {% elsif vezes == 6 %}
+{% assign juros = '1.' | append: settings.parcelaseis %}
+  {% elsif vezes == 5 %}
+{% assign juros = '1.' | append: settings.parcelacinco %}
+  {% elsif vezes == 4 %}
+{% assign juros = '1.' | append: settings.parcelaquatro %}
+  {% elsif vezes == 3 %}
+{% assign juros = '1.' | append: settings.parcelatres %}
+  {% elsif vezes == 2 %}
+{% assign juros = '1.' | append: settings.parceladois %}
+{% endif %}
+  
+  {% if settings.appmax %}
+    <p class="parcelamento">{% render 'icones', icon: 'credit-card' %}<h>Em até</h> <span><strong>{{ settings.vezes-parcela }}x</strong></span> de <span> <b>{{ product.selected_or_first_available_variant.price | times: 1.2048 | divided_by: vezes | money }}</b></span></p>
+    {% elsif settings.cartpanda %}
+    <p class="parcelamento">{% render 'icones', icon: 'credit-card' %}<h>Em até</h> <span><strong>{{ settings.vezes-parcela }}x</strong></span> de <span> <b>{{ product.selected_or_first_available_variant.price | times: 1.2375 | divided_by: vezes | money }}</b></span></p>
+    {% elsif settings.personalizado %}    
+    <p class="parcelamento">{% render 'icones', icon: 'credit-card' %}<h>Em até</h> <span><strong>{{ settings.vezes-parcela }}x</strong></span> de <span> <b>{{ product.selected_or_first_available_variant.price | times: juros | divided_by: vezes | money }}</b></span></p>
+  {% endif %}
+{% endif %}
+
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'pix' -%}
+    <div class="pix" style="background: {{ block.settings.pix-bg }}">
+      {{ block.settings.pix-svg }}
+      {{ block.settings.pix }}
+    </div>
+  {% endcase %}
+{% endfor %}

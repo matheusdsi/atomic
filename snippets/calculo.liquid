@@ -1,0 +1,48 @@
+
+
+{% assign vezes = settings.vezes-parcela %}
+
+{% if vezes == 12 %}
+{% assign juros = '1.' | append: settings.parceladoze %}
+{% elsif vezes == 11 %}
+{% assign juros = '1.' | append: settings.parcelaonze %}
+  {% elsif vezes == 10 %}
+{% assign juros = '1.' | append: settings.parceladez %}
+  {% elsif vezes == 9 %}
+{% assign juros = '1.' | append: settings.parcelanove %}
+  {% elsif vezes == 8 %}
+{% assign juros = '1.' | append: settings.parcelaoito %}
+  {% elsif vezes == 7 %}
+{% assign juros = '1.' | append: settings.parcelasete %}
+  {% elsif vezes == 6 %}
+{% assign juros = '1.' | append: settings.parcelaseis %}
+  {% elsif vezes == 5 %}
+{% assign juros = '1.' | append: settings.parcelacinco %}
+  {% elsif vezes == 4 %}
+{% assign juros = '1.' | append: settings.parcelaquatro %}
+  {% elsif vezes == 3 %}
+{% assign juros = '1.' | append: settings.parcelatres %}
+  {% elsif vezes == 2 %}
+{% assign juros = '1.' | append: settings.parceladois %}
+{% endif %}
+
+<script>
+function parcelamento() {
+  var preco = $('.product__info .price--large ').text().trim().split(' ')[2].replace(',', '.')
+  var preco = parseFloat(preco);
+  {% if settings.appmax %}
+    var calculo = ((preco + 0) * 1.2048) / {{ vezes }};
+  {% elsif settings.cartpanda %}
+    var calculo = ((preco + 0) * 1.2375) / {{ vezes }};
+  {% elsif settings.personalizado %} 
+    var calculo = ((preco + 0) * {{juros}}) / {{ vezes }};
+  {% endif %}
+  var calculo = calculo.toFixed(2).replace('.', ',');
+  var calculo = ('R$ ' + calculo);
+  $('.product__info .parcelamento b').html(calculo);  
+}
+
+$(".block-swatch, .variant-swatch").change(function () {
+  setTimeout(function () { parcelamento(); }, 150);
+});
+</script>
