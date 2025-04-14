@@ -1,10 +1,7 @@
 /* Custom CSS for Atomic Theme */
 
 /* Section Specification Table Styles */
-.shopify-section--specification-table {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
+
 
 .shopify-section--specification-table .section {
   background-color: #fff;
@@ -12,6 +9,10 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   padding: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .shopify-section--specification-table .section-stack {
@@ -138,6 +139,10 @@
   .shopify-section--specification-table .feature-chart__value {
     text-align: right;
   }
+
+  .images-scrolling-mobile {
+    flex-direction: column;
+  }
 }
 
 /* Section Images with Text Scrolling Styles */
@@ -159,7 +164,7 @@
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
   display: flex;
-  gap: 20px;
+  gap: 4rem;
   padding: 20px 0;
   margin: 0 -20px;
   padding: 0 20px;
@@ -218,17 +223,39 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+  padding-bottom: 60px;
+}
+
+.images-scrolling-desktop__content-list .images-scrolling__content {
+  transition: opacity 0.5s ease;
+  will-change: opacity;
 }
 
 .images-scrolling-desktop__media-wrapper {
   position: sticky;
   top: 100px;
+  height: fit-content;
+  align-self: flex-start;
 }
 
 .images-scrolling-desktop__media-wrapper img {
   width: 100%;
   border-radius: 8px;
   transition: opacity 0.5s ease, clip-path 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: opacity, clip-path;
+  max-height: 450px;
+  object-fit: cover;  
+}
+
+.images-scrolling-desktop__media-wrapper img:first-child {
+  position: relative;
+}
+
+.product:not(.product--featured) {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 741px) {
@@ -244,6 +271,8 @@
     display: grid;
     grid-template-columns: var(--images-scrolling-grid-template-columns);
     gap: 40px;
+    align-items: start;
+    min-height: 500px;
   }
   
   .images-scrolling__content {
@@ -346,6 +375,12 @@
 
 div#shopify-section-header {
   overflow: hidden;
+}
+
+.shopify-section--main-product {
+  background: #f9f9f9;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media(max-width: 740px) {

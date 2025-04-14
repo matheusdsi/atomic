@@ -86,12 +86,11 @@
     <div class="images-scrolling-desktop__content-list">
       {% for block in section.blocks %}
         {% if block.type == 'image_text_block' %}
-          <div class="images-scrolling__content {% if forloop.first != true %}opacity-0{% endif %}" {% if forloop.first != true %}style="opacity: 0;"{% endif %} {{ block.shopify_attributes }}>
+          <div class="images-scrolling__content {% if forloop.first != true %}opacity-0{% endif %}" {{ block.shopify_attributes }}>
             <div class="prose" style="--images-scrolling-item-icon-width: {{ section.settings.icon_width }}px">
               {% if block.settings.icon != blank %}
-                <img src="{{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }}" 
-                     alt="{{ block.settings.icon.alt | escape }}" 
-                     srcset="{{ block.settings.icon | img_url: width: section.settings.icon_width }} {{ section.settings.icon_width }}w, {{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }} {{ section.settings.icon_width | times: 2 }}w" 
+                <img src="{{ block.settings.icon | img_url: 'master' }}" 
+                     alt="{{ block.settings.icon.alt | escape }}"
                      width="{{ block.settings.icon.width }}" 
                      height="{{ block.settings.icon.height }}" 
                      loading="lazy" 
@@ -122,14 +121,10 @@
         {% if block.type == 'image_text_block' %}
           {% if block.settings.image != blank %}
             <img src="{{ block.settings.image | img_url: 'master' }}" 
-                 alt="{{ block.settings.image.alt | escape }}" 
-                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | img_url: 'master' }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
                  width="{{ block.settings.image.width }}" 
                  height="{{ block.settings.image.height }}" 
                  loading="lazy" 
-                 sizes="(max-width: 740px) 100vw, 650px" 
-                 class="rounded-sm"
-                 {% if forloop.first != true %}style="opacity: 1; clip-path: inset(100% 0px 0px);"{% endif %}>
+                 class="rounded-sm">
           {% endif %}
         {% endif %}
       {% endfor %}
@@ -137,6 +132,155 @@
   </images-with-text-scrolling>
   </div>
 </div>
+
+<script>
+class ImagesWithTextScrolling extends HTMLElement {
+  constructor() {
+    super();
+    this.scrollingExperience = this.hasAttribute('scrolling-experience') ? this.getAttribute('scrolling-experience') : 'reveal';
+    this.isMobile = window.innerWidth < 741;
+    
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => this.init());
+    } else {
+      this.init();
+    }
+    
+    // Handle resize events
+    window.addEventListener('resize', this.handleResize.bind(this));
+  }
+  
+  init() {
+    // Setup mobile scroll behavior if mobile
+    if (this.isMobile) {
+      this.setupMobile();
+    } else {
+      this.setupDesktop();
+    }
+  }
+  
+  handleResize() {
+    const wasMobile = this.isMobile;
+    this.isMobile = window.innerWidth < 741;
+    
+    // Only re-init if we've crossed the breakpoint
+    if (wasMobile !== this.isMobile) {
+      // Clean up previous observers
+      if (this.observer) {
+        this.observer.disconnect();
+        this.observer = null;
+      }
+      
+      this.init();
+    }
+  }
+  
+  setupMobile() {
+    const mobileContainer = this.classList.contains('images-scrolling-mobile') ? this : document.querySelector('.images-scrolling-mobile');
+    if (!mobileContainer) return;
+    
+    // Ensure proper snap scrolling behavior
+    mobileContainer.style.scrollSnapType = 'x mandatory';
+    
+    const items = mobileContainer.querySelectorAll('.images-scrolling-mobile__item');
+    items.forEach(item => {
+      item.style.scrollSnapAlign = 'start';
+    });
+  }
+
+  setupDesktop() {
+    this.contentList = this.querySelector('.images-scrolling-desktop__content-list');
+    this.mediaWrapper = this.querySelector('.images-scrolling-desktop__media-wrapper');
+    
+    if (!this.contentList || !this.mediaWrapper) return;
+    
+    this.contentItems = Array.from(this.querySelectorAll('.images-scrolling__content'));
+    this.mediaItems = Array.from(this.querySelectorAll('.images-scrolling-desktop__media-wrapper img'));
+
+    if (!this.contentItems.length || !this.mediaItems.length) return;
+
+    // Force initial state reset
+    this.contentItems.forEach((item, index) => {
+      if (index === 0) {
+        item.classList.remove('opacity-0');
+        item.style.opacity = '1';
+        if (this.mediaItems[index]) {
+          this.mediaItems[index].style.opacity = '1';
+          this.mediaItems[index].style.clipPath = 'inset(0)';
+          this.mediaItems[index].style.zIndex = '1';
+        }
+      } else {
+        item.classList.add('opacity-0');
+        item.style.opacity = '0';
+        if (this.mediaItems[index]) {
+          this.mediaItems[index].style.opacity = '0';
+          this.mediaItems[index].style.clipPath = 'inset(100% 0px 0px)';
+          this.mediaItems[index].style.zIndex = '0';
+        }
+      }
+    });
+
+    this.setupIntersectionObserver();
+  }
+
+  setupIntersectionObserver() {
+    const options = {
+      root: null,
+      rootMargin: '-20% 0px -20% 0px',
+      threshold: [0.1, 0.25, 0.5, 0.75]
+    };
+
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.25) {
+          const index = this.contentItems.indexOf(entry.target);
+          if (index !== -1) {
+            this.activateItem(index);
+          }
+        }
+      });
+    }, options);
+
+    this.contentItems.forEach(item => {
+      this.observer.observe(item);
+    });
+  }
+
+  activateItem(index) {
+    this.contentItems.forEach((item, i) => {
+      if (i === index) {
+        item.classList.remove('opacity-0');
+        item.style.opacity = '1';
+      } else {
+        item.classList.add('opacity-0');
+        item.style.opacity = '0';
+      }
+    });
+
+    this.mediaItems.forEach((img, i) => {
+      if (i === index) {
+        img.style.opacity = '1';
+        img.style.clipPath = 'inset(0)';
+        img.style.zIndex = '2';
+      } else {
+        img.style.opacity = '0';
+        img.style.clipPath = 'inset(100% 0px 0px)';
+        img.style.zIndex = '1';
+      }
+    });
+  }
+
+  disconnectedCallback() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+    window.removeEventListener('resize', this.handleResize.bind(this));
+  }
+}
+
+customElements.define('images-with-text-scrolling', ImagesWithTextScrolling);
+</script>
 
 {% schema %}
 {
