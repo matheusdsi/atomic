@@ -246,6 +246,8 @@
   top: 0;
   left: 0;
   will-change: opacity, clip-path;
+  max-height: 450px;
+  object-fit: cover;  
 }
 
 .images-scrolling-desktop__media-wrapper img:first-child {
