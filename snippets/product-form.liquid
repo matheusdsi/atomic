@@ -64,25 +64,54 @@
 
                 {%- case selector_type -%}
                   {%- when 'variant_image' -%}
-                    <div class="variant-swatch-list">
-                      {%- assign option_position0 = option.position | minus: 1 -%}
+                    {%- liquid
+                      assign flickity_options = '{"prevNextButtons": true, "pageDots": false, "contain": true, "cellAlign": "left", "groupCells": true, "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}}'
+                    -%}
+                    <flickity-carousel class="variant-swatch-carousel" flickity-config="{{ flickity_options | escape }}">
+                      <div class="variant-swatch-list">
+                        {%- assign option_position0 = option.position | minus: 1 -%}
 
-                      {%- for value in option.values -%}
-                        {%- comment -%}We search for the first variant that has an image for this color{%- endcomment -%}
-                        {%- for variant in product.variants -%}
-                          {%- if variant.options[option_position0] == value -%}
-                            <div class="variant-swatch">
-                              <input class="variant-swatch__radio visually-hidden" type="radio" name="option{{ option.position }}" form="{{ product_form_id }}" id="{{ option_id }}-{{ forloop.index }}" value="{{ value | escape }}" data-bind-value="{{ option_id }}-value" {% if value == option.selected_value %}checked="checked"{% endif %} aria-label="{{ value | escape }}">
-                              <label class="variant-swatch__item" for="{{ option_id }}-{{ forloop.index }}">
-                                <span class="visually-hidden">{{ value }}</span>
-                                <img class="variant-swatch__image" loading="lazy" sizes="(max-width: 740px) 64px, 72px" {% render 'image-attributes', image: variant.featured_media, sizes: '64,72,128,144,192,216' %}>
-                              </label>
-                            </div>
-                            {%- break -%}
-                          {%- endif -%}
+                        {%- for value in option.values -%}
+                          {%- comment -%}We search for the first variant that has an image for this color{%- endcomment -%}
+                          {%- for variant in product.variants -%}
+                            {%- if variant.options[option_position0] == value -%}
+                              <div class="variant-swatch">
+                                <input class="variant-swatch__radio visually-hidden" type="radio" name="option{{ option.position }}" form="{{ product_form_id }}" id="{{ option_id }}-{{ forloop.index }}" value="{{ value | escape }}" data-bind-value="{{ option_id }}-value" {% if value == option.selected_value %}checked="checked"{% endif %} aria-label="{{ value | escape }}">
+                                <label class="variant-swatch__item" for="{{ option_id }}-{{ forloop.index }}">
+                                  <span class="visually-hidden">{{ value }}</span>
+                                  <img class="variant-swatch__image" loading="lazy" sizes="(max-width: 740px) 64px, 72px" {% render 'image-attributes', image: variant.featured_media, sizes: '64,72,128,144,192,216' %}>
+                                </label>
+                              </div>
+                              {%- break -%}
+                            {%- endif -%}
+                          {%- endfor -%}
                         {%- endfor -%}
-                      {%- endfor -%}
-                    </div>
+                      </div>
+                    </flickity-carousel>
+                    <style>
+                      .variant-swatch-carousel .flickity-prev-next-button {
+                        width: 28px;
+                        height: 28px;
+                        background-color: rgba(var(--text-color-rgb), 0.08);
+                        border-radius: 100%;
+                      }
+                      .variant-swatch-carousel .flickity-prev-next-button:hover {
+                        background-color: rgba(var(--text-color-rgb), 0.15);
+                      }
+                      .variant-swatch-carousel .flickity-prev-next-button svg {
+                        width: 8px;
+                        height: 14px;
+                        fill: rgb(var(--text-color-rgb));
+                      }
+                      .variant-swatch-carousel .variant-swatch-list {
+                        display: flex;
+                        width: 100%;
+                        padding: 5px 0;
+                      }
+                      .variant-swatch-carousel .variant-swatch {
+                        margin-right: 10px;
+                      }
+                    </style>
 
                   {%- when 'color' -%}
                     <div class="color-swatch-list">
