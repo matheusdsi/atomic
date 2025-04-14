@@ -64,8 +64,8 @@
 
                 {%- case selector_type -%}
                   {%- when 'variant_image' -%}
-                    <div class="variant-swatch-carousel">
-                      <div class="variant-swatch-list js-variant-swatch-slick">
+                    <div class="variant-swatch-scroll-container">
+                      <div class="variant-swatch-list">
                         {%- assign option_position0 = option.position | minus: 1 -%}
 
                         {%- for value in option.values -%}
@@ -85,89 +85,45 @@
                         {%- endfor -%}
                       </div>
                     </div>
-                    <script>
-                      // Initialize the variant swatch carousel
-                      function initVariantSwatchCarousel() {
-                        if (typeof jQuery !== 'undefined' && typeof jQuery.fn.slick !== 'undefined') {
-                          // Both jQuery and Slick are loaded
-                          jQuery('.js-variant-swatch-slick').not('.slick-initialized').slick({
-                            dots: false,
-                            infinite: false,
-                            speed: 300,
-                            slidesToShow: 5,
-                            slidesToScroll: 1,
-                            arrows: true,
-                            prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>',
-                            nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg></button>',
-                            responsive: [
-                              {
-                                breakpoint: 1024,
-                                settings: {
-                                  slidesToShow: 4
-                                }
-                              },
-                              {
-                                breakpoint: 600,
-                                settings: {
-                                  slidesToShow: 3
-                                }
-                              }
-                            ]
-                          });
-                        } else {
-                          // Try again in 100ms if either jQuery or Slick isn't loaded yet
-                          setTimeout(initVariantSwatchCarousel, 100);
-                        }
-                      }
-                      
-                      // Call our initialization function when the document is ready
-                      document.addEventListener('DOMContentLoaded', function() {
-                        initVariantSwatchCarousel();
-                      });
-                    </script>
                     <style>
-                      .variant-swatch-carousel {
+                      .variant-swatch-scroll-container {
                         position: relative;
                         width: 100%;
-                        padding: 0 25px;
+                        overflow: hidden;
                       }
-                      .variant-swatch-list .slick-track {
+                      .variant-swatch-list {
                         display: flex;
-                        align-items: center;
+                        flex-wrap: nowrap;
+                        overflow-x: auto;
+                        -webkit-overflow-scrolling: touch;
+                        scrollbar-width: none; /* Firefox */
+                        -ms-overflow-style: none; /* IE and Edge */
+                        padding: 10px 0;
+                        gap: 10px;
+                      }
+                      .variant-swatch-list::-webkit-scrollbar {
+                        display: none; /* Chrome, Safari and Opera */
                       }
                       .variant-swatch {
-                        text-align: center;
-                        padding: 5px;
+                        flex: 0 0 auto;
                       }
-                      .variant-swatch-carousel .slick-arrow {
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        z-index: 1;
-                        width: 24px;
-                        height: 24px;
-                        background: #f5f5f5;
-                        border-radius: 50%;
-                        border: none;
+                      .variant-swatch__item {
+                        display: block;
                         cursor: pointer;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 0;
+                        border: 2px solid transparent;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        transition: all 0.2s ease;
                       }
-                      .variant-swatch-carousel .slick-arrow:hover {
-                        background: #e5e5e5;
+                      .variant-swatch__radio:checked + .variant-swatch__item {
+                        border-color: #1e316a;
+                        box-shadow: 0 0 0 1px #1e316a;
                       }
-                      .variant-swatch-carousel .slick-prev {
-                        left: 0;
-                      }
-                      .variant-swatch-carousel .slick-next {
-                        right: 0;
-                      }
-                      .variant-swatch-carousel .slick-arrow svg {
-                        width: 16px;
-                        height: 16px;
-                        color: #333;
+                      .variant-swatch__image {
+                        display: block;
+                        width: 64px;
+                        height: 64px;
+                        object-fit: cover;
                       }
                     </style>
 
