@@ -6,45 +6,86 @@
   margin-bottom: 40px;
 }
 
+.shopify-section--specification-table .section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 30px;
+}
+
+.shopify-section--specification-table .section-stack {
+  display: flex;
+  flex-direction: column;
+}
+
 .shopify-section--specification-table .section-stack__intro {
   margin-bottom: 20px;
 }
 
 .shopify-section--specification-table .h2 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   margin-bottom: 15px;
+  color: #000;
+}
+
+.shopify-section--specification-table .prose p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
 .shopify-section--specification-table .feature-chart__table {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .shopify-section--specification-table .feature-chart__table-row {
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.shopify-section--specification-table .feature-chart__table-row:last-child {
-  border-bottom: none;
+  padding: 15px 0;
 }
 
 .shopify-section--specification-table .feature-chart__heading {
-  flex: 0 0 30%;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.02);
   font-weight: 600;
+  color: #000;
+  margin-right: 10px;
 }
 
 .shopify-section--specification-table .feature-chart__value {
-  flex: 1;
-  padding: 15px;
+  color: #333;
 }
 
 .shopify-section--specification-table .feature-chart__value p {
   margin: 0;
+}
+
+@media (min-width: 741px) {
+  .shopify-section--specification-table .section-stack {
+    flex-direction: column;
+  }
+  
+  .shopify-section--specification-table .feature-chart__table-row {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .shopify-section--specification-table .section {
+    padding: 20px;
+  }
+  
+  .shopify-section--specification-table .section-stack {
+    flex-direction: column;
+  }
+  
+  .shopify-section--specification-table .section-stack__main {
+    margin-top: 15px;
+  }
+  
+  .shopify-section--specification-table .h2 {
+    font-size: 24px;
+  }
 }
 
 /* Section Images with Text Scrolling Styles */
