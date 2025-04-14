@@ -138,6 +138,10 @@
   .shopify-section--specification-table .feature-chart__value {
     text-align: right;
   }
+
+  .images-scrolling-mobile {
+    flex-direction: column;
+  }
 }
 
 /* Section Images with Text Scrolling Styles */
