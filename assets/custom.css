@@ -83,3 +83,7 @@
   visibility: hidden;
   pointer-events: none;
 }
+
+div#shopify-section-header {
+  overflow: hidden;
+}
