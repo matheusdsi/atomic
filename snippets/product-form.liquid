@@ -64,10 +64,7 @@
 
                 {%- case selector_type -%}
                   {%- when 'variant_image' -%}
-                    {%- liquid
-                      assign flickity_options = '{"prevNextButtons": true, "pageDots": false, "contain": true, "cellAlign": "left", "groupCells": true, "arrowShape": {"x0": 20, "x1": 60, "y1": 40, "x2": 60, "y2": 35, "x3": 25}}'
-                    -%}
-                    <flickity-carousel class="variant-swatch-carousel" flickity-config="{{ flickity_options | escape }}">
+                    <div class="variant-swatch-carousel">
                       <div class="variant-swatch-list">
                         {%- assign option_position0 = option.position | minus: 1 -%}
 
@@ -87,29 +84,32 @@
                           {%- endfor -%}
                         {%- endfor -%}
                       </div>
-                    </flickity-carousel>
+                    </div>
                     <style>
-                      .variant-swatch-carousel .flickity-prev-next-button {
-                        width: 28px;
-                        height: 28px;
-                        background-color: rgba(var(--text-color-rgb), 0.08);
-                        border-radius: 100%;
-                      }
-                      .variant-swatch-carousel .flickity-prev-next-button:hover {
-                        background-color: rgba(var(--text-color-rgb), 0.15);
-                      }
-                      .variant-swatch-carousel .flickity-prev-next-button svg {
-                        width: 8px;
-                        height: 14px;
-                        fill: rgb(var(--text-color-rgb));
-                      }
-                      .variant-swatch-carousel .variant-swatch-list {
-                        display: flex;
+                      .variant-swatch-carousel {
+                        position: relative;
                         width: 100%;
+                        overflow: hidden;
+                      }
+                      .variant-swatch-list {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        overflow-x: auto;
+                        -webkit-overflow-scrolling: touch;
+                        scroll-behavior: smooth;
+                        -ms-overflow-style: none; /* IE and Edge */
+                        scrollbar-width: none; /* Firefox */
                         padding: 5px 0;
                       }
-                      .variant-swatch-carousel .variant-swatch {
+                      .variant-swatch-list::-webkit-scrollbar {
+                        display: none; /* Chrome, Safari and Opera */
+                      }
+                      .variant-swatch {
+                        flex: 0 0 auto;
                         margin-right: 10px;
+                      }
+                      .variant-swatch:last-child {
+                        margin-right: 0;
                       }
                     </style>
 
