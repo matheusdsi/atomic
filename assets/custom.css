@@ -87,3 +87,7 @@
 div#shopify-section-header {
   overflow: hidden;
 }
+
+@media(max-width: 740px) {
+  
+}
