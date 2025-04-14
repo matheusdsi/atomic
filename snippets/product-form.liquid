@@ -64,8 +64,11 @@
 
                 {%- case selector_type -%}
                   {%- when 'variant_image' -%}
-                    <div class="variant-swatch-scroll-container">
-                      <div class="variant-swatch-list">
+                    <div class="variant-swatch-scroll-container" id="variant-swatch-container-{{ option_id }}">
+                      <button type="button" class="variant-swatch-nav variant-swatch-prev" aria-label="Previous variants">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      </button>
+                      <div class="variant-swatch-list" id="variant-swatch-list-{{ option_id }}">
                         {%- assign option_position0 = option.position | minus: 1 -%}
 
                         {%- for value in option.values -%}
@@ -84,12 +87,53 @@
                           {%- endfor -%}
                         {%- endfor -%}
                       </div>
+                      <button type="button" class="variant-swatch-nav variant-swatch-next" aria-label="Next variants">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </button>
                     </div>
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        var container = document.getElementById('variant-swatch-container-{{ option_id }}');
+                        var scrollList = document.getElementById('variant-swatch-list-{{ option_id }}');
+                        var prevBtn = container.querySelector('.variant-swatch-prev');
+                        var nextBtn = container.querySelector('.variant-swatch-next');
+                        
+                        // Scroll amount for each click (approximately 2 items)
+                        var scrollAmount = 140;
+                        
+                        // Update button visibility based on scroll position
+                        function updateButtonVisibility() {
+                          prevBtn.classList.toggle('hidden', scrollList.scrollLeft <= 0);
+                          nextBtn.classList.toggle('hidden', scrollList.scrollLeft + scrollList.clientWidth >= scrollList.scrollWidth - 5);
+                        }
+                        
+                        // Initial button visibility
+                        updateButtonVisibility();
+                        
+                        // Scroll left button click
+                        prevBtn.addEventListener('click', function() {
+                          scrollList.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                          setTimeout(updateButtonVisibility, 350);
+                        });
+                        
+                        // Scroll right button click
+                        nextBtn.addEventListener('click', function() {
+                          scrollList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                          setTimeout(updateButtonVisibility, 350);
+                        });
+                        
+                        // Update button visibility when scrolling manually
+                        scrollList.addEventListener('scroll', function() {
+                          updateButtonVisibility();
+                        });
+                      });
+                    </script>
                     <style>
                       .variant-swatch-scroll-container {
                         position: relative;
                         width: 100%;
-                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
                       }
                       .variant-swatch-list {
                         display: flex;
@@ -100,6 +144,8 @@
                         -ms-overflow-style: none; /* IE and Edge */
                         padding: 10px 0;
                         gap: 10px;
+                        flex: 1;
+                        scroll-behavior: smooth;
                       }
                       .variant-swatch-list::-webkit-scrollbar {
                         display: none; /* Chrome, Safari and Opera */
@@ -124,6 +170,35 @@
                         width: 64px;
                         height: 64px;
                         object-fit: cover;
+                      }
+                      .variant-swatch-nav {
+                        flex: 0 0 auto;
+                        width: 28px;
+                        height: 28px;
+                        background-color: #f5f5f5;
+                        border-radius: 50%;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        z-index: 1;
+                        transition: background-color 0.2s ease;
+                        padding: 0;
+                        margin: 0 5px;
+                      }
+                      .variant-swatch-nav:hover {
+                        background-color: #e5e5e5;
+                      }
+                      .variant-swatch-nav svg {
+                        width: 16px;
+                        height: 16px;
+                        color: #333;
+                      }
+                      .variant-swatch-nav.hidden {
+                        opacity: 0;
+                        visibility: hidden;
+                        pointer-events: none;
                       }
                     </style>
 
