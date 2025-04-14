@@ -227,6 +227,7 @@
 
 .images-scrolling-desktop__content-list .images-scrolling__content {
   transition: opacity 0.5s ease;
+  will-change: opacity;
 }
 
 .images-scrolling-desktop__media-wrapper {
@@ -243,11 +244,11 @@
   position: absolute;
   top: 0;
   left: 0;
+  will-change: opacity, clip-path;
 }
 
 .images-scrolling-desktop__media-wrapper img:first-child {
   position: relative;
-  visibility: visible;
 }
 
 @media screen and (min-width: 741px) {
@@ -264,6 +265,7 @@
     grid-template-columns: var(--images-scrolling-grid-template-columns);
     gap: 40px;
     align-items: start;
+    min-height: 500px;
   }
   
   .images-scrolling__content {
