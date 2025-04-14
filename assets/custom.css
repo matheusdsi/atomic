@@ -115,4 +115,9 @@ div#shopify-section-header {
   .variant-carousel-container {
     overflow: hidden;
   }
+
+  .product__media-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
