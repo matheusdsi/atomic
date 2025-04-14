@@ -32,8 +32,9 @@
   }
 </style>
 
-<div class="section product-content {% if section.settings.narrow %}section--narrow{% endif %} {% if section.settings.full_width %}section-full{% endif %} bg-gradient text-custom" 
+<div class="section product-content container {% if section.settings.narrow %}section--narrow{% endif %} {% if section.settings.full_width %}section-full{% endif %} bg-gradient text-custom" 
      style="--gradient: {{ section.settings.background_gradient }}; --background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
+  <div class="section__content">
   
   <!-- Mobile version -->
   <images-with-text-scrolling class="images-scrolling-mobile scroll-area bleed sm:unbleed">
@@ -137,6 +138,7 @@
       {% endfor %}
     </div>
   </images-with-text-scrolling>
+  </div>
 </div>
 
 {% schema %}
