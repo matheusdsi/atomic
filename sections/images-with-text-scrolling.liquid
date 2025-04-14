@@ -41,9 +41,9 @@
       {% if block.type == 'image_text_block' %}
         <div class="images-scrolling-mobile__item snap-start" {{ block.shopify_attributes }}>
           {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | image_url: width: 1600 }}" 
+            <img src="{{ block.settings.image | img_url: width: 1600 }}" 
                  alt="{{ block.settings.image.alt | escape }}" 
-                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | image_url: width: width }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
+                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | img_url: width: width }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
                  width="{{ block.settings.image.width }}" 
                  height="{{ block.settings.image.height }}" 
                  loading="lazy" 
@@ -54,9 +54,9 @@
           <div class="images-scrolling__content">
             <div class="prose" style="--images-scrolling-item-icon-width: {{ section.settings.icon_width }}px">
               {% if block.settings.icon != blank %}
-                <img src="{{ block.settings.icon | image_url: width: section.settings.icon_width | times: 2 }}" 
+                <img src="{{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }}" 
                      alt="{{ block.settings.icon.alt | escape }}" 
-                     srcset="{{ block.settings.icon | image_url: width: section.settings.icon_width }} {{ section.settings.icon_width }}w, {{ block.settings.icon | image_url: width: section.settings.icon_width | times: 2 }} {{ section.settings.icon_width | times: 2 }}w" 
+                     srcset="{{ block.settings.icon | img_url: width: section.settings.icon_width }} {{ section.settings.icon_width }}w, {{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }} {{ section.settings.icon_width | times: 2 }}w" 
                      width="{{ block.settings.icon.width }}" 
                      height="{{ block.settings.icon.height }}" 
                      loading="lazy" 
@@ -91,9 +91,9 @@
           <div class="images-scrolling__content {% if forloop.first != true %}opacity-0{% endif %}" {% if forloop.first != true %}style="opacity: 0;"{% endif %} {{ block.shopify_attributes }}>
             <div class="prose" style="--images-scrolling-item-icon-width: {{ section.settings.icon_width }}px">
               {% if block.settings.icon != blank %}
-                <img src="{{ block.settings.icon | image_url: width: section.settings.icon_width | times: 2 }}" 
+                <img src="{{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }}" 
                      alt="{{ block.settings.icon.alt | escape }}" 
-                     srcset="{{ block.settings.icon | image_url: width: section.settings.icon_width }} {{ section.settings.icon_width }}w, {{ block.settings.icon | image_url: width: section.settings.icon_width | times: 2 }} {{ section.settings.icon_width | times: 2 }}w" 
+                     srcset="{{ block.settings.icon | img_url: width: section.settings.icon_width }} {{ section.settings.icon_width }}w, {{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }} {{ section.settings.icon_width | times: 2 }}w" 
                      width="{{ block.settings.icon.width }}" 
                      height="{{ block.settings.icon.height }}" 
                      loading="lazy" 
@@ -123,9 +123,9 @@
       {% for block in section.blocks %}
         {% if block.type == 'image_text_block' %}
           {% if block.settings.image != blank %}
-            <img src="{{ block.settings.image | image_url: width: 1600 }}" 
+            <img src="{{ block.settings.image | img_url: width: 1600 }}" 
                  alt="{{ block.settings.image.alt | escape }}" 
-                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | image_url: width: width }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
+                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | img_url: width: width }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
                  width="{{ block.settings.image.width }}" 
                  height="{{ block.settings.image.height }}" 
                  loading="lazy" 
