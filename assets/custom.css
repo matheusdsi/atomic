@@ -225,6 +225,10 @@
   padding-bottom: 60px;
 }
 
+.images-scrolling-desktop__content-list .images-scrolling__content {
+  transition: opacity 0.5s ease;
+}
+
 .images-scrolling-desktop__media-wrapper {
   position: sticky;
   top: 100px;
