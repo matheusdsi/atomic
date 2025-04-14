@@ -135,89 +135,72 @@
 </div>
 
 <script>
-  class ImagesWithTextScrolling extends HTMLElement {
-    constructor() {
-      super();
-      this.scrollingExperience = this.getAttribute('scrolling-experience') || 'reveal';
-      this.contentList = this.querySelector('.images-scrolling-desktop__content-list');
-      this.mediaWrapper = this.querySelector('.images-scrolling-desktop__media-wrapper');
-      this.contentItems = this.querySelectorAll('.images-scrolling-desktop__content-list .images-scrolling__content');
-      this.mediaItems = this.querySelectorAll('.images-scrolling-desktop__media-wrapper img');
-      
-      if (this.contentItems.length === 0 || this.mediaItems.length === 0) return;
-      
-      this.activeIndex = 0;
-      this.observer = null;
-      this.setupIntersectionObserver();
-    }
-    
-    setupIntersectionObserver() {
-      const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.6
-      };
-      
-      this.observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const index = Array.from(this.contentItems).indexOf(entry.target);
-            if (index !== -1 && index !== this.activeIndex) {
-              this.setActiveItem(index);
+  document.addEventListener('DOMContentLoaded', function() {
+    const initScrollSections = function() {
+      document.querySelectorAll('images-with-text-scrolling.images-scrolling-desktop').forEach(function(scrollingElement) {
+        const contentItems = scrollingElement.querySelectorAll('.images-scrolling__content');
+        const mediaItems = scrollingElement.querySelectorAll('.images-scrolling-desktop__media-wrapper img');
+        
+        if (contentItems.length === 0 || mediaItems.length === 0) return;
+        
+        // Set initial state
+        contentItems[0].classList.remove('opacity-0');
+        contentItems[0].style.opacity = '1';
+        mediaItems[0].style.opacity = '1';
+        mediaItems[0].style.clipPath = 'none';
+        
+        for (let i = 1; i < contentItems.length; i++) {
+          contentItems[i].classList.add('opacity-0');
+          contentItems[i].style.opacity = '0';
+          mediaItems[i].style.opacity = '0';
+          mediaItems[i].style.clipPath = 'inset(100% 0 0 0)';
+        }
+        
+        // Setup intersection observer
+        const observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              const target = entry.target;
+              const index = Array.from(contentItems).indexOf(target);
+              
+              if (index !== -1) {
+                // Show current content and image
+                contentItems.forEach((item, i) => {
+                  if (i === index) {
+                    item.classList.remove('opacity-0');
+                    item.style.opacity = '1';
+                  } else {
+                    item.classList.add('opacity-0');
+                    item.style.opacity = '0';
+                  }
+                });
+                
+                // Update images
+                mediaItems.forEach((img, i) => {
+                  if (i === index) {
+                    img.style.opacity = '1';
+                    img.style.clipPath = 'none';
+                  } else {
+                    img.style.opacity = '0';
+                    img.style.clipPath = 'inset(100% 0 0 0)';
+                  }
+                });
+              }
             }
-          }
+          });
+        }, {
+          threshold: 0.5,
+          rootMargin: '-10% 0px -10% 0px'
         });
-      }, options);
-      
-      this.contentItems.forEach(item => {
-        this.observer.observe(item);
+        
+        // Observe all content items
+        contentItems.forEach(item => observer.observe(item));
       });
-    }
+    };
     
-    setActiveItem(index) {
-      // Update content items
-      this.contentItems.forEach((item, i) => {
-        if (i === index) {
-          item.classList.remove('opacity-0');
-          item.style.opacity = '1';
-          item.style.visibility = 'visible';
-        } else {
-          item.classList.add('opacity-0');
-          item.style.opacity = '0';
-          // Don't hide immediately to allow for transition
-          setTimeout(() => {
-            if (this.activeIndex !== i) {
-              item.style.visibility = 'hidden';
-            }
-          }, 500);
-        }
-      });
-      
-      // Update media items
-      this.mediaItems.forEach((item, i) => {
-        if (i === index) {
-          item.style.opacity = '1';
-          item.style.clipPath = 'inset(0)';
-          item.style.visibility = 'visible';
-          item.style.zIndex = '1';
-        } else {
-          item.style.opacity = '0';
-          item.style.clipPath = 'inset(100% 0px 0px)';
-          item.style.zIndex = '0';
-        }
-      });
-      
-      this.activeIndex = index;
-    }
-    
-    disconnectedCallback() {
-      if (this.observer) {
-        this.observer.disconnect();
-      }
-    }
-  }
-  
-  customElements.define('images-with-text-scrolling', ImagesWithTextScrolling);
+    // Initialize the scrolling sections
+    initScrollSections();
+  });
 </script>
 
 {% schema %}
