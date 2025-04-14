@@ -1,0 +1,295 @@
+{% comment %}
+  section descrição Section
+  A customizable section to display scrolling images with text content.
+{% endcomment %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-background-hash: 000003300150080004091000060130005;
+  }
+
+  #shopify-section-{{ section.id }} + * {
+    --previous-section-background-hash: 000003300150080004091000060130005;
+  }
+</style>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --images-scrolling-block-count: {{ section.blocks.size }};
+    --images-scrolling-image-ratio: {{ section.settings.image_ratio }};
+  }
+
+  @media screen and (max-width: 740px) {
+    #shopify-section-{{ section.id }} {
+      --images-scrolling-grid: none;
+    }
+  }
+
+  @media screen and (min-width: 741px) {
+    #shopify-section-{{ section.id }} {
+      --images-scrolling-grid-template-columns: [content] minmax(0, {{ section.settings.content_width }}fr) [media] minmax(0, 1fr);
+    }
+  }
+</style>
+
+<div class="section product-content container {% if section.settings.narrow %}section--narrow{% endif %} {% if section.settings.full_width %}section-full{% endif %} bg-gradient text-custom" 
+     style="--gradient: {{ section.settings.background_gradient }}; --background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
+  <div class="section__content">
+  
+  <!-- Mobile version -->
+  <images-with-text-scrolling class="images-scrolling-mobile scroll-area bleed sm:unbleed">
+    {% for block in section.blocks %}
+      {% if block.type == 'image_text_block' %}
+        <div class="images-scrolling-mobile__item snap-start" {{ block.shopify_attributes }}>
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | img_url: 'master' }}" 
+                 alt="{{ block.settings.image.alt | escape }}"                  
+                 width="{{ block.settings.image.width }}" 
+                 height="{{ block.settings.image.height }}" 
+                 loading="lazy"
+                 class="rounded-sm">
+          {% endif %}
+          
+          <div class="images-scrolling__content">
+            <div class="prose" style="--images-scrolling-item-icon-width: {{ section.settings.icon_width }}px">
+              {% if block.settings.icon != blank %}
+                <img src="{{ block.settings.icon | img_url: 'master' }}" 
+                     alt="{{ block.settings.icon.alt | escape }}"                      
+                     width="{{ block.settings.icon.width }}" 
+                     height="{{ block.settings.icon.height }}" 
+                     loading="lazy" 
+                     sizes="{{ section.settings.icon_width }}px" 
+                     class="images-scrolling__icon">
+              {% endif %}
+              
+              <p class="h1">
+                <span class="text-gradient {% if block.settings.heading_gradient == blank %}hidden{% endif %}" 
+                      style="--gradient: {{ block.settings.heading_gradient }}">
+                  {{ block.settings.heading }}
+                </span>
+              </p>
+              
+              <p>
+                <span class="metafield-multi_line_text_field">
+                  {{ block.settings.text }}
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </images-with-text-scrolling>
+  
+  <!-- Desktop version -->
+  <images-with-text-scrolling scrolling-experience="{{ section.settings.scrolling_experience }}" class="images-scrolling-desktop">
+    <div class="images-scrolling-desktop__content-list">
+      {% for block in section.blocks %}
+        {% if block.type == 'image_text_block' %}
+          <div class="images-scrolling__content {% if forloop.first != true %}opacity-0{% endif %}" {% if forloop.first != true %}style="opacity: 0;"{% endif %} {{ block.shopify_attributes }}>
+            <div class="prose" style="--images-scrolling-item-icon-width: {{ section.settings.icon_width }}px">
+              {% if block.settings.icon != blank %}
+                <img src="{{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }}" 
+                     alt="{{ block.settings.icon.alt | escape }}" 
+                     srcset="{{ block.settings.icon | img_url: width: section.settings.icon_width }} {{ section.settings.icon_width }}w, {{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }} {{ section.settings.icon_width | times: 2 }}w" 
+                     width="{{ block.settings.icon.width }}" 
+                     height="{{ block.settings.icon.height }}" 
+                     loading="lazy" 
+                     sizes="{{ section.settings.icon_width }}px" 
+                     class="images-scrolling__icon">
+              {% endif %}
+              
+              <p class="h1">
+                <span class="text-gradient {% if block.settings.heading_gradient == blank %}hidden{% endif %}" 
+                      style="--gradient: {{ block.settings.heading_gradient }}">
+                  {{ block.settings.heading }}
+                </span>
+              </p>
+              
+              <p>
+                <span class="metafield-multi_line_text_field">
+                  {{ block.settings.text }}
+                </span>
+              </p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="images-scrolling-desktop__media-wrapper">
+      {% for block in section.blocks %}
+        {% if block.type == 'image_text_block' %}
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | img_url: 'master' }}" 
+                 alt="{{ block.settings.image.alt | escape }}" 
+                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | img_url: 'master' }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
+                 width="{{ block.settings.image.width }}" 
+                 height="{{ block.settings.image.height }}" 
+                 loading="lazy" 
+                 sizes="(max-width: 740px) 100vw, 650px" 
+                 class="rounded-sm"
+                 {% if forloop.first != true %}style="opacity: 1; clip-path: inset(100% 0px 0px);"{% endif %}>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </images-with-text-scrolling>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "section descrição",
+  "tag": "section",
+  "class": "shopify-section--images-and-text-scrolling",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow",
+      "label": "Narrow section",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full width",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 0.4,
+      "max": 1.2,
+      "step": 0.1,
+      "label": "Content width ratio",
+      "default": 0.8
+    },
+    {
+      "type": "range",
+      "id": "image_ratio",
+      "min": 0.5,
+      "max": 2.0,
+      "step": 0.1,
+      "label": "Image ratio",
+      "default": 1.3
+    },
+    {
+      "type": "range",
+      "id": "icon_width",
+      "min": 40,
+      "max": 200,
+      "step": 10,
+      "label": "Icon width",
+      "default": 120
+    },
+    {
+      "type": "select",
+      "id": "scrolling_experience",
+      "label": "Scrolling experience",
+      "options": [
+        {
+          "value": "reveal",
+          "label": "Reveal"
+        },
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "slide",
+          "label": "Slide"
+        }
+      ],
+      "default": "reveal"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#3e3e3e"
+    },
+    {
+      "type": "text",
+      "id": "background_gradient",
+      "label": "Background gradient",
+      "info": "CSS gradient value",
+      "default": "linear-gradient(277deg, rgba(0, 0, 0, 1), rgba(7, 7, 7, 1) 99%, rgba(62, 62, 62, 1) 99.638%)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#f0f0f0"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_text_block",
+      "name": "Image with Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon (optional)"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Feature heading"
+        },
+        {
+          "type": "text",
+          "id": "heading_gradient",
+          "label": "Heading gradient",
+          "info": "CSS gradient value",
+          "default": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Share information about your product or feature."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "section descrição",
+      "blocks": [
+        {
+          "type": "image_text_block",
+          "settings": {
+            "heading": "Secagem rápida",
+            "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
+            "text": "Projetada para acompanhar o seu ritmo. Com nossa exclusiva tecnologia de secagem rápida, ela oferece a combinação perfeita de conforto e performance. O tecido altamente tecnológico absorve a umidade da pele e a evapora rapidamente, garantindo que você se sinta seco e confortável mesmo durante as atividades mais intensas."
+          }
+        },
+        {
+          "type": "image_text_block",
+          "settings": {
+            "heading": "Tecnologia Dry",
+            "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
+            "text": "A tecnologia Dry Fit é uma inovação no desenvolvimento de tecidos que proporciona conforto e alto desempenho. Feita a partir de materiais sintéticos leves e respiráveis, como poliéster, ela é projetada para absorver e evaporar rapidamente o suor, mantendo o corpo seco durante atividades físicas."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

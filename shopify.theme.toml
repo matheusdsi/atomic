@@ -1,0 +1,5 @@
+[environments.env1]
+theme = "149470085358"
+store = "useatomic"
+password  = "shptka_78217d0b4b9133a0f6e26380acef2f16"
+ignore = "sections/header.liquid"
