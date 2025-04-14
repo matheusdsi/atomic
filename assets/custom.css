@@ -1,29 +1,17 @@
 /* Custom CSS for Atomic Theme */
 
-/* Variant Swatch Carousel Styles */
-.variant-swatch-scroll-container {
-  position: relative;
+/* Variant Swatch Styles */
+.variant-swatch-wrapper {
   width: 100%;
-  display: flex;
-  align-items: center;
+  position: relative;
   overflow: hidden;
 }
 
 .variant-swatch-list {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
-  padding: 10px 0;
+  flex-wrap: wrap;
   gap: 10px;
-  flex: 1;
-  scroll-behavior: smooth;
-}
-
-.variant-swatch-list::-webkit-scrollbar {
-  display: none; /* Chrome, Safari and Opera */
+  padding: 10px 0;
 }
 
 .variant-swatch {
@@ -51,54 +39,19 @@
   object-fit: cover;
 }
 
-.variant-swatch-nav {
-  flex: 0 0 auto;
-  width: 28px;
-  height: 28px;
-  background-color: #f5f5f5;
-  border-radius: 50%;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1;
-  transition: background-color 0.2s ease;
-  padding: 0;
-  margin: 0 5px;
-}
-
-.variant-swatch-nav:hover {
-  background-color: #e5e5e5;
-}
-
-.variant-swatch-nav svg {
-  width: 16px;
-  height: 16px;
-  color: #333;
-}
-
-.variant-swatch-nav.hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
+/* Navigation buttons removed */
 
 div#shopify-section-header {
   overflow: hidden;
 }
 
 @media(max-width: 740px) {
-  .variant-swatch-nav {
-    position: absolute;
-    bottom: 0px;
+  .variant-swatch-list {
+    padding: 5px 0;
   }
-
-  .variant-swatch-prev {
-    left: 0;
-  }
-
-  .variant-swatch-next {
-    right: 0;
+  
+  .variant-swatch__image {
+    width: 50px;
+    height: 50px;
   }
 }
