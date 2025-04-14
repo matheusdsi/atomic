@@ -64,8 +64,11 @@
 
                 {%- case selector_type -%}
                   {%- when 'variant_image' -%}
-                    <div class="variant-swatch-wrapper">
-                      <div class="variant-swatch-list">
+                    <div class="variant-carousel-container">
+                      <button type="button" class="variant-carousel-btn prev-btn" id="prev-btn-{{ option_id }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                      </button>
+                      <div class="variant-carousel" id="variant-carousel-{{ option_id }}">
                         {%- assign option_position0 = option.position | minus: 1 -%}
 
                         {%- for value in option.values -%}
@@ -84,7 +87,66 @@
                           {%- endfor -%}
                         {%- endfor -%}
                       </div>
+                      <button type="button" class="variant-carousel-btn next-btn" id="next-btn-{{ option_id }}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      </button>
                     </div>
+                    
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                        initVariantCarousel('{{ option_id }}');
+                      });
+                      
+                      function initVariantCarousel(optionId) {
+                        const carousel = document.getElementById('variant-carousel-' + optionId);
+                        const prevBtn = document.getElementById('prev-btn-' + optionId);
+                        const nextBtn = document.getElementById('next-btn-' + optionId);
+                        
+                        if (!carousel || !prevBtn || !nextBtn) return;
+                        
+                        // Amount to scroll on each button click (pixels)
+                        const scrollAmount = 130;
+                        
+                        // Update button states initially
+                        updateButtonStates();
+                        
+                        // Add button click handlers
+                        prevBtn.addEventListener('click', function(e) {
+                          e.preventDefault(); // Prevent default behavior
+                          e.stopPropagation(); // Stop event bubbling
+                          carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                        });
+                        
+                        nextBtn.addEventListener('click', function(e) {
+                          e.preventDefault(); // Prevent default behavior
+                          e.stopPropagation(); // Stop event bubbling
+                          carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                        });
+                        
+                        // Update button states on scroll
+                        carousel.addEventListener('scroll', updateButtonStates);
+                        
+                        // Update button states when window resizes
+                        window.addEventListener('resize', updateButtonStates);
+                        
+                        // Update button states function
+                        function updateButtonStates() {
+                          // Hide prev button if at the start
+                          if (carousel.scrollLeft <= 0) {
+                            prevBtn.classList.add('disabled');
+                          } else {
+                            prevBtn.classList.remove('disabled');
+                          }
+                          
+                          // Hide next button if at the end
+                          if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 5) {
+                            nextBtn.classList.add('disabled');
+                          } else {
+                            nextBtn.classList.remove('disabled');
+                          }
+                        }
+                      }
+                    </script>
 
                   {%- when 'color' -%}
                     <div class="color-swatch-list">
