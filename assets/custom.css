@@ -370,6 +370,12 @@ div#shopify-section-header {
   overflow: hidden;
 }
 
+.shopify-section--main-product {
+  background: #f9f9f9;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
