@@ -91,7 +91,7 @@ div#shopify-section-header {
 @media(max-width: 740px) {
   .variant-swatch-nav {
     position: absolute;
-    top: 1rem;
+    bottom: -10px;
   }
 
   .variant-swatch-prev {
