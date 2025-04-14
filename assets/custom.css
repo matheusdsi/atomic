@@ -1,17 +1,30 @@
 /* Custom CSS for Atomic Theme */
 
-/* Variant Swatch Styles */
-.variant-swatch-wrapper {
-  width: 100%;
+/* Variant Carousel Styles */
+.variant-carousel-container {
   position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.variant-swatch-list {
+.variant-carousel {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
   padding: 10px 0;
+  gap: 10px;
+  flex: 1;
+  -webkit-overflow-scrolling: touch;
+}
+
+.variant-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }
 
 .variant-swatch {
@@ -39,19 +52,67 @@
   object-fit: cover;
 }
 
-/* Navigation buttons removed */
+/* Carousel Navigation Buttons */
+.variant-carousel-btn {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 5px;
+  z-index: 2;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.variant-carousel-btn svg {
+  width: 16px;
+  height: 16px;
+  color: #333;
+}
+
+.variant-carousel-btn:hover:not(.disabled) {
+  background-color: #e5e5e5;
+}
+
+.variant-carousel-btn.disabled {
+  opacity: 0.3;
+  cursor: default;
+}
 
 div#shopify-section-header {
   overflow: hidden;
 }
 
 @media(max-width: 740px) {
-  .variant-swatch-list {
+  .variant-carousel {
     padding: 5px 0;
+  }
+  
+  .variant-carousel-btn {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    margin: 0 3px;
+  }
+  
+  .variant-carousel-btn svg {
+    width: 14px;
+    height: 14px;
   }
   
   .variant-swatch__image {
     width: 50px;
     height: 50px;
+  }
+  
+  /* Make sure carousel doesn't break layout on mobile */
+  .product-form__option-selector {
+    overflow: hidden;
   }
 }
