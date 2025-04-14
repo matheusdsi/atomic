@@ -89,5 +89,15 @@ div#shopify-section-header {
 }
 
 @media(max-width: 740px) {
-  
+  .variant-swatch-nav {
+    position: absolute;
+  }
+
+  .variant-swatch-prev {
+    left: 0;
+  }
+
+  .variant-swatch-next {
+    right: 0;
+  }
 }
