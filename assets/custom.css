@@ -4,9 +4,13 @@
 .variant-swatch-scroll-container {
   position: relative;
   width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   overflow: hidden;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .variant-swatch-list {
@@ -20,6 +24,9 @@
   gap: 10px;
   flex: 1;
   scroll-behavior: smooth;
+  max-width: 100%;
+  box-sizing: border-box !important;
+  margin: 0 !important;
 }
 
 .variant-swatch-list::-webkit-scrollbar {
@@ -89,5 +96,48 @@ div#shopify-section-header {
 }
 
 @media(max-width: 740px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .product-form__option-selector {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
   
+  .variant-swatch-scroll-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  .variant-swatch-list {
+    width: calc(100% - 56px) !important;
+    max-width: calc(100% - 56px) !important;
+    margin: 0 !important;
+    padding: 8px 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  .variant-swatch-nav {
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px !important;
+    margin: 0 2px !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .variant-swatch {
+    width: auto !important;
+    max-width: 56px !important;
+  }
+  
+  .variant-swatch__image {
+    width: 48px !important;
+    height: 48px !important;
+  }
 }
