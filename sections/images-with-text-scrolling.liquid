@@ -55,8 +55,7 @@
             <div class="prose" style="--images-scrolling-item-icon-width: {{ section.settings.icon_width }}px">
               {% if block.settings.icon != blank %}
                 <img src="{{ block.settings.icon | img_url: 'master' }}" 
-                     alt="{{ block.settings.icon.alt | escape }}" 
-                     srcset="{{ block.settings.icon | img_url: width: section.settings.icon_width }} {{ section.settings.icon_width }}w, {{ block.settings.icon | img_url: width: section.settings.icon_width | times: 2 }} {{ section.settings.icon_width | times: 2 }}w" 
+                     alt="{{ block.settings.icon.alt | escape }}"                      
                      width="{{ block.settings.icon.width }}" 
                      height="{{ block.settings.icon.height }}" 
                      loading="lazy" 
