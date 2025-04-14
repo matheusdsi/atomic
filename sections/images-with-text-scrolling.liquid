@@ -121,12 +121,9 @@
         {% if block.type == 'image_text_block' %}
           {% if block.settings.image != blank %}
             <img src="{{ block.settings.image | img_url: 'master' }}" 
-                 alt="{{ block.settings.image.alt | escape }}" 
-                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | img_url: 'master' }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
                  width="{{ block.settings.image.width }}" 
                  height="{{ block.settings.image.height }}" 
                  loading="lazy" 
-                 sizes="(max-width: 740px) 100vw, 650px" 
                  class="rounded-sm"
                  {% if forloop.first != true %}style="opacity: 1; clip-path: inset(100% 0px 0px);"{% endif %}>
           {% endif %}
