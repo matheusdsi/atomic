@@ -254,6 +254,10 @@
   position: relative;
 }
 
+.product:not(.product--featured) {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 741px) {
   .shopify-section--images-and-text-scrolling {
     padding: 60px 0;
