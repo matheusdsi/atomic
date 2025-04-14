@@ -180,9 +180,16 @@
         if (i === index) {
           item.classList.remove('opacity-0');
           item.style.opacity = '1';
+          item.style.visibility = 'visible';
         } else {
           item.classList.add('opacity-0');
           item.style.opacity = '0';
+          // Don't hide immediately to allow for transition
+          setTimeout(() => {
+            if (this.activeIndex !== i) {
+              item.style.visibility = 'hidden';
+            }
+          }, 500);
         }
       });
       
@@ -191,9 +198,12 @@
         if (i === index) {
           item.style.opacity = '1';
           item.style.clipPath = 'inset(0)';
+          item.style.visibility = 'visible';
+          item.style.zIndex = '1';
         } else {
-          item.style.opacity = '1';
+          item.style.opacity = '0';
           item.style.clipPath = 'inset(100% 0px 0px)';
+          item.style.zIndex = '0';
         }
       });
       
