@@ -135,72 +135,107 @@
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const initScrollSections = function() {
-      document.querySelectorAll('images-with-text-scrolling.images-scrolling-desktop').forEach(function(scrollingElement) {
-        const contentItems = scrollingElement.querySelectorAll('.images-scrolling__content');
-        const mediaItems = scrollingElement.querySelectorAll('.images-scrolling-desktop__media-wrapper img');
-        
-        if (contentItems.length === 0 || mediaItems.length === 0) return;
-        
-        // Set initial state
-        contentItems[0].classList.remove('opacity-0');
-        contentItems[0].style.opacity = '1';
-        mediaItems[0].style.opacity = '1';
-        mediaItems[0].style.clipPath = 'none';
-        
-        for (let i = 1; i < contentItems.length; i++) {
-          contentItems[i].classList.add('opacity-0');
-          contentItems[i].style.opacity = '0';
-          mediaItems[i].style.opacity = '0';
-          mediaItems[i].style.clipPath = 'inset(100% 0 0 0)';
-        }
-        
-        // Setup intersection observer
-        const observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              const target = entry.target;
-              const index = Array.from(contentItems).indexOf(target);
-              
-              if (index !== -1) {
-                // Show current content and image
-                contentItems.forEach((item, i) => {
-                  if (i === index) {
-                    item.classList.remove('opacity-0');
-                    item.style.opacity = '1';
-                  } else {
-                    item.classList.add('opacity-0');
-                    item.style.opacity = '0';
-                  }
-                });
-                
-                // Update images
-                mediaItems.forEach((img, i) => {
-                  if (i === index) {
-                    img.style.opacity = '1';
-                    img.style.clipPath = 'none';
-                  } else {
-                    img.style.opacity = '0';
-                    img.style.clipPath = 'inset(100% 0 0 0)';
-                  }
-                });
-              }
-            }
-          });
-        }, {
-          threshold: 0.5,
-          rootMargin: '-10% 0px -10% 0px'
-        });
-        
-        // Observe all content items
-        contentItems.forEach(item => observer.observe(item));
-      });
+class ImagesWithTextScrolling extends HTMLElement {
+  constructor() {
+    super();
+    this.scrollingExperience = this.hasAttribute('scrolling-experience') ? this.getAttribute('scrolling-experience') : 'reveal';
+    this.setup();
+  }
+
+  setup() {
+    if (window.innerWidth < 741) return; // Only apply on desktop
+
+    this.contentList = this.querySelector('.images-scrolling-desktop__content-list');
+    this.mediaWrapper = this.querySelector('.images-scrolling-desktop__media-wrapper');
+    this.contentItems = Array.from(this.querySelectorAll('.images-scrolling__content'));
+    this.mediaItems = Array.from(this.querySelectorAll('.images-scrolling-desktop__media-wrapper img'));
+
+    if (!this.contentItems.length || !this.mediaItems.length) return;
+
+    // Set initial states
+    this.contentItems.forEach((item, index) => {
+      if (index === 0) {
+        item.classList.remove('opacity-0');
+        item.style.opacity = '1';
+        this.mediaItems[index].style.opacity = '1';
+        this.mediaItems[index].style.clipPath = 'inset(0)';
+      } else {
+        item.classList.add('opacity-0');
+        item.style.opacity = '0';
+        this.mediaItems[index].style.opacity = '0';
+        this.mediaItems[index].style.clipPath = 'inset(100% 0px 0px)';
+      }
+    });
+
+    this.setupIntersectionObserver();
+  }
+
+  setupIntersectionObserver() {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: [0.5, 0.75]
     };
-    
-    // Initialize the scrolling sections
-    initScrollSections();
+
+    this.observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+          const index = this.contentItems.indexOf(entry.target);
+          if (index !== -1) {
+            this.activateItem(index);
+          }
+        }
+      });
+    }, options);
+
+    this.contentItems.forEach(item => {
+      this.observer.observe(item);
+    });
+  }
+
+  activateItem(index) {
+    this.contentItems.forEach((item, i) => {
+      if (i === index) {
+        item.classList.remove('opacity-0');
+        item.style.opacity = '1';
+      } else {
+        item.classList.add('opacity-0');
+        item.style.opacity = '0';
+      }
+    });
+
+    this.mediaItems.forEach((img, i) => {
+      if (i === index) {
+        img.style.opacity = '1';
+        img.style.clipPath = 'inset(0)';
+        img.style.zIndex = '1';
+      } else {
+        img.style.opacity = '0';
+        img.style.clipPath = 'inset(100% 0px 0px)';
+        img.style.zIndex = '0';
+      }
+    });
+  }
+
+  disconnectedCallback() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
+  }
+}
+
+customElements.define('images-with-text-scrolling', ImagesWithTextScrolling);
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('images-with-text-scrolling').forEach(element => {
+    if (!element._upgraded) {
+      element._upgraded = true;
+      if (element.isConnected) {
+        element.setup && element.setup();
+      }
+    }
   });
+});
 </script>
 
 {% schema %}
