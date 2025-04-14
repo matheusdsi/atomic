@@ -112,7 +112,7 @@ div#shopify-section-header {
   }
   
   /* Make sure carousel doesn't break layout on mobile */
-  .product-form__option-selector {
+  .variant-carousel-container {
     overflow: hidden;
   }
 }
