@@ -147,6 +147,7 @@
         "image_text_block_9Uc7VL": {
           "type": "image_text_block",
           "settings": {
+            "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
             "heading": "Secagem rápida",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
             "text": "Projetada para acompanhar o seu ritmo. Com nossa exclusiva tecnologia de secagem rápida, ela oferece a combinação perfeita de conforto e performance. O tecido altamente tecnológico absorve a umidade da pele e a evapora rapidamente, garantindo que você se sinta seco e confortável mesmo durante as atividades mais intensas."
@@ -155,6 +156,7 @@
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
+            "image": "shopify://shop_images/dry.webp",
             "heading": "Tecnologia Dry",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
             "text": "A tecnologia Dry Fit é uma inovação no desenvolvimento de tecidos que proporciona conforto e alto desempenho. Feita a partir de materiais sintéticos leves e respiráveis, como poliéster, ela é projetada para absorver e evaporar rapidamente o suor, mantendo o corpo seco durante atividades físicas."
