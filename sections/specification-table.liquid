@@ -1,0 +1,181 @@
+{% comment %}
+  Specification Table Section
+  A customizable section to display product specifications with a title and description.
+{% endcomment %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-background-hash: 054922020920008346060000003430673;
+  }
+
+  #shopify-section-{{ section.id }} + * {
+    --previous-section-background-hash: 054922020920008346060000003430673;
+  }
+  
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} {
+      --section-background-hash: 0;
+    }
+
+    #shopify-section-{{ section.id }} + * {
+      --previous-section-background-hash: 0;
+    }
+  }
+</style>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --feature-chart-values-columns-count: 1;
+  }
+
+  @media screen and (min-width: 700px) {
+    #shopify-section-{{ section.id }} .section-stack {
+      flex-wrap: wrap;
+      justify-content: start;
+    }
+
+    #shopify-section-{{ section.id }} .section-stack__intro {
+      flex: 1 0 350px; /* Allow to grow and shrink with a range from 350px to 750px */
+      max-width: 750px;
+      width: auto;
+    }
+
+    #shopify-section-{{ section.id }} .section-stack__main {
+      flex: 1 1 600px;
+      min-width: 450px;
+      width: auto;
+    }
+  }
+</style>
+
+<div class="section section-boxed bg-custom text-custom" style="--background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
+  <div class="section-stack section-stack--horizontal">
+    <div class="section-stack__intro">
+      <div class="prose">
+        <h2 class="h2">
+          <span class="text-custom" style="--text-color: {{ section.settings.heading_color }};">
+            {{ section.settings.heading }}
+          </span>
+        </h2>
+        <p>
+          <span class="metafield-multi_line_text_field">
+            {{ section.settings.description }}
+          </span>
+        </p>
+      </div>
+    </div>
+    
+    <div class="section-stack__main">
+      <feature-chart max-rows="5" class="feature-chart bg-custom text-custom" style="--background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
+        <div class="feature-chart__table divide-y scroll-area">
+          {% for block in section.blocks %}
+            {% if block.type == 'specification_row' %}
+              <div class="feature-chart__table-row">
+                <div class="feature-chart__heading bold">{{ block.settings.specification_name }}</div>
+                <div class="feature-chart__value prose text-subdued">
+                  <p>{{ block.settings.specification_value }}</p>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </feature-chart>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Specification Table",
+  "tag": "section",
+  "class": "shopify-section--specification-table",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Descrição"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Experimente o melhor em durabilidade, conforto e secagem rápida com o Kit 6 Camisetas - Eleitas pelos Clientes. Aproveite os benefícios desses recursos essenciais em um único pacote, garantindo uma experiência de alta qualidade e praticidade para o seu dia a dia. Nunca mais se preocupe com peças que desgastam ou demoram para secar."
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "specification_row",
+      "name": "Specification Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "specification_name",
+          "label": "Specification Name",
+          "default": "Specification"
+        },
+        {
+          "type": "text",
+          "id": "specification_value",
+          "label": "Specification Value",
+          "default": "Value"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Specification Table",
+      "blocks": [
+        {
+          "type": "specification_row",
+          "settings": {
+            "specification_name": "Composição",
+            "specification_value": "100% Poliéster"
+          }
+        },
+        {
+          "type": "specification_row",
+          "settings": {
+            "specification_name": "Modelagem",
+            "specification_value": "Raglan"
+          }
+        },
+        {
+          "type": "specification_row",
+          "settings": {
+            "specification_name": "Modelo veste",
+            "specification_value": "G"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
