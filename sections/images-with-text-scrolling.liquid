@@ -125,7 +125,7 @@
           {% if block.settings.image != blank %}
             <img src="{{ block.settings.image | img_url: 'master' }}" 
                  alt="{{ block.settings.image.alt | escape }}" 
-                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | img_url: width: width }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
+                 srcset="{% for width in '200,300,400,600,800,1000,1200,1400,1600' %}{{ block.settings.image | img_url: 'master' }} {{ width }}w{% if forloop.last != true %}, {% endif %}{% endfor %}" 
                  width="{{ block.settings.image.width }}" 
                  height="{{ block.settings.image.height }}" 
                  loading="lazy" 
