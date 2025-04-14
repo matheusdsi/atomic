@@ -50,38 +50,74 @@
 
 <div class="section section-boxed bg-custom text-custom" style="--background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
   <div class="section__content">
-  <div class="section-stack section-stack--horizontal">
-    <div class="section-stack__intro">
-      <div class="prose">
-        <h2 class="h2">
-          <span class="text-custom" style="--text-color: {{ section.settings.heading_color }};">
-            {{ section.settings.heading }}
-          </span>
-        </h2>
-        <p>
-          <span class="metafield-multi_line_text_field">
-            {{ section.settings.description }}
-          </span>
-        </p>
-      </div>
-    </div>
-    
-    <div class="section-stack__main">
-      <feature-chart max-rows="5" class="feature-chart bg-custom text-custom" style="--background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
-        <div class="feature-chart__table divide-y scroll-area">
-          {% for block in section.blocks %}
-            {% if block.type == 'specification_row' %}
-              <div class="feature-chart__table-row">
-                <div class="feature-chart__heading bold">{{ block.settings.specification_name }}</div>
-                <div class="feature-chart__value prose text-subdued">
-                  <p>{{ block.settings.specification_value }}</p>
-                </div>
-              </div>
-            {% endif %}
-          {% endfor %}
+    <div class="section-stack">
+      <!-- Mobile Layout -->
+      <div class="section-stack__intro mobile-only">
+        <div class="prose">
+          <h2 class="h2">
+            <span class="text-custom" style="--text-color: {{ section.settings.heading_color }};">
+              {{ section.settings.heading }}
+            </span>
+          </h2>
+          <p>
+            <span class="metafield-multi_line_text_field">
+              {{ section.settings.description }}
+            </span>
+          </p>
         </div>
-      </feature-chart>
-    </div>
+      </div>
+      
+      <div class="section-stack__main mobile-only">
+        <feature-chart class="feature-chart bg-custom text-custom" style="--background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
+          <div class="feature-chart__table mobile-view">
+            {% for block in section.blocks %}
+              {% if block.type == 'specification_row' %}
+                <div class="feature-chart__table-row" {{ block.shopify_attributes }}>
+                  <div class="feature-chart__heading bold">{{ block.settings.specification_name }}</div>
+                  <div class="feature-chart__value prose text-subdued">
+                    <p>{{ block.settings.specification_value }}</p>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </feature-chart>
+      </div>
+      
+      <!-- Desktop Layout -->
+      <div class="desktop-layout">
+        <div class="desktop-layout__left">
+          <div class="prose">
+            <h2 class="h2">
+              <span class="text-custom" style="--text-color: {{ section.settings.heading_color }};">
+                {{ section.settings.heading }}
+              </span>
+            </h2>
+            <p>
+              <span class="metafield-multi_line_text_field">
+                {{ section.settings.description }}
+              </span>
+            </p>
+          </div>
+        </div>
+        
+        <div class="desktop-layout__right">
+          <feature-chart class="feature-chart bg-custom text-custom" style="--background: {{ section.settings.background_color }}; --text-color: {{ section.settings.text_color }};">
+            <div class="feature-chart__table desktop-view">
+              {% for block in section.blocks %}
+                {% if block.type == 'specification_row' %}
+                  <div class="feature-chart__table-row" {{ block.shopify_attributes }}>
+                    <div class="feature-chart__heading bold">{{ block.settings.specification_name }}</div>
+                    <div class="feature-chart__value prose text-subdued">
+                      <p>{{ block.settings.specification_value }}</p>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </feature-chart>
+        </div>
+      </div>
     </div>
   </div>
 </div>
