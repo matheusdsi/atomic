@@ -104,12 +104,12 @@
 
   {% if product.selected_or_first_available_variant.metafields.custom.text_card != blank%}
     <div class="stamp">
-      <span class="bg-black text-white">{{ product.selected_or_first_available_variant.metafields.custom.text_card }}</span>
+      <span class="bg-black text-white rounded-4xl">{{ product.selected_or_first_available_variant.metafields.custom.text_card }}</span>
     </div>
   {% else %}
     {% if product.selected_or_first_available_variant.price > settings.free_shipping %}
       <div class="stamp">
-        <span class="bg-black text-white">Frete Grátis</span>
+        <span class="bg-black text-white rounded-4xl">Frete Grátis</span>
     </div>
   {% endif %}
   {% endif %}
