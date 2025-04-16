@@ -192,8 +192,8 @@
         "shadow_opacity": 10,
         "shadow_blur": 10,
         "shadow_offset": 4,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "88ccb0c5-4011-44e5-b0bc-6ff8a25399ab": {
