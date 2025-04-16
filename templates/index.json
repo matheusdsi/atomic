@@ -180,7 +180,7 @@
         "columns_desktop": 4,
         "card_width_mobile": 80,
         "gap": 16,
-        "show_controls": true,
+        "show_controls": false,
         "image_ratio": "133.33%",
         "border_radius": 8,
         "overlay_opacity": 15,
