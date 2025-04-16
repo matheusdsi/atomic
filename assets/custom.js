@@ -8,6 +8,7 @@
  * to easily extend the theme and re-use the theme infrastructure for your own code.
  *
  * The technical documentation is summarized here.
+ */
 
 /* Mega Menu with Images JavaScript */
 document.addEventListener('DOMContentLoaded', function() {
@@ -194,6 +195,48 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+/**
+ * ------------------------------------------------------------------------------------------------------------
+ * BEING NOTIFIED WHEN A VARIANT HAS CHANGED
+ * ------------------------------------------------------------------------------------------------------------
+ *
+ * This event is fired whenever a the user has changed the variant in a selector. The target get you the form
+ * that triggered this event.
+ *
+ * Example:
+ *
+ * document.addEventListener('variant:changed', function(event) {
+ *   let variant = event.detail.variant; // Gives you access to the whole variant details
+ *   let form = event.target;
+ * });
+ *
+ * ------------------------------------------------------------------------------------------------------------
+ * MANUALLY CHANGE A VARIANT
+ * ------------------------------------------------------------------------------------------------------------
+ *
+ * You may want to manually change the variant, and let the theme automatically adjust all the selectors. To do
+ * that, you can get the DOM element of type "<product-variants>", and call the selectVariant method on it with
+ * the variant ID.
+ *
+ * Example:
+ *
+ * const productVariantElement = document.querySelector('product-variants');
+ * productVariantElement.selectVariant(12345);
+ *
+ * ------------------------------------------------------------------------------------------------------------
+ * BEING NOTIFIED WHEN A NEW VARIANT IS ADDED TO THE CART
+ * ------------------------------------------------------------------------------------------------------------
+ *
+ * This event is fired whenever a variant is added to the cart through a form selector (product page, quick
+ * view...). This event DOES NOT include any change done through the cart on an existing variant. For that,
+ * please refer to the "cart:updated" event.
+ *
+ * Example:
+ *
+ * document.addEventListener('variant:added', function(event) {
+ *   var variant = event.detail.variant; // Get the variant that was added
+ * });
 
  *
  * ------------------------------------------------------------------------------------------------------------
