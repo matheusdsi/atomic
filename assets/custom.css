@@ -395,6 +395,12 @@ div#shopify-section-header {
   border-radius: 1rem;
 }
 
+.stamp span {
+  padding: 5px 15px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
