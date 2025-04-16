@@ -125,6 +125,77 @@
         "background": "rgba(0,0,0,0)"
       }
     },
+    "card_collections_7BYVR6": {
+      "type": "card-collections",
+      "blocks": {
+        "card_G8nAqU": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
+            "subheading": "COLEÇÃO",
+            "heading": "Nome da coleção",
+            "link": ""
+          }
+        },
+        "card_pqUT43": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/dry.webp",
+            "subheading": "COLEÇÃO",
+            "heading": "Nome da coleção",
+            "link": ""
+          }
+        },
+        "card_77dXry": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
+            "subheading": "COLEÇÃO",
+            "heading": "Nome da coleção",
+            "link": ""
+          }
+        },
+        "card_86YXt6": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/dry.webp",
+            "subheading": "COLEÇÃO",
+            "heading": "Nome da coleção",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_G8nAqU",
+        "card_pqUT43",
+        "card_77dXry",
+        "card_86YXt6"
+      ],
+      "name": "Cards Carrossel",
+      "settings": {
+        "title": "Coleções em destaque",
+        "subtitle": "",
+        "heading_alignment": "center",
+        "background_color": "#ffffff",
+        "columns_desktop": 4,
+        "card_width_mobile": 80,
+        "gap": 16,
+        "show_controls": true,
+        "image_ratio": "133.33%",
+        "border_radius": 8,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "text_color": "#ffffff",
+        "zoom_scale": 5,
+        "hover_effect": "translateY(-5px)",
+        "transition_duration": 300,
+        "shadow_opacity": 10,
+        "shadow_blur": 10,
+        "shadow_offset": 4,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "88ccb0c5-4011-44e5-b0bc-6ff8a25399ab": {
       "type": "collection-list",
       "blocks": {
@@ -886,6 +957,7 @@
   },
   "order": [
     "75d0263f-6b34-417b-b59b-f08719a890c3",
+    "card_collections_7BYVR6",
     "88ccb0c5-4011-44e5-b0bc-6ff8a25399ab",
     "e788eef9-ffef-44cb-bca8-e2d079bd7a59",
     "ae51efcc-b4da-4994-95d2-75b73575a563",
