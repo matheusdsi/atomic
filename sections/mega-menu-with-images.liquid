@@ -64,7 +64,7 @@
               {%- for link in section.settings.menu.links -%}
                 <li>
                   <details is="mega-menu-disclosure" trigger="hover">
-                    <summary class="text-with-icon gap-2.5 bold link-faded-reverse" data-url="{{ link.url }}">
+                    <summary class="text-with-icon gap-2.5 bold link-faded-reverse" data-url="{{ link.url }}" onclick="if(window.innerWidth > 1150) { window.location.href = '{{ link.url }}'; }">
                       {{ link.title }}
                       <svg role="presentation" focusable="false" width="10" height="7" class="icon icon-chevron-bottom" viewBox="0 0 10 7">
                         <path d="m1 1 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"></path>
