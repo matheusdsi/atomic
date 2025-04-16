@@ -399,6 +399,7 @@ div#shopify-section-header {
   padding: 5px 15px;
   font-size: 13px;
   margin-bottom: 5px;
+  display: block;
 }
 
 @media(max-width: 740px) {
