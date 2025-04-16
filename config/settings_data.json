@@ -67,6 +67,7 @@
     "opcao_frete1": true,
     "frete1_preco": "R$ 19,90",
     "opcao_frete2": false,
+    "free_shipping": 199,
     "checkout_logo_image": "shopify://shop_images/Logo_-_Sem_Fundo_225x_2x_d9da97c0-4643-460b-8259-0c8179a4ec57.png",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
