@@ -42,21 +42,26 @@
   }
   
   .card-collections__grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: var(--card-gap);
-    overflow: visible;
+    width: 100%;
+    overflow: hidden;
   }
   
-  @media screen and (min-width: 750px) {
-    .card-collections__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .card-collections__carousel {
+    display: flex;
+    gap: var(--card-gap);
+    width: 100%;
   }
   
   @media screen and (min-width: 990px) {
-    .card-collections__grid {
-      grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+    .card-collections__carousel {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .card-collections__carousel .card-collections__card {
+      flex: 0 0 calc((100% - (var(--card-gap) * ({{ section.settings.columns_desktop }} - 1))) / {{ section.settings.columns_desktop }});
+      max-width: calc((100% - (var(--card-gap) * ({{ section.settings.columns_desktop }} - 1))) / {{ section.settings.columns_desktop }});
+      margin-bottom: var(--card-gap);
     }
     
     .card-collections__title {
@@ -165,14 +170,13 @@
   /* Mobile carousel styles */
   @media screen and (max-width: 989px) {
     .card-collections__carousel {
-      display: flex;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       -webkit-overflow-scrolling: touch;
       scroll-behavior: smooth;
       -ms-overflow-style: none;
       scrollbar-width: none;
-      gap: var(--card-gap);
+      flex-wrap: nowrap;
       padding-bottom: 20px;
     }
     
@@ -183,7 +187,7 @@
     .card-collections__carousel .card-collections__card {
       flex: 0 0 {{ section.settings.card_width_mobile }}%;
       scroll-snap-align: start;
-      width: {{ section.settings.card_width_mobile }}%;
+      min-width: {{ section.settings.card_width_mobile }}%;
     }
   }
   
@@ -283,7 +287,7 @@
       </div>
     </div>
     
-    {%- if section.settings.show_controls and section.blocks.size > section.settings.columns_desktop -%}
+    {%- if section.settings.show_controls -%}
       <div class="card-collections__controls">
         <button class="card-collections__control-button card-collections__prev" aria-label="{{ 'general.accessibility.previous' | t }}" disabled>
           <svg viewBox="0 0 24 24">
@@ -307,28 +311,46 @@
     const nextButton = document.querySelector('#shopify-section-{{ section.id }} .card-collections__next');
     
     if (carousel && prevButton && nextButton) {
-      const scrollAmount = carousel.offsetWidth * 0.8;
-      
-      function updateButtonState() {
-        prevButton.disabled = carousel.scrollLeft <= 0;
-        nextButton.disabled = carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 10;
+      // Só ativa o carrossel em telas menores que 990px
+      function setupCarousel() {
+        if (window.innerWidth < 990) {
+          const cardWidth = carousel.querySelector('.card-collections__card').offsetWidth;
+          const scrollAmount = cardWidth + parseInt(getComputedStyle(document.documentElement).getPropertyValue('--card-gap'));
+          
+          function updateButtonState() {
+            prevButton.disabled = carousel.scrollLeft <= 0;
+            nextButton.disabled = carousel.scrollLeft + carousel.offsetWidth >= carousel.scrollWidth - 10;
+          }
+          
+          prevButton.addEventListener('click', function() {
+            carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            setTimeout(updateButtonState, 500);
+          });
+          
+          nextButton.addEventListener('click', function() {
+            carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            setTimeout(updateButtonState, 500);
+          });
+          
+          carousel.addEventListener('scroll', updateButtonState);
+          
+          // Initial button state
+          updateButtonState();
+        } else {
+          // Desativa os botões no desktop
+          prevButton.style.display = 'none';
+          nextButton.style.display = 'none';
+        }
       }
       
-      prevButton.addEventListener('click', function() {
-        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        setTimeout(updateButtonState, 500);
+      setupCarousel();
+      
+      // Reconfigura quando a janela é redimensionada
+      let resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(setupCarousel, 250);
       });
-      
-      nextButton.addEventListener('click', function() {
-        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        setTimeout(updateButtonState, 500);
-      });
-      
-      carousel.addEventListener('scroll', updateButtonState);
-      window.addEventListener('resize', updateButtonState);
-      
-      // Initial button state
-      updateButtonState();
     }
   });
 </script>
