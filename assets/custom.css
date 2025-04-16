@@ -402,6 +402,10 @@
   text-align: left;
 }
 
+span.shipping-bar__text.text--small {
+    font-weight: bold;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
