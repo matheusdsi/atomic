@@ -67,6 +67,7 @@
     "opcao_frete1": true,
     "frete1_preco": "R$ 19,90",
     "opcao_frete2": false,
+    "free_shipping": 199,
     "checkout_logo_image": "shopify://shop_images/Logo_-_Sem_Fundo_225x_2x_d9da97c0-4643-460b-8259-0c8179a4ec57.png",
     "checkout_logo_size": "small",
     "checkout_body_background_color": "#ffffff",
@@ -131,6 +132,37 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "mega_menu_gGpzqp": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "Camiseta Térmica UV50+",
+              "images_position": "right",
+              "image_1_heading": "",
+              "image_1_text": "",
+              "image_1_link": "",
+              "image_2_heading": "",
+              "image_2_text": "",
+              "image_2_link": "",
+              "image_3_heading": "",
+              "image_3_text": "",
+              "image_3_link": "",
+              "image_4": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
+              "image_4_heading": "",
+              "image_4_text": "",
+              "image_4_link": "",
+              "image_5_heading": "",
+              "image_5_text": "",
+              "image_5_link": "",
+              "image_6_heading": "",
+              "image_6_text": "",
+              "image_6_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "mega_menu_gGpzqp"
+        ],
         "settings": {
           "enable_sticky_header": true,
           "logo": "shopify://shop_images/Logo_-_Sem_Fundo_3f46b43e-9532-4bcd-bafa-8bf5c476dcc4.png",
