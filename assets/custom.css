@@ -373,10 +373,6 @@
   cursor: default;
 }
 
-div#shopify-section-header {
-  overflow: hidden;
-}
-
 .shopify-section--main-product {
   background: #f9f9f9;
   padding-top: 1rem;
