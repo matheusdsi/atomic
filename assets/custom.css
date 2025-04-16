@@ -402,6 +402,10 @@ div#shopify-section-header {
   display: inline-block;
 }
 
+.product-item-meta {
+  text-align: left;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
