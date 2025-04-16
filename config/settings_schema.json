@@ -1,1 +1,1058 @@
-[{"name":"theme_info","theme_name":"Vortex","theme_author":"tiago Digital","theme_version":"1.0","theme_documentation_url":"https:\/\/demo-tiagodigital-joias.myshopify.com\/","theme_support_url":"https:\/\/demo-tiagodigital-joias.myshopify.com\/"},{"name":"Licença do tema","settings":[{"type":"paragraph","content":"Acesse nosso site e saiba mais! [Saber mais](https:\/\/tiagodigital.com\/)"},{"type":"text","id":"key","label":"Chave de licença"}]},{"name":"Appearance","settings":[{"type":"paragraph","content":"Adapt the theme to your brand style by changing rounded elements, spacing and icons style."},{"type":"range","id":"icon_stroke_width","min":1,"max":2,"step":0.1,"unit":"px","label":"Icon thickness","default":2},{"type":"range","id":"button_border_radius","min":0,"max":30,"step":2,"unit":"px","label":"Button\/input border radius","default":0},{"type":"select","id":"block_border_radius","label":"Block border radius","options":[{"value":"none","label":"None"},{"value":"small","label":"Small"},{"value":"medium","label":"Medium"},{"value":"large","label":"Large"}],"default":"none"},{"type":"select","id":"vertical_spacing","label":"Vertical spacing","info":"Impact the vertical spacing separating each section.","options":[{"value":"small","label":"Small"},{"value":"medium","label":"Medium"},{"value":"large","label":"Large"}],"default":"large"}]},{"name":"Colors","settings":[{"type":"header","content":"General"},{"type":"color","id":"heading_color","label":"Heading","default":"#1c1b1b"},{"type":"color","id":"text_color","label":"Body text","default":"#677279"},{"type":"color","id":"background","label":"Background","default":"#ffffff"},{"type":"color","id":"secondary_background","label":"Secondary background","info":"Use a color close to the main background.","default":"#f7f8fd"},{"type":"color","id":"success_color","label":"Success","default":"#168342"},{"type":"color","id":"error_color","label":"Error","default":"#e00000"},{"type":"header","content":"Header"},{"type":"color","id":"header_background","label":"Background","default":"#1e316a"},{"type":"color","id":"header_text_color","label":"Text","default":"#ffffff"},{"type":"header","content":"Footer"},{"type":"color","id":"footer_background","label":"Background","default":"#f3f5f6"},{"type":"color","id":"footer_text_color","label":"Text","default":"#677279"},{"type":"header","content":"Primary button"},{"type":"color","id":"primary_button_background","label":"Background","default":"#00badb"},{"type":"color","id":"primary_button_text_color","label":"Text","default":"#ffffff"},{"type":"header","content":"Secondary button"},{"type":"color","id":"secondary_button_background","label":"Background","default":"#1e2d7d"},{"type":"color","id":"secondary_button_text_color","label":"Text","default":"#ffffff"},{"type":"header","content":"Product"},{"type":"color","id":"product_rating_color","label":"Star rating","default":"#f6a429"},{"type":"color","id":"product_on_sale_accent","label":"On sale accent","default":"#e00000"},{"type":"color","id":"product_sold_out_accent","label":"Sold out accent","default":"#6f719b"},{"type":"color","id":"product_custom_label_background","label":"Custom label","info":"[Learn more](https:\/\/support.maestrooo.com\/article\/75-collection-displaying-custom-label)","default":"#1e316a"},{"type":"color","id":"product_custom_label_2_background","label":"Custom label 2","info":"[Learn more](https:\/\/support.maestrooo.com\/article\/75-collection-displaying-custom-label)","default":"#1e316a"},{"type":"color","id":"product_in_stock_text_color","label":"In stock accent","default":"#168342"},{"type":"color","id":"product_low_stock_text_color","label":"Low stock accent","default":"#e00000"},{"type":"color","id":"fundo-compare","label":"Bg Compare","default":"#000000"},{"type":"color","id":"texto-compare","label":"Texto compare","default":"#fff"}]},{"name":"Typography","settings":[{"type":"header","content":"Headings"},{"type":"font_picker","id":"heading_font","label":"Font","info":"Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)","default":"helvetica_n4"},{"type":"select","id":"heading_font_size","label":"Heading size","options":[{"value":"small","label":"Small"},{"value":"medium","label":"Medium"},{"value":"large","label":"Large"}],"default":"medium"},{"type":"select","id":"heading_text_transform","label":"Heading style","options":[{"value":"normal","label":"Normal"},{"value":"lowercase","label":"Lowercase"},{"value":"uppercase","label":"Uppercase"}],"default":"uppercase"},{"type":"header","content":"Body text"},{"type":"font_picker","id":"text_font","label":"Font","info":"Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https:\/\/help.shopify.com\/en\/manual\/online-store\/os\/store-speed\/improving-speed#fonts)","default":"helvetica_n4"},{"type":"range","id":"text_font_size","label":"Base size","min":12,"max":20,"unit":"px","default":15}]},{"name":"Currency format","settings":[{"type":"header","content":"Currency codes"},{"type":"paragraph","content":"Cart and checkout prices always show currency codes. Example: $1.00 USD."},{"type":"checkbox","id":"currency_code_enabled","label":"Show currency codes","default":false}]},{"name":"Animation","settings":[{"type":"paragraph","content":"Users who configured their preferences to minimize non-essential motion will automatically experience reduced animations."},{"type":"checkbox","id":"show_image_zoom","label":"Show image zoom","info":"Affect various images that are slowly zoomed on hover","default":true},{"type":"checkbox","id":"stagger_products_apparition","label":"Reveal products one by one","info":"Affect any product grid listing","default":true},{"type":"checkbox","id":"stagger_blog_posts_apparition","label":"Reveal blog posts one by one","info":"Affect any blog post listing","default":true},{"type":"checkbox","id":"reveal_product_media","label":"Reveal product media","info":"Affect product pages and featured product section","default":true}]},{"name":"Color swatch","settings":[{"type":"checkbox","id":"round_color_swatches","label":"Round color swatches","default":false},{"type":"textarea","id":"color_swatch_config","label":"Configuration","placeholder":"Red:#ff0000\nGreen:#00ff00\nBlue:#0000ff","info":"Each rule must be in its own line. [Learn more](https:\/\/support.maestrooo.com\/article\/80-product-uploading-custom-color-for-color-swatch) about the exact naming convention."}]},{"name":"Products grid","settings":[{"type":"checkbox","id":"show_vendor","label":"Show vendor","default":false},{"type":"checkbox","id":"show_secondary_image","label":"Show secondary image on hover","default":false},{"type":"checkbox","id":"product_add_to_cart","label":"Enable quick add to cart","default":true},{"type":"checkbox","id":"show_product_rating","label":"Show product rating","info":"To display a rating, add a product rating app. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)","default":false},{"type":"checkbox","id":"show_discount","label":"Show discount label","default":true},{"type":"select","id":"discount_mode","label":"Show discount as...","options":[{"value":"percentage","label":"Percentage"},{"value":"saving","label":"Saving"}],"default":"saving"},{"type":"select","id":"product_color_display","label":"Color display mode","options":[{"value":"hide","label":"Hide"},{"value":"count","label":"Count"},{"value":"swatch","label":"Swatch"}],"default":"count"},{"type":"select","id":"product_image_size","label":"Product image size","options":[{"value":"natural","label":"Natural"},{"value":"short","label":"Short (4:3)"},{"value":"square","label":"Square (1:1)"},{"value":"tall","label":"Tall (2:3)"}],"default":"natural"}]},{"name":"Search","settings":[{"type":"header","content":"Search for"},{"type":"checkbox","id":"search_enable_products","label":"Products","default":true},{"type":"checkbox","id":"search_enable_blog_posts","label":"Blog posts","default":true},{"type":"checkbox","id":"search_enable_pages","label":"Pages","default":false},{"type":"checkbox","id":"search_enable_collections","label":"Collections","info":"Collection results currently only show on predictive search.","default":true},{"type":"select","id":"search_unavailable_products","label":"Sold out products should...","options":[{"value":"show","label":"Always show"},{"value":"hide","label":"Be hidden"},{"value":"last","label":"Show last"}],"default":"last"}]},{"name":"Cart","settings":[{"type":"select","id":"cart_type","label":"Cart type","options":[{"value":"drawer","label":"Drawer"},{"value":"message","label":"Message"},{"value":"page","label":"Page"}],"default":"message"},{"type":"select","id":"cart_icon","label":"Cart icon","options":[{"value":"shopping_bag","label":"Shopping bag"},{"value":"shopping_cart","label":"Shopping cart"},{"value":"tote_bag","label":"Tote bag"}],"default":"shopping_bag"},{"type":"url","id":"cart_empty_button_link","label":"Empty button link","default":"\/collections\/all"},{"type":"checkbox","id":"cart_show_free_shipping_threshold","label":"Show free shipping minimum amount","info":"Make sure that you have properly configured your [shipping rates](\/admin\/settings\/shipping).","default":false},{"type":"text","id":"cart_free_shipping_threshold","label":"Free shipping minimum amount","info":"Enter amount using number only. If using multiple currencies, separate each currency code with its amount (eg.: USD:50,EUR:60,JPY:9000)","default":"50"}]},{"name":"Social media","settings":[{"type":"header","content":"Accounts"},{"type":"text","id":"social_facebook","label":"Facebook"},{"type":"text","id":"social_twitter","label":"Twitter"},{"type":"text","id":"social_pinterest","label":"Pinterest"},{"type":"text","id":"social_instagram","label":"Instagram"},{"type":"text","id":"social_vimeo","label":"Vimeo"},{"type":"text","id":"social_tumblr","label":"Tumblr"},{"type":"text","id":"social_youtube","label":"YouTube"},{"type":"text","id":"social_tiktok","label":"TikTok"},{"type":"text","id":"social_linkedin","label":"LinkedIn"},{"type":"text","id":"social_snapchat","label":"Snapchat"},{"type":"text","id":"social_fancy","label":"Fancy"},{"type":"text","id":"social_wechat","label":"WeChat"},{"type":"text","id":"social_reddit","label":"Reddit"},{"type":"text","id":"social_line","label":"LINE"},{"type":"text","id":"social_spotify","label":"Spotify"}]},{"name":"GTM","settings":[{"type":"text","id":"gtm","label":"Google Tag Manager (GTM)","info":"Ex: GTM-XXXXXXX"}]},{"name":"HEAD Scripts","settings":[{"type":"html","id":"scripts-extras-head","label":"scripts","info":"Sera inserido no head"}]},{"name":"Body Scripts","settings":[{"type":"html","id":"scripts-extras-body","label":"scripts","info":"Sera inserido no body"}]},{"name":"Favicon","settings":[{"type":"image_picker","id":"favicon","label":"Image","info":"96 x 96px .png recommended"}]},{"name":"juros","settings":[{"type":"checkbox","id":"appmax","label":"Juros Appmax"},{"type":"checkbox","id":"cartpanda","label":"Juros Cartpand"},{"type":"checkbox","id":"personalizado","label":"Juros Personalizado","default":true},{"type":"text","id":"parceladois","label":"2x - sem % - Ex. 4,51% incluir 0451","default":"0451"},{"type":"text","id":"parcelatres","label":"3x - sem % - Ex. 6,04% incluir 0604","default":"0604"},{"type":"text","id":"parcelaquatro","label":"4x - sem % - Ex. 7,59% incluir 0759","default":"0759"},{"type":"text","id":"parcelacinco","label":"5x - sem % - Ex. 9,15% incluir 0915","default":"0915"},{"type":"text","id":"parcelaseis","label":"6x - sem % - Ex. 10,72% incluir 1072","default":"1072"},{"type":"text","id":"parcelasete","label":"7x - sem % - Ex. 12,31% incluir 1231","default":"1231"},{"type":"text","id":"parcelaoito","label":"8x - sem % - Ex. 13,92% incluir 1392","default":"1392"},{"type":"text","id":"parcelanove","label":"9x - sem % - Ex. 15,54% incluir 1554","default":"1554"},{"type":"text","id":"parceladez","label":"10x - sem % - Ex. 17,17% incluir 1717","default":"1717"},{"type":"text","id":"parcelaonze","label":"11x - sem % - Ex. 18,82% incluir 1882","default":"1882"},{"type":"text","id":"parceladoze","label":"12x - sem % - Ex. 20,48% incluir 2048","default":"2048"},{"type":"range","id":"vezes-parcela","min":1,"max":12,"step":1,"label":"Qtd Parcelas","default":12}]},{"name":"Sticky WhatsApp","settings":[{"type":"header","content":"Whatsapp Flutuante"},{"type":"checkbox","id":"show_sticky_whats","label":"Ativar Wpp sticky","default":true},{"type":"checkbox","id":"show_sticky_whatsd","label":"Mostrar no Desktop","default":true},{"type":"checkbox","id":"show_sticky_whatsm","label":"Mostrar no Mobile","default":true},{"type":"text","id":"whats_num_sticky","label":"Numero Whatsapp","info":"Digite o número no formado 11999999999 sem espaços ou -","default":"11999999999"}]},{"name":"Frete carrinho","settings":[{"type":"header","content":"Primeira Opção de Frete"},{"type":"text","id":"fretebotaofrase","label":"Frase botão","info":"Nome que aparecerá no botão","default":"Calcular"},{"type":"checkbox","id":"opcao_frete1","label":"1º Linha Frete","info":"Ativar 1º linha do frete","default":true},{"type":"text","id":"frete1_nome","label":"Nome para o frete 1","info":"Nome para o primeiro frete, utilize termos como Grátis, padrão, PAC etc.","default":"Padrão"},{"type":"text","id":"frete1_preco","label":"Preco Frete 1","info":"Adicione o preço para primeira opção de frete","default":"Grátis"},{"type":"text","id":"frete1_prazo","label":"Prazo Frete 1","info":"Adicione o prazo para primeira opção de frete","default":"8 a 11 dias"},{"type":"checkbox","id":"opcao_frete2","label":"2º Linha Frete","info":"Ativar a 2º linha do frete","default":true},{"type":"text","id":"frete2_nome","label":"Nome para o frete 2","info":"Nome para o segundo frete, utilize termos como expresso, sedex etc.","default":"Expresso"},{"type":"text","id":"frete2_preco","label":"Preco Frete 2","info":"Adicione o preço para segunda opção de frete","default":"R$ 9,79"},{"type":"text","id":"frete2_prazo","label":"Prazo Frete 2","info":"Adicione o prazo para segunda opção de frete","default":"5 a 7 dias"},{"type":"checkbox","id":"opcao_frete3","label":"3º Linha Frete","info":"Ativar a 3º linha do frete","default":false},{"type":"text","id":"frete3_nome","label":"Nome para o frete 3","info":"Nome para o terceiro frete, utilize termos como expresso, sedex etc.","default":"Jadlog"},{"type":"text","id":"frete3_preco","label":"Preco Frete 3","info":"Adicione o preço para terceira opção de frete","default":"R$ 9,79"},{"type":"text","id":"frete3_prazo","label":"Prazo Frete 3","info":"Adicione o prazo para terceira opção de frete","default":"5 a 7 dias"},{"type":"checkbox","id":"opcao_frete4","label":"4º Linha Frete","info":"Ativar a 4º linha do frete","default":false},{"type":"text","id":"frete4_nome","label":"Nome para o frete 4","info":"Nome para o quarto frete, utilize termos como expresso, sedex etc.","default":"Transportadora"},{"type":"text","id":"frete4_preco","label":"Preco Frete 4","info":"Adicione o preço para quarta opção de frete","default":"R$ 9,79"},{"type":"text","id":"frete4_prazo","label":"Prazo Frete 4","info":"Adicione o prazo para quarta opção de frete","default":"5 a 7 dias"},{"type":"checkbox","id":"opcao_frete5","label":"5º Linha Frete","info":"Ativar a 5º linha do frete","default":false},{"type":"text","id":"frete5_nome","label":"Nome para o frete 5","info":"Nome para o quinto frete, utilize termos como expresso, sedex etc.","default":"PAC"},{"type":"text","id":"frete5_preco","label":"Preco Frete 5","info":"Adicione o preço para quinta opção de frete","default":"R$ 9,79"},{"type":"text","id":"frete5_prazo","label":"Prazo Frete 5","info":"Adicione o prazo para quinta opção de frete","default":"5 a 7 dias"}]}]
+[
+    {
+      "name": "theme_info",
+      "theme_name": "Vortex",
+      "theme_author": "tiago Digital",
+      "theme_version": "1.0",
+      "theme_documentation_url": "https://demo-tiagodigital-joias.myshopify.com/",
+      "theme_support_url": "https://demo-tiagodigital-joias.myshopify.com/"
+    },
+    {
+      "name": "Licença do tema",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Acesse nosso site e saiba mais! [Saber mais](https://tiagodigital.com/)"
+        },
+        {
+          "type": "text",
+          "id": "key",
+          "label": "Chave de licença"
+        }
+      ]
+    },
+    {
+      "name": "Appearance",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Adapt the theme to your brand style by changing rounded elements, spacing and icons style."
+        },
+        {
+          "type": "range",
+          "id": "icon_stroke_width",
+          "min": 1,
+          "max": 2,
+          "step": 0.1,
+          "unit": "px",
+          "label": "Icon thickness",
+          "default": 2
+        },
+        {
+          "type": "range",
+          "id": "button_border_radius",
+          "min": 0,
+          "max": 30,
+          "step": 2,
+          "unit": "px",
+          "label": "Button/input border radius",
+          "default": 0
+        },
+        {
+          "type": "select",
+          "id": "block_border_radius",
+          "label": "Block border radius",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "none"
+        },
+        {
+          "type": "select",
+          "id": "vertical_spacing",
+          "label": "Vertical spacing",
+          "info": "Impact the vertical spacing separating each section.",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "large"
+        }
+      ]
+    },
+    {
+      "name": "Colors",
+      "settings": [
+        {
+          "type": "header",
+          "content": "General"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "label": "Heading",
+          "default": "#1c1b1b"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Body text",
+          "default": "#677279"
+        },
+        {
+          "type": "color",
+          "id": "background",
+          "label": "Background",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "secondary_background",
+          "label": "Secondary background",
+          "info": "Use a color close to the main background.",
+          "default": "#f7f8fd"
+        },
+        {
+          "type": "color",
+          "id": "success_color",
+          "label": "Success",
+          "default": "#168342"
+        },
+        {
+          "type": "color",
+          "id": "error_color",
+          "label": "Error",
+          "default": "#e00000"
+        },
+        {
+          "type": "header",
+          "content": "Header"
+        },
+        {
+          "type": "color",
+          "id": "header_background",
+          "label": "Background",
+          "default": "#1e316a"
+        },
+        {
+          "type": "color",
+          "id": "header_text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "content": "Footer"
+        },
+        {
+          "type": "color",
+          "id": "footer_background",
+          "label": "Background",
+          "default": "#f3f5f6"
+        },
+        {
+          "type": "color",
+          "id": "footer_text_color",
+          "label": "Text",
+          "default": "#677279"
+        },
+        {
+          "type": "header",
+          "content": "Primary button"
+        },
+        {
+          "type": "color",
+          "id": "primary_button_background",
+          "label": "Background",
+          "default": "#00badb"
+        },
+        {
+          "type": "color",
+          "id": "primary_button_text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "content": "Secondary button"
+        },
+        {
+          "type": "color",
+          "id": "secondary_button_background",
+          "label": "Background",
+          "default": "#1e2d7d"
+        },
+        {
+          "type": "color",
+          "id": "secondary_button_text_color",
+          "label": "Text",
+          "default": "#ffffff"
+        },
+        {
+          "type": "header",
+          "content": "Product"
+        },
+        {
+          "type": "color",
+          "id": "product_rating_color",
+          "label": "Star rating",
+          "default": "#f6a429"
+        },
+        {
+          "type": "color",
+          "id": "product_on_sale_accent",
+          "label": "On sale accent",
+          "default": "#e00000"
+        },
+        {
+          "type": "color",
+          "id": "product_sold_out_accent",
+          "label": "Sold out accent",
+          "default": "#6f719b"
+        },
+        {
+          "type": "color",
+          "id": "product_custom_label_background",
+          "label": "Custom label",
+          "info": "[Learn more](https://support.maestrooo.com/article/75-collection-displaying-custom-label)",
+          "default": "#1e316a"
+        },
+        {
+          "type": "color",
+          "id": "product_custom_label_2_background",
+          "label": "Custom label 2",
+          "info": "[Learn more](https://support.maestrooo.com/article/75-collection-displaying-custom-label)",
+          "default": "#1e316a"
+        },
+        {
+          "type": "color",
+          "id": "product_in_stock_text_color",
+          "label": "In stock accent",
+          "default": "#168342"
+        },
+        {
+          "type": "color",
+          "id": "product_low_stock_text_color",
+          "label": "Low stock accent",
+          "default": "#e00000"
+        },
+        {
+          "type": "color",
+          "id": "fundo-compare",
+          "label": "Bg Compare",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "texto-compare",
+          "label": "Texto compare",
+          "default": "#fff"
+        }
+      ]
+    },
+    {
+      "name": "Typography",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Headings"
+        },
+        {
+          "type": "font_picker",
+          "id": "heading_font",
+          "label": "Font",
+          "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+          "default": "helvetica_n4"
+        },
+        {
+          "type": "select",
+          "id": "heading_font_size",
+          "label": "Heading size",
+          "options": [
+            {
+              "value": "small",
+              "label": "Small"
+            },
+            {
+              "value": "medium",
+              "label": "Medium"
+            },
+            {
+              "value": "large",
+              "label": "Large"
+            }
+          ],
+          "default": "medium"
+        },
+        {
+          "type": "select",
+          "id": "heading_text_transform",
+          "label": "Heading style",
+          "options": [
+            {
+              "value": "normal",
+              "label": "Normal"
+            },
+            {
+              "value": "lowercase",
+              "label": "Lowercase"
+            },
+            {
+              "value": "uppercase",
+              "label": "Uppercase"
+            }
+          ],
+          "default": "uppercase"
+        },
+        {
+          "type": "header",
+          "content": "Body text"
+        },
+        {
+          "type": "font_picker",
+          "id": "text_font",
+          "label": "Font",
+          "info": "Selecting different fonts can affect the speed of your online store. Learn more about [system fonts.](https://help.shopify.com/en/manual/online-store/os/store-speed/improving-speed#fonts)",
+          "default": "helvetica_n4"
+        },
+        {
+          "type": "range",
+          "id": "text_font_size",
+          "label": "Base size",
+          "min": 12,
+          "max": 20,
+          "unit": "px",
+          "default": 15
+        }
+      ]
+    },
+    {
+      "name": "Currency format",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Currency codes"
+        },
+        {
+          "type": "paragraph",
+          "content": "Cart and checkout prices always show currency codes. Example: $1.00 USD."
+        },
+        {
+          "type": "checkbox",
+          "id": "currency_code_enabled",
+          "label": "Show currency codes",
+          "default": false
+        }
+      ]
+    },
+    {
+      "name": "Animation",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Users who configured their preferences to minimize non-essential motion will automatically experience reduced animations."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_image_zoom",
+          "label": "Show image zoom",
+          "info": "Affect various images that are slowly zoomed on hover",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "stagger_products_apparition",
+          "label": "Reveal products one by one",
+          "info": "Affect any product grid listing",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "stagger_blog_posts_apparition",
+          "label": "Reveal blog posts one by one",
+          "info": "Affect any blog post listing",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "reveal_product_media",
+          "label": "Reveal product media",
+          "info": "Affect product pages and featured product section",
+          "default": true
+        }
+      ]
+    },
+    {
+      "name": "Color swatch",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "round_color_swatches",
+          "label": "Round color swatches",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "color_swatch_config",
+          "label": "Configuration",
+          "placeholder": "Red:#ff0000\nGreen:#00ff00\nBlue:#0000ff",
+          "info": "Each rule must be in its own line. [Learn more](https://support.maestrooo.com/article/80-product-uploading-custom-color-for-color-swatch) about the exact naming convention."
+        }
+      ]
+    },
+    {
+      "name": "Products grid",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_vendor",
+          "label": "Show vendor",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_secondary_image",
+          "label": "Show secondary image on hover",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "product_add_to_cart",
+          "label": "Enable quick add to cart",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_product_rating",
+          "label": "Show product rating",
+          "info": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_discount",
+          "label": "Show discount label",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "discount_mode",
+          "label": "Show discount as...",
+          "options": [
+            {
+              "value": "percentage",
+              "label": "Percentage"
+            },
+            {
+              "value": "saving",
+              "label": "Saving"
+            }
+          ],
+          "default": "saving"
+        },
+        {
+          "type": "select",
+          "id": "product_color_display",
+          "label": "Color display mode",
+          "options": [
+            {
+              "value": "hide",
+              "label": "Hide"
+            },
+            {
+              "value": "count",
+              "label": "Count"
+            },
+            {
+              "value": "swatch",
+              "label": "Swatch"
+            }
+          ],
+          "default": "count"
+        },
+        {
+          "type": "select",
+          "id": "product_image_size",
+          "label": "Product image size",
+          "options": [
+            {
+              "value": "natural",
+              "label": "Natural"
+            },
+            {
+              "value": "short",
+              "label": "Short (4:3)"
+            },
+            {
+              "value": "square",
+              "label": "Square (1:1)"
+            },
+            {
+              "value": "tall",
+              "label": "Tall (2:3)"
+            }
+          ],
+          "default": "natural"
+        }
+      ]
+    },
+    {
+      "name": "Search",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Search for"
+        },
+        {
+          "type": "checkbox",
+          "id": "search_enable_products",
+          "label": "Products",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "search_enable_blog_posts",
+          "label": "Blog posts",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "search_enable_pages",
+          "label": "Pages",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "search_enable_collections",
+          "label": "Collections",
+          "info": "Collection results currently only show on predictive search.",
+          "default": true
+        },
+        {
+          "type": "select",
+          "id": "search_unavailable_products",
+          "label": "Sold out products should...",
+          "options": [
+            {
+              "value": "show",
+              "label": "Always show"
+            },
+            {
+              "value": "hide",
+              "label": "Be hidden"
+            },
+            {
+              "value": "last",
+              "label": "Show last"
+            }
+          ],
+          "default": "last"
+        }
+      ]
+    },
+    {
+      "name": "Cart",
+      "settings": [
+        {
+          "type": "select",
+          "id": "cart_type",
+          "label": "Cart type",
+          "options": [
+            {
+              "value": "drawer",
+              "label": "Drawer"
+            },
+            {
+              "value": "message",
+              "label": "Message"
+            },
+            {
+              "value": "page",
+              "label": "Page"
+            }
+          ],
+          "default": "message"
+        },
+        {
+          "type": "select",
+          "id": "cart_icon",
+          "label": "Cart icon",
+          "options": [
+            {
+              "value": "shopping_bag",
+              "label": "Shopping bag"
+            },
+            {
+              "value": "shopping_cart",
+              "label": "Shopping cart"
+            },
+            {
+              "value": "tote_bag",
+              "label": "Tote bag"
+            }
+          ],
+          "default": "shopping_bag"
+        },
+        {
+          "type": "url",
+          "id": "cart_empty_button_link",
+          "label": "Empty button link",
+          "default": "/collections/all"
+        },
+        {
+          "type": "checkbox",
+          "id": "cart_show_free_shipping_threshold",
+          "label": "Show free shipping minimum amount",
+          "info": "Make sure that you have properly configured your [shipping rates](/admin/settings/shipping).",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "cart_free_shipping_threshold",
+          "label": "Free shipping minimum amount",
+          "info": "Enter amount using number only. If using multiple currencies, separate each currency code with its amount (eg.: USD:50,EUR:60,JPY:9000)",
+          "default": "50"
+        }
+      ]
+    },
+    {
+      "name": "Social media",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Accounts"
+        },
+        {
+          "type": "text",
+          "id": "social_facebook",
+          "label": "Facebook"
+        },
+        {
+          "type": "text",
+          "id": "social_twitter",
+          "label": "Twitter"
+        },
+        {
+          "type": "text",
+          "id": "social_pinterest",
+          "label": "Pinterest"
+        },
+        {
+          "type": "text",
+          "id": "social_instagram",
+          "label": "Instagram"
+        },
+        {
+          "type": "text",
+          "id": "social_vimeo",
+          "label": "Vimeo"
+        },
+        {
+          "type": "text",
+          "id": "social_tumblr",
+          "label": "Tumblr"
+        },
+        {
+          "type": "text",
+          "id": "social_youtube",
+          "label": "YouTube"
+        },
+        {
+          "type": "text",
+          "id": "social_tiktok",
+          "label": "TikTok"
+        },
+        {
+          "type": "text",
+          "id": "social_linkedin",
+          "label": "LinkedIn"
+        },
+        {
+          "type": "text",
+          "id": "social_snapchat",
+          "label": "Snapchat"
+        },
+        {
+          "type": "text",
+          "id": "social_fancy",
+          "label": "Fancy"
+        },
+        {
+          "type": "text",
+          "id": "social_wechat",
+          "label": "WeChat"
+        },
+        {
+          "type": "text",
+          "id": "social_reddit",
+          "label": "Reddit"
+        },
+        {
+          "type": "text",
+          "id": "social_line",
+          "label": "LINE"
+        },
+        {
+          "type": "text",
+          "id": "social_spotify",
+          "label": "Spotify"
+        }
+      ]
+    },
+    {
+      "name": "GTM",
+      "settings": [
+        {
+          "type": "text",
+          "id": "gtm",
+          "label": "Google Tag Manager (GTM)",
+          "info": "Ex: GTM-XXXXXXX"
+        }
+      ]
+    },
+    {
+      "name": "HEAD Scripts",
+      "settings": [
+        {
+          "type": "html",
+          "id": "scripts-extras-head",
+          "label": "scripts",
+          "info": "Sera inserido no head"
+        }
+      ]
+    },
+    {
+      "name": "Body Scripts",
+      "settings": [
+        {
+          "type": "html",
+          "id": "scripts-extras-body",
+          "label": "scripts",
+          "info": "Sera inserido no body"
+        }
+      ]
+    },
+    {
+      "name": "Favicon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "favicon",
+          "label": "Image",
+          "info": "96 x 96px .png recommended"
+        }
+      ]
+    },
+    {
+      "name": "juros",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "appmax",
+          "label": "Juros Appmax"
+        },
+        {
+          "type": "checkbox",
+          "id": "cartpanda",
+          "label": "Juros Cartpand"
+        },
+        {
+          "type": "checkbox",
+          "id": "personalizado",
+          "label": "Juros Personalizado",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "parceladois",
+          "label": "2x - sem % - Ex. 4,51% incluir 0451",
+          "default": "0451"
+        },
+        {
+          "type": "text",
+          "id": "parcelatres",
+          "label": "3x - sem % - Ex. 6,04% incluir 0604",
+          "default": "0604"
+        },
+        {
+          "type": "text",
+          "id": "parcelaquatro",
+          "label": "4x - sem % - Ex. 7,59% incluir 0759",
+          "default": "0759"
+        },
+        {
+          "type": "text",
+          "id": "parcelacinco",
+          "label": "5x - sem % - Ex. 9,15% incluir 0915",
+          "default": "0915"
+        },
+        {
+          "type": "text",
+          "id": "parcelaseis",
+          "label": "6x - sem % - Ex. 10,72% incluir 1072",
+          "default": "1072"
+        },
+        {
+          "type": "text",
+          "id": "parcelasete",
+          "label": "7x - sem % - Ex. 12,31% incluir 1231",
+          "default": "1231"
+        },
+        {
+          "type": "text",
+          "id": "parcelaoito",
+          "label": "8x - sem % - Ex. 13,92% incluir 1392",
+          "default": "1392"
+        },
+        {
+          "type": "text",
+          "id": "parcelanove",
+          "label": "9x - sem % - Ex. 15,54% incluir 1554",
+          "default": "1554"
+        },
+        {
+          "type": "text",
+          "id": "parceladez",
+          "label": "10x - sem % - Ex. 17,17% incluir 1717",
+          "default": "1717"
+        },
+        {
+          "type": "text",
+          "id": "parcelaonze",
+          "label": "11x - sem % - Ex. 18,82% incluir 1882",
+          "default": "1882"
+        },
+        {
+          "type": "text",
+          "id": "parceladoze",
+          "label": "12x - sem % - Ex. 20,48% incluir 2048",
+          "default": "2048"
+        },
+        {
+          "type": "range",
+          "id": "vezes-parcela",
+          "min": 1,
+          "max": 12,
+          "step": 1,
+          "label": "Qtd Parcelas",
+          "default": 12
+        }
+      ]
+    },
+    {
+      "name": "Sticky WhatsApp",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Whatsapp Flutuante"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sticky_whats",
+          "label": "Ativar Wpp sticky",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sticky_whatsd",
+          "label": "Mostrar no Desktop",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_sticky_whatsm",
+          "label": "Mostrar no Mobile",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "whats_num_sticky",
+          "label": "Numero Whatsapp",
+          "info": "Digite o número no formado 11999999999 sem espaços ou -",
+          "default": "11999999999"
+        }
+      ]
+    },
+    {
+      "name": "Frete carrinho",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Primeira Opção de Frete"
+        },
+        {
+          "type": "text",
+          "id": "fretebotaofrase",
+          "label": "Frase botão",
+          "info": "Nome que aparecerá no botão",
+          "default": "Calcular"
+        },
+        {
+          "type": "checkbox",
+          "id": "opcao_frete1",
+          "label": "1º Linha Frete",
+          "info": "Ativar 1º linha do frete",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "frete1_nome",
+          "label": "Nome para o frete 1",
+          "info": "Nome para o primeiro frete, utilize termos como Grátis, padrão, PAC etc.",
+          "default": "Padrão"
+        },
+        {
+          "type": "text",
+          "id": "frete1_preco",
+          "label": "Preco Frete 1",
+          "info": "Adicione o preço para primeira opção de frete",
+          "default": "Grátis"
+        },
+        {
+          "type": "text",
+          "id": "frete1_prazo",
+          "label": "Prazo Frete 1",
+          "info": "Adicione o prazo para primeira opção de frete",
+          "default": "8 a 11 dias"
+        },
+        {
+          "type": "checkbox",
+          "id": "opcao_frete2",
+          "label": "2º Linha Frete",
+          "info": "Ativar a 2º linha do frete",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "frete2_nome",
+          "label": "Nome para o frete 2",
+          "info": "Nome para o segundo frete, utilize termos como expresso, sedex etc.",
+          "default": "Expresso"
+        },
+        {
+          "type": "text",
+          "id": "frete2_preco",
+          "label": "Preco Frete 2",
+          "info": "Adicione o preço para segunda opção de frete",
+          "default": "R$ 9,79"
+        },
+        {
+          "type": "text",
+          "id": "frete2_prazo",
+          "label": "Prazo Frete 2",
+          "info": "Adicione o prazo para segunda opção de frete",
+          "default": "5 a 7 dias"
+        },
+        {
+          "type": "checkbox",
+          "id": "opcao_frete3",
+          "label": "3º Linha Frete",
+          "info": "Ativar a 3º linha do frete",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "frete3_nome",
+          "label": "Nome para o frete 3",
+          "info": "Nome para o terceiro frete, utilize termos como expresso, sedex etc.",
+          "default": "Jadlog"
+        },
+        {
+          "type": "text",
+          "id": "frete3_preco",
+          "label": "Preco Frete 3",
+          "info": "Adicione o preço para terceira opção de frete",
+          "default": "R$ 9,79"
+        },
+        {
+          "type": "text",
+          "id": "frete3_prazo",
+          "label": "Prazo Frete 3",
+          "info": "Adicione o prazo para terceira opção de frete",
+          "default": "5 a 7 dias"
+        },
+        {
+          "type": "checkbox",
+          "id": "opcao_frete4",
+          "label": "4º Linha Frete",
+          "info": "Ativar a 4º linha do frete",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "frete4_nome",
+          "label": "Nome para o frete 4",
+          "info": "Nome para o quarto frete, utilize termos como expresso, sedex etc.",
+          "default": "Transportadora"
+        },
+        {
+          "type": "text",
+          "id": "frete4_preco",
+          "label": "Preco Frete 4",
+          "info": "Adicione o preço para quarta opção de frete",
+          "default": "R$ 9,79"
+        },
+        {
+          "type": "text",
+          "id": "frete4_prazo",
+          "label": "Prazo Frete 4",
+          "info": "Adicione o prazo para quarta opção de frete",
+          "default": "5 a 7 dias"
+        },
+        {
+          "type": "checkbox",
+          "id": "opcao_frete5",
+          "label": "5º Linha Frete",
+          "info": "Ativar a 5º linha do frete",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "frete5_nome",
+          "label": "Nome para o frete 5",
+          "info": "Nome para o quinto frete, utilize termos como expresso, sedex etc.",
+          "default": "PAC"
+        },
+        {
+          "type": "text",
+          "id": "frete5_preco",
+          "label": "Preco Frete 5",
+          "info": "Adicione o preço para quinta opção de frete",
+          "default": "R$ 9,79"
+        },
+        {
+          "type": "text",
+          "id": "frete5_prazo",
+          "label": "Prazo Frete 5",
+          "info": "Adicione o prazo para quinta opção de frete",
+          "default": "5 a 7 dias"
+        }
+      ]
+    },
+    {
+        "name": "Frete Grátis selo",
+        "settings": [
+            {
+                "type": "number",
+                "id": "free_shipping",
+                "label": "Valor Frete Carrinho"
+            }
+        ]
+    }
+  ]
+  
