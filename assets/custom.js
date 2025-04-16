@@ -8,6 +8,193 @@
  * to easily extend the theme and re-use the theme infrastructure for your own code.
  *
  * The technical documentation is summarized here.
+
+/* Mega Menu with Images JavaScript */
+document.addEventListener('DOMContentLoaded', function() {
+  // Custom Element for Mega Menu Disclosure
+  if (!customElements.get('mega-menu-disclosure')) {
+    class MegaMenuDisclosure extends HTMLDetailsElement {
+      constructor() {
+        super();
+        this.trigger = this.getAttribute('trigger') || 'click';
+        this.addEventListener('toggle', this.onToggle.bind(this));
+        
+        if (this.trigger === 'hover') {
+          this.addEventListener('mouseenter', this.onMouseEnter.bind(this));
+          this.addEventListener('mouseleave', this.onMouseLeave.bind(this));
+        }
+        
+        // Close when clicking outside
+        document.addEventListener('click', this.onDocumentClick.bind(this));
+      }
+      
+      onToggle(event) {
+        // Prevent default behavior
+        event.preventDefault();
+      }
+      
+      onMouseEnter() {
+        this.setAttribute('open', '');
+      }
+      
+      onMouseLeave() {
+        this.removeAttribute('open');
+      }
+      
+      onDocumentClick(event) {
+        if (!this.contains(event.target) && this.hasAttribute('open')) {
+          this.removeAttribute('open');
+        }
+      }
+    }
+    
+    customElements.define('mega-menu-disclosure', MegaMenuDisclosure, { extends: 'details' });
+  }
+  
+  // Custom Element for Mega Menu Promo Carousel
+  if (!customElements.get('mega-menu-promo-carousel')) {
+    class MegaMenuPromoCarousel extends HTMLElement {
+      constructor() {
+        super();
+        this.slides = Array.from(this.querySelectorAll('.content-over-media'));
+        this.currentIndex = 0;
+        this.autoplayInterval = null;
+        
+        // Find control buttons
+        const prevButton = this.parentNode.querySelector('[is="prev-button"]');
+        const nextButton = this.parentNode.querySelector('[is="next-button"]');
+        
+        if (prevButton) {
+          prevButton.addEventListener('click', this.prev.bind(this));
+        }
+        
+        if (nextButton) {
+          nextButton.addEventListener('click', this.next.bind(this));
+        }
+        
+        // Start autoplay
+        this.startAutoplay();
+      }
+      
+      startAutoplay() {
+        if (this.slides.length > 1) {
+          this.autoplayInterval = setInterval(() => {
+            this.next();
+          }, 5000);
+        }
+      }
+      
+      stopAutoplay() {
+        if (this.autoplayInterval) {
+          clearInterval(this.autoplayInterval);
+          this.autoplayInterval = null;
+        }
+      }
+      
+      prev() {
+        this.stopAutoplay();
+        this.currentIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+        this.updateSlides();
+        this.startAutoplay();
+      }
+      
+      next() {
+        this.stopAutoplay();
+        this.currentIndex = (this.currentIndex + 1) % this.slides.length;
+        this.updateSlides();
+        this.startAutoplay();
+      }
+      
+      updateSlides() {
+        this.slides.forEach((slide, index) => {
+          if (index === this.currentIndex) {
+            slide.classList.add('is-selected');
+            slide.classList.remove('reveal-invisible');
+          } else {
+            slide.classList.remove('is-selected');
+            slide.classList.add('reveal-invisible');
+          }
+        });
+      }
+    }
+    
+    customElements.define('mega-menu-promo-carousel', MegaMenuPromoCarousel);
+  }
+  
+  // Custom Element for Height Observer
+  if (!customElements.get('height-observer')) {
+    class HeightObserver extends HTMLElement {
+      constructor() {
+        super();
+        this.variableName = this.getAttribute('variable') || 'element';
+        this.observer = new ResizeObserver(this.updateHeight.bind(this));
+        this.observer.observe(this);
+      }
+      
+      updateHeight(entries) {
+        for (const entry of entries) {
+          const height = entry.contentRect.height;
+          document.documentElement.style.setProperty(`--${this.variableName}-height`, `${height}px`);
+        }
+      }
+      
+      disconnectedCallback() {
+        this.observer.disconnect();
+      }
+    }
+    
+    customElements.define('height-observer', HeightObserver);
+  }
+  
+  // Mobile Navigation Drawer
+  const mobileMenuButton = document.querySelector('button[aria-controls="header-sidebar-menu"]');
+  const mobileMenu = document.getElementById('header-sidebar-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      
+      if (isExpanded) {
+        mobileMenu.removeAttribute('open');
+        this.setAttribute('aria-expanded', 'false');
+      } else {
+        mobileMenu.setAttribute('open', '');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+    
+    // Close button in mobile menu
+    const closeButton = mobileMenu.querySelector('button[is="close-button"]');
+    if (closeButton) {
+      closeButton.addEventListener('click', function() {
+        mobileMenu.removeAttribute('open');
+        mobileMenuButton.setAttribute('aria-expanded', 'false');
+      });
+    }
+    
+    // Panel navigation in mobile menu
+    const panelButtons = mobileMenu.querySelectorAll('button[data-panel]');
+    panelButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const panelId = this.getAttribute('data-panel');
+        const panels = mobileMenu.querySelectorAll('.panel');
+        
+        panels.forEach((panel, index) => {
+          if (index.toString() === panelId) {
+            panel.style.transform = 'translateX(0%)';
+            panel.style.opacity = '1';
+            panel.style.visibility = 'visible';
+          } else {
+            panel.style.transform = index < parseInt(panelId) ? 'translateX(-100%)' : 'translateX(100%)';
+            panel.style.opacity = '0';
+            panel.style.visibility = 'hidden';
+          }
+        });
+      });
+    });
+  }
+});
+
  *
  * ------------------------------------------------------------------------------------------------------------
  * BEING NOTIFIED WHEN A VARIANT HAS CHANGED
