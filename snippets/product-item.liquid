@@ -102,6 +102,18 @@
     {%- endif -%}
   </div>
 
+  {% if product.selected_or_first_available_variant.metafields.custom.text_card != blank%}
+    <div class="stamp">
+      <span class="bg-black text-white rounded-4xl">{{ product.selected_or_first_available_variant.metafields.custom.text_card }}</span>
+    </div>
+  {% else %}
+    {% if product.selected_or_first_available_variant.price > settings.free_shipping %}
+      <div class="stamp">
+        <span class="bg-black text-white rounded-4xl">Frete Grátis</span>
+    </div>
+  {% endif %}
+  {% endif %}
+
   <div class="product-item__info {% if show_cta %}product-item__info--with-button{% endif %} {% if reduced_font_size %}text--small{% endif %}">
     <div class="product-item-meta">
       {%- if settings.show_vendor -%}

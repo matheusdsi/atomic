@@ -373,14 +373,33 @@
   cursor: default;
 }
 
-div#shopify-section-header {
-  overflow: hidden;
-}
-
 .shopify-section--main-product {
   background: #f9f9f9;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.bg-black {
+  background-color: #000;
+} 
+
+.text-white {
+  color: #fff;
+} 
+
+.rounded-4xl {
+  border-radius: 1rem;
+}
+
+.stamp span {
+  padding: 5px 15px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.product-item-meta {
+  text-align: left;
 }
 
 @media(max-width: 740px) {
