@@ -73,7 +73,21 @@ document.addEventListener('DOMContentLoaded', function() {
           nextButton.addEventListener('click', this.next.bind(this));
         }
         
+        // Adiciona suporte ao evento initialize
+        this.addEventListener('initialize', this.initialize.bind(this));
+        
         // Start autoplay
+        this.startAutoplay();
+        
+        // Inicializa o carrossel
+        this.initialize();
+      }
+      
+      initialize() {
+        // Reinicia o carrossel e atualiza os slides
+        this.stopAutoplay();
+        this.currentIndex = 0;
+        this.updateSlides();
         this.startAutoplay();
       }
       
