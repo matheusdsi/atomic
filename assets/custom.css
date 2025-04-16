@@ -383,6 +383,18 @@ div#shopify-section-header {
   padding-bottom: 1rem;
 }
 
+.bg-black {
+  background-color: #1e316a;
+} 
+
+.text-white {
+  color: #fff;
+} 
+
+.rounded-4xl {
+  border-radius: 1rem;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
