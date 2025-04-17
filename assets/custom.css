@@ -408,6 +408,7 @@ span.shipping-bar__text.text--small {
 
 .shipping-bar__progress {
   border-color: #2e9e7b;
+  font-size: 16px;
 }
 
 .shipping-bar__progress:after {
