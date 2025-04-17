@@ -406,6 +406,14 @@ span.shipping-bar__text.text--small {
     font-weight: bold;
 }
 
+.shipping-bar__progress {
+  border-color: #2e9e7b;
+}
+
+.shipping-bar__progress:after {
+  background: #2e9e7b;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
