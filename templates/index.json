@@ -137,15 +137,6 @@
             "link": ""
           }
         },
-        "card_pqUT43": {
-          "type": "card",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_11_22_38.png",
-            "subheading": "",
-            "heading": "",
-            "link": "shopify://collections/camiseta-oversized"
-          }
-        },
         "card_77dXry": {
           "type": "card",
           "settings": {
@@ -155,20 +146,29 @@
             "link": "shopify://collections/camiseta-longa-termica-uv"
           }
         },
+        "card_pqUT43": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_11_22_38.png",
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://collections/camiseta-oversized"
+          }
+        },
         "card_86YXt6": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/dry.webp",
-            "subheading": "COLEÇÃO",
-            "heading": "Nome da coleção",
-            "link": ""
+            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_15_22_48.png",
+            "subheading": "",
+            "heading": "",
+            "link": "shopify://collections/corta-vento"
           }
         }
       },
       "block_order": [
         "card_G8nAqU",
-        "card_pqUT43",
         "card_77dXry",
+        "card_pqUT43",
         "card_86YXt6"
       ],
       "name": "Cards Carrossel",
