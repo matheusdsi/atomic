@@ -16,8 +16,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/banner_1900x600_1.png",
-            "mobile_image": "shopify://shop_images/banner_8000x999_b0d83429-741c-4a49-a66f-d28c5acd9f7a.png",
+            "image": "shopify://shop_images/ChatGPT_Image_3_de_mai._de_2025_11_18_36.png",
+            "mobile_image": "shopify://shop_images/ChatGPT_Image_3_de_mai._de_2025_11_21_37.png",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -34,7 +34,6 @@
         },
         "image_MjnrPR": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Banner_de_site_para_loja_de_moda_masculina.png",
             "mobile_image": "shopify://shop_images/banner_8000x999_1.png",
