@@ -13,6 +13,8 @@
   padding-bottom: 0;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .shopify-section--specification-table .section-stack {
