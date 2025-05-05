@@ -417,6 +417,10 @@ span.shipping-bar__text.text--small {
   background: #2e9e7b;
 }
 
+.drawer__content .price--compare {
+  color: red;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
