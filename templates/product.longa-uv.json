@@ -110,14 +110,14 @@
           "type": "specification_row",
           "settings": {
             "specification_name": "Composição",
-            "specification_value": "100% Poliéster"
+            "specification_value": "90% Poliéster 10% Elastano"
           }
         },
         "specification_row_bzyeyy": {
           "type": "specification_row",
           "settings": {
             "specification_name": "Modelagem",
-            "specification_value": "Raglan"
+            "specification_value": "Slim"
           }
         },
         "specification_row_gjr4iR": {
@@ -135,7 +135,7 @@
       ],
       "settings": {
         "heading": "Descrição",
-        "description": "Experimente o melhor em durabilidade, conforto e secagem rápida com o Kit 6 Camisetas - Eleitas pelos Clientes. Aproveite os benefícios desses recursos essenciais em um único pacote, garantindo uma experiência de alta qualidade e praticidade para o seu dia a dia. Nunca mais se preocupe com peças que desgastam ou demoram para secar.",
+        "description": "A Camisa Térmica Segunda Pele UV 50+ é uma camiseta de manga longa e gola redonda, oferecendo maior cobertura ao corpo, perfeita para atividades expostas ao sol.\n\nAlém disso, é ideal para práticas esportivas e treinos de alta performance, proporcionando conforto e liberdade de movimentos.",
         "background_color": "#ffffff",
         "text_color": "#000000",
         "heading_color": "#000000"
@@ -148,19 +148,18 @@
           "type": "image_text_block",
           "settings": {
             "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
-            "icon": "shopify://shop_images/Design_sem_nome_1_f63bb91c-b146-4529-96b7-1e3e7c6e72ef.png",
             "heading": "Fast Dry e Proteção UV",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "Projetada para acompanhar o seu ritmo. Com nossa exclusiva tecnologia de secagem rápida, ela oferece a combinação perfeita de conforto e performance. O tecido altamente tecnológico absorve a umidade da pele e a evapora rapidamente, garantindo que você se sinta seco e confortável mesmo durante as atividades mais intensas."
+            "text": "Peças equipadas com tecnologia Fast Dry, proporcionando uma secagem rápida em questão de minutos.\nProtegem a pele das ações nocivas dos raios UV-A e UV-B através da proteção solar FPU 50+ presente no DNA."
           }
         },
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
             "image": "shopify://shop_images/dry.webp",
-            "heading": "Tecnologia Dry",
+            "heading": "Regulação Térmica e Tecido Leve",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "A tecnologia Dry Fit é uma inovação no desenvolvimento de tecidos que proporciona conforto e alto desempenho. Feita a partir de materiais sintéticos leves e respiráveis, como poliéster, ela é projetada para absorver e evaporar rapidamente o suor, mantendo o corpo seco durante atividades físicas."
+            "text": "Material respirável, proporcionando conforto e frescor.\nEquilibra a temperatura corporal, retendo calor em ambientes frios e dissipando-o em climas quentes."
           }
         }
       },
