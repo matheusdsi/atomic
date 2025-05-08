@@ -148,19 +148,18 @@
           "type": "image_text_block",
           "settings": {
             "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
-            "icon": "shopify://shop_images/Design_sem_nome_1_f63bb91c-b146-4529-96b7-1e3e7c6e72ef.png",
-            "heading": "Fast Dry e Proteção UV",
+            "heading": "Ultraleve e Impermeável",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "Projetada para acompanhar o seu ritmo. Com nossa exclusiva tecnologia de secagem rápida, ela oferece a combinação perfeita de conforto e performance. O tecido altamente tecnológico absorve a umidade da pele e a evapora rapidamente, garantindo que você se sinta seco e confortável mesmo durante as atividades mais intensas."
+            "text": "Projetada para acompanhar o seu ritmo. Feita com tecido ultraleve e impermeável, a jaqueta oferece proteção contra ventos fortes e chuvas leves, mantendo seu corpo aquecido e seco."
           }
         },
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
             "image": "shopify://shop_images/dry.webp",
-            "heading": "Tecnologia Dry",
+            "heading": "Proteção e Conforto",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "A tecnologia Dry Fit é uma inovação no desenvolvimento de tecidos que proporciona conforto e alto desempenho. Feita a partir de materiais sintéticos leves e respiráveis, como poliéster, ela é projetada para absorver e evaporar rapidamente o suor, mantendo o corpo seco durante atividades físicas."
+            "text": "Com um design minimalista e clean, esta peça é um convite para explorar o conforto em sua forma mais simples. O tecido corta-vento oferece proteção contra vento e chuva, enquanto a simplicidade do visual permite versatilidade em combinações."
           }
         }
       },
