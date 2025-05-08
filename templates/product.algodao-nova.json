@@ -148,19 +148,18 @@
           "type": "image_text_block",
           "settings": {
             "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
-            "icon": "shopify://shop_images/Design_sem_nome_1_f63bb91c-b146-4529-96b7-1e3e7c6e72ef.png",
-            "heading": "Secagem rápida",
+            "heading": "100% Algodão",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "Projetada para acompanhar o seu ritmo. Com nossa exclusiva tecnologia de secagem rápida, ela oferece a combinação perfeita de conforto e performance. O tecido altamente tecnológico absorve a umidade da pele e a evapora rapidamente, garantindo que você se sinta seco e confortável mesmo durante as atividades mais intensas."
+            "text": "Confeccionada em tecido de alta qualidade, essa camisa é ideal para diversas ocasiões, oferecendo leveza e durabilidade, mantendo o estilo sem abrir mão do conforto."
           }
         },
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
             "image": "shopify://shop_images/dry.webp",
-            "heading": "Tecnologia Dry",
+            "heading": "Versatilidade e Estilo",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "A tecnologia Dry Fit é uma inovação no desenvolvimento de tecidos que proporciona conforto e alto desempenho. Feita a partir de materiais sintéticos leves e respiráveis, como poliéster, ela é projetada para absorver e evaporar rapidamente o suor, mantendo o corpo seco durante atividades físicas."
+            "text": "O design casual permite que essa camisa seja usada em diferentes ocasiões, desde o trabalho até eventos sociais, sempre com um toque de estilo e sofisticação."
           }
         }
       },
