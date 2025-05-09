@@ -110,14 +110,14 @@
           "type": "specification_row",
           "settings": {
             "specification_name": "Composição",
-            "specification_value": "100% Poliéster"
+            "specification_value": "95% Algodão 5%Elastano"
           }
         },
         "specification_row_bzyeyy": {
           "type": "specification_row",
           "settings": {
             "specification_name": "Modelagem",
-            "specification_value": "Raglan"
+            "specification_value": "GRANDE"
           }
         },
         "specification_row_gjr4iR": {
@@ -184,6 +184,7 @@
       "blocks": {
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "109bc139-fc39-4a47-a8ee-f19b493b6eca": {
