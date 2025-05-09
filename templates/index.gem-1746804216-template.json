@@ -15,13 +15,13 @@
         "b3480c7f-361f-4170-96a5-7f39f38265d0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_3_de_mai._de_2025_16_21_59.png",
-            "mobile_image": "shopify://shop_images/ChatGPT_Image_3_de_mai._de_2025_11_21_37.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_16_21_59.png",
+            "mobile_image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_11_21_37.png",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify://collections/black-friday",
+            "button_1_link": "shopify:\/\/collections\/black-friday",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -34,13 +34,13 @@
         "image_MjnrPR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Banner_de_site_para_loja_de_moda_masculina.png",
-            "mobile_image": "shopify://shop_images/banner_8000x999_1.png",
+            "image": "shopify:\/\/shop_images\/Banner_de_site_para_loja_de_moda_masculina.png",
+            "mobile_image": "shopify:\/\/shop_images\/banner_8000x999_1.png",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify://collections/camiseta-curta-cyber-termica-uv",
+            "button_1_link": "shopify:\/\/collections\/camiseta-curta-cyber-termica-uv",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -53,13 +53,13 @@
         "image_XQmyix": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_3_de_mai._de_2025_16_39_55.png",
-            "mobile_image": "shopify://shop_images/Camiseta_compressao.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_16_39_55.png",
+            "mobile_image": "shopify:\/\/shop_images\/Camiseta_compressao.png",
             "text_position": "bottom_right",
             "subheading": "",
             "title": "",
             "button_1_text": "teste botão",
-            "button_1_link": "shopify://collections/camisa-peluciada-manga-longa-masculina",
+            "button_1_link": "shopify:\/\/collections\/camisa-peluciada-manga-longa-masculina",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -72,8 +72,8 @@
         "template--20594189926423__75d0263f-6b34-417b-b59b-f08719a890c3-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_3_de_mai._de_2025_10_53_43.png",
-            "mobile_image": "shopify://shop_images/ChatGPT_Image_3_de_mai._de_2025_10_52_47.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_10_53_43.png",
+            "mobile_image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_10_52_47.png",
             "text_position": "bottom_left",
             "subheading": "",
             "title": "",
@@ -91,13 +91,13 @@
         "image_KJ74kd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_16_39_51.png",
-            "mobile_image": "shopify://shop_images/corta_vento.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_16_39_51.png",
+            "mobile_image": "shopify:\/\/shop_images\/corta_vento.png",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify://collections/camiseta-curta-treino",
+            "button_1_link": "shopify:\/\/collections\/camiseta-curta-treino",
             "button_2_text": "",
             "button_2_link": "",
             "text_color": "#ffffff",
@@ -129,7 +129,7 @@
         "card_G8nAqU": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_15_44_45.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_15_44_45.png",
             "subheading": "",
             "heading": "",
             "link": ""
@@ -138,28 +138,28 @@
         "card_77dXry": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_15_43_24.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_15_43_24.png",
             "subheading": "",
             "heading": "",
-            "link": "shopify://collections/camiseta-longa-termica-uv"
+            "link": "shopify:\/\/collections\/camiseta-longa-termica-uv"
           }
         },
         "card_pqUT43": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_11_22_38.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_11_22_38.png",
             "subheading": "",
             "heading": "",
-            "link": "shopify://collections/camiseta-oversized"
+            "link": "shopify:\/\/collections\/camiseta-oversized"
           }
         },
         "card_86YXt6": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_15_32_17.png",
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_15_32_17.png",
             "subheading": "",
             "heading": "",
-            "link": "shopify://collections/corta-vento"
+            "link": "shopify:\/\/collections\/corta-vento"
           }
         }
       },
@@ -201,7 +201,7 @@
           "type": "collection",
           "settings": {
             "collection": "oversized-estampa-drop-atoomic",
-            "image": "shopify://shop_images/capinha_siteaaaaaaa_2.png",
+            "image": "shopify:\/\/shop_images\/capinha_siteaaaaaaa_2.png",
             "subheading": "",
             "title": "Camisas Oversized",
             "link_text": "",
@@ -215,7 +215,7 @@
           "type": "collection",
           "settings": {
             "collection": "camiseta-uv50",
-            "image": "shopify://shop_images/C1_-_Camisa_Termica_UV50.jpg",
+            "image": "shopify:\/\/shop_images\/C1_-_Camisa_Termica_UV50.jpg",
             "subheading": "",
             "title": "Camiseta UV 50+",
             "link_text": "",
@@ -229,7 +229,7 @@
           "type": "collection",
           "settings": {
             "collection": "camiseta-curta-cyber-termica-uv",
-            "image": "shopify://shop_images/4baeba474b000b3f5dfd3a2f28af635b_1cef6b1e-5d89-4c0b-9013-94feec75426e.png",
+            "image": "shopify:\/\/shop_images\/4baeba474b000b3f5dfd3a2f28af635b_1cef6b1e-5d89-4c0b-9013-94feec75426e.png",
             "subheading": "",
             "title": "Camiseta Curta Térmica",
             "link_text": "",
@@ -264,7 +264,7 @@
             "collection": "camiseta-curta-cyber-termica-uv",
             "label": "Camiseta Térmica Compressão CYBER",
             "button_text": "Ver mais",
-            "button_url": "shopify://collections/camiseta-oversized"
+            "button_url": "shopify:\/\/collections\/camiseta-oversized"
           }
         },
         "collection_mqE9DY": {
@@ -273,7 +273,7 @@
             "collection": "camiseta-curta-estampada-termica-uv",
             "label": "",
             "button_text": "",
-            "button_url": "shopify://collections/camiseta-gola-alta-segunda-pele"
+            "button_url": "shopify:\/\/collections\/camiseta-gola-alta-segunda-pele"
           }
         }
       },
@@ -304,7 +304,7 @@
             "collection": "camiseta-uv50",
             "label": "Camisa Térmica Uv+",
             "button_text": "Ver mais",
-            "button_url": "shopify://collections/camiseta-uv50"
+            "button_url": "shopify:\/\/collections\/camiseta-uv50"
           }
         }
       },
@@ -335,7 +335,7 @@
             "tab_label": "Text 1",
             "subheading": "Subheading",
             "title": "Image with text",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -347,7 +347,7 @@
             "tab_label": "Text 2",
             "subheading": "Subheading",
             "title": "Image with text",
-            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -427,7 +427,7 @@
         "reveal_on_scroll": true,
         "subheading": "Subheading",
         "title": "Image with text block",
-        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.</p>",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
@@ -470,7 +470,7 @@
           "settings": {
             "label": "2000",
             "title": "Your heading",
-            "content": "<p>Write content about your store</p>",
+            "content": "<p>Write content about your store<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -480,7 +480,7 @@
           "settings": {
             "label": "2010",
             "title": "Your heading",
-            "content": "<p>Write content about your store</p>",
+            "content": "<p>Write content about your store<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -490,7 +490,7 @@
           "settings": {
             "label": "2020",
             "title": "Your heading",
-            "content": "<p>Write content about your store</p>",
+            "content": "<p>Write content about your store<\/p>",
             "button_text": "",
             "button_link": ""
           }
@@ -571,7 +571,7 @@
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "Receba promoções exclusivas",
-        "content": "<p>Promoções e lançamentos exclusivos. Assine abaixo:</p>",
+        "content": "<p>Promoções e lançamentos exclusivos. Assine abaixo:<\/p>",
         "text_position": "right",
         "text_alignment": "left",
         "text_background": "rgba(0,0,0,0)",
@@ -586,8 +586,8 @@
         "image_gPMmXL": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Desktop_-_4_a4272d59-ff51-48b4-8f22-6b596aa30c9c.webp",
-            "mobile_image": "shopify://shop_images/Mobile_-_4_caf3acfa-1f5a-44c3-aa0d-1577b9e1294f.webp",
+            "image": "shopify:\/\/shop_images\/Desktop_-_4_a4272d59-ff51-48b4-8f22-6b596aa30c9c.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_-_4_caf3acfa-1f5a-44c3-aa0d-1577b9e1294f.webp",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -605,8 +605,8 @@
         "template--20594189926423__7fe52de5-828d-49df-b8d9-5d1ba575ea83-image-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Desktop_-_5.webp",
-            "mobile_image": "shopify://shop_images/Mobile_-_5_bfa224ae-e80d-405c-9cc1-a2789473669c.jpg",
+            "image": "shopify:\/\/shop_images\/Desktop_-_5.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_-_5_bfa224ae-e80d-405c-9cc1-a2789473669c.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -711,7 +711,7 @@
           "type": "collection",
           "settings": {
             "collection": "camiseta-curta-treino",
-            "image": "shopify://shop_images/C4_-_Camisa_Curta_36cb7635-9835-428d-bb5f-5741da6be01e.jpg",
+            "image": "shopify:\/\/shop_images\/C4_-_Camisa_Curta_36cb7635-9835-428d-bb5f-5741da6be01e.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -725,7 +725,7 @@
           "type": "collection",
           "settings": {
             "collection": "kit-camisetas-uv50",
-            "image": "shopify://shop_images/C11_-_Kit_Camisa_UV50_96ea282e-8e5c-43d4-b755-4778cf406677.jpg",
+            "image": "shopify:\/\/shop_images\/C11_-_Kit_Camisa_UV50_96ea282e-8e5c-43d4-b755-4778cf406677.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -739,7 +739,7 @@
           "type": "collection",
           "settings": {
             "collection": "camiseta-gola-alta-segunda-pele",
-            "image": "shopify://shop_images/C3_-_Camisa_Gola_Alta_b95b4ec1-1619-4c81-acb0-41adbaaf0236.jpg",
+            "image": "shopify:\/\/shop_images\/C3_-_Camisa_Gola_Alta_b95b4ec1-1619-4c81-acb0-41adbaaf0236.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -753,7 +753,7 @@
           "type": "collection",
           "settings": {
             "collection": "camiseta-regata",
-            "image": "shopify://shop_images/C5_-_Camisa_Regata_a0a6b44c-4018-496e-8994-5111780182e5.jpg",
+            "image": "shopify:\/\/shop_images\/C5_-_Camisa_Regata_a0a6b44c-4018-496e-8994-5111780182e5.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -767,7 +767,7 @@
           "type": "collection",
           "settings": {
             "collection": "camisa-viscose",
-            "image": "shopify://shop_images/C6_-_Cmisa_Viscose_60ff3c09-84b1-47d1-bf02-2b649b148035.jpg",
+            "image": "shopify:\/\/shop_images\/C6_-_Cmisa_Viscose_60ff3c09-84b1-47d1-bf02-2b649b148035.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -781,7 +781,7 @@
           "type": "collection",
           "settings": {
             "collection": "shorts-e-bermuda",
-            "image": "shopify://shop_images/C7_-_Shorts_e_Bermudas_2db7460f-9bf0-466c-9da8-e9cbf47eade4.jpg",
+            "image": "shopify:\/\/shop_images\/C7_-_Shorts_e_Bermudas_2db7460f-9bf0-466c-9da8-e9cbf47eade4.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -795,7 +795,7 @@
           "type": "collection",
           "settings": {
             "collection": "sungas",
-            "image": "shopify://shop_images/C8_-_Sungas_72497c97-20a6-4d32-93eb-ea0fb771811a.jpg",
+            "image": "shopify:\/\/shop_images\/C8_-_Sungas_72497c97-20a6-4d32-93eb-ea0fb771811a.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -809,7 +809,7 @@
           "type": "collection",
           "settings": {
             "collection": "kits",
-            "image": "shopify://shop_images/C9_-_Kits_af516dd2-6b40-4d88-904f-d0d6719c4d21.jpg",
+            "image": "shopify:\/\/shop_images\/C9_-_Kits_af516dd2-6b40-4d88-904f-d0d6719c4d21.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -823,7 +823,7 @@
           "type": "collection",
           "settings": {
             "collection": "kit-camiseta-curta-treino",
-            "image": "shopify://shop_images/C10_-_Kit_Camisa_Curta_2d04c4c5-eb9c-4de6-b823-36ab75b7879d.jpg",
+            "image": "shopify:\/\/shop_images\/C10_-_Kit_Camisa_Curta_2d04c4c5-eb9c-4de6-b823-36ab75b7879d.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -837,7 +837,7 @@
           "type": "collection",
           "settings": {
             "collection": "kit-camisetas-uv50",
-            "image": "shopify://shop_images/C11_-_Kit_Camisa_UV50_96ea282e-8e5c-43d4-b755-4778cf406677.jpg",
+            "image": "shopify:\/\/shop_images\/C11_-_Kit_Camisa_UV50_96ea282e-8e5c-43d4-b755-4778cf406677.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -851,7 +851,7 @@
           "type": "collection",
           "settings": {
             "collection": "kit-sungas",
-            "image": "shopify://shop_images/C12_-_Kit_Sungas_ab453c28-9ffd-4a0a-9e21-9032f5b027e4.jpg",
+            "image": "shopify:\/\/shop_images\/C12_-_Kit_Sungas_ab453c28-9ffd-4a0a-9e21-9032f5b027e4.jpg",
             "subheading": "",
             "title": "",
             "link_text": "",
@@ -891,7 +891,7 @@
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "Receba novidades",
-        "content": "<p>Inscreva-se e receba novidades exclusivas!</p>",
+        "content": "<p>Inscreva-se e receba novidades exclusivas!<\/p>",
         "text_position": "right",
         "text_alignment": "left",
         "text_background": "#000000",
@@ -909,7 +909,7 @@
             "icon": "picto-box",
             "custom_icon_width": 50,
             "title": "Frete",
-            "content": "<p>FRETE R$19,90 para todo o Brasil </p>"
+            "content": "<p>FRETE R$19,90 para todo o Brasil <\/p>"
           }
         },
         "item-2": {
@@ -918,7 +918,7 @@
             "icon": "picto-customer-support",
             "custom_icon_width": 50,
             "title": "Atendimento",
-            "content": "<p>Horario de Atendimento: Segunda à Sexta: 8:00 AM | 18:00 PM</p>"
+            "content": "<p>Horario de Atendimento: Segunda à Sexta: 8:00 AM | 18:00 PM<\/p>"
           }
         },
         "item-3": {
@@ -927,7 +927,7 @@
             "icon": "picto-lock",
             "custom_icon_width": 50,
             "title": "Pagamento seguro",
-            "content": "<p>Utilizamos a mesma segurança de dados dos maiores bancos nacionais e internacionais (SSL).</p>"
+            "content": "<p>Utilizamos a mesma segurança de dados dos maiores bancos nacionais e internacionais (SSL).<\/p>"
           }
         },
         "item-4": {
@@ -937,7 +937,7 @@
             "icon": "picto-return-box",
             "custom_icon_width": 50,
             "title": "Contact us",
-            "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com</p>"
+            "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com<\/p>"
           }
         }
       },
