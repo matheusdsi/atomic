@@ -147,7 +147,7 @@
         "image_text_block_9Uc7VL": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/3_89b5478f-6a3c-4fa3-9cb0-3292b65aa53a.png",
+            "image": "shopify://shop_images/Atoomic_3.png",
             "heading": "Fast Dry e Proteção UV",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
             "text": "Peças equipadas com tecnologia Fast Dry, proporcionando uma secagem rápida em questão de minutos.\nProtegem a pele das ações nocivas dos raios UV-A e UV-B através da proteção solar FPU 50+ presente no DNA."
@@ -156,7 +156,7 @@
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/4_1fd8d7d7-2389-436a-af0f-ca4d37442d06.png",
+            "image": "shopify://shop_images/Atoomic_4.png",
             "heading": "Regulação Térmica e Tecido Leve",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
             "text": "Material respirável, proporcionando conforto e frescor.\nEquilibra a temperatura corporal, retendo calor em ambientes frios e dissipando-o em climas quentes."
@@ -184,7 +184,6 @@
       "blocks": {
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {}
         },
         "109bc139-fc39-4a47-a8ee-f19b493b6eca": {
