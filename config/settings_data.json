@@ -67,7 +67,7 @@
     "opcao_frete1": true,
     "frete1_preco": "R$ 19,90",
     "opcao_frete2": false,
-    "free_shipping": 199,
+    "free_shipping": 19900,
     "accent_color": "#405de6",
     "checkout_accent_color": "#282828",
     "checkout_body_background_color": "#ffffff",
