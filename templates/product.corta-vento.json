@@ -110,7 +110,7 @@
           "type": "specification_row",
           "settings": {
             "specification_name": "Composição",
-            "specification_value": "100% Poliéster"
+            "specification_value": "100% Poliéster Aspen"
           }
         },
         "specification_row_bzyeyy": {
@@ -147,19 +147,19 @@
         "image_text_block_9Uc7VL": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/Atoomic_7a3f9f15-0198-4291-b99c-b0db1d22bff1.png",
-            "heading": "Proteção e Conforto",
+            "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
+            "heading": "Ultraleve e Impermeável",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "Com um design minimalista e clean, esta peça é um convite para explorar o conforto em sua forma mais simples. O tecido corta-vento oferece proteção contra vento e chuva, enquanto a simplicidade do visual permite versatilidade em combinações."
+            "text": "Projetada para acompanhar o seu ritmo. Feita com tecido ultraleve e impermeável, a jaqueta oferece proteção contra ventos fortes e chuvas leves, mantendo seu corpo aquecido e seco."
           }
         },
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/Atoomic_1_72ffe614-b9c8-4a7f-912f-9e9178d7a7a7.png",
-            "heading": "Ultraleve e Impermeável",
+            "image": "shopify://shop_images/dry.webp",
+            "heading": "Proteção e Conforto",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "Projetada para acompanhar o seu ritmo. Feita com tecido ultraleve e impermeável, a jaqueta oferece proteção contra ventos fortes e chuvas leves, mantendo seu corpo aquecido e seco."
+            "text": "Com um design minimalista e clean, esta peça é um convite para explorar o conforto em sua forma mais simples. O tecido corta-vento oferece proteção contra vento e chuva, enquanto a simplicidade do visual permite versatilidade em combinações."
           }
         }
       },
