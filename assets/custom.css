@@ -417,7 +417,7 @@ span.shipping-bar__text.text--small {
   background: #2e9e7b;
 }
 
-.drawer__content .price--compare {
+.drawer__content .price--compare, .price--compare {
   color: red;
 }
 
