@@ -422,7 +422,7 @@ span.shipping-bar__text.text--small {
 }
 
 .bundler-volume-target-element {
-    display: none;
+    display: none!important;
 }
 
 @media(max-width: 740px) {
