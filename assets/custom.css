@@ -421,6 +421,10 @@ span.shipping-bar__text.text--small {
   color: red;
 }
 
+.bundler-volume-target-element {
+    display: none;
+}
+
 @media(max-width: 740px) {
   .variant-carousel {
     padding: 5px 0;
