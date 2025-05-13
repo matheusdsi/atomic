@@ -147,19 +147,19 @@
         "image_text_block_9Uc7VL": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
-            "heading": "Ultraleve e Impermeável",
+            "image": "shopify://shop_images/Atoomic_c2b53311-b509-4002-b703-fa12ee7ecdeb.png",
+            "heading": "Proteção e Conforto",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "Projetada para acompanhar o seu ritmo. Feita com tecido ultraleve e impermeável, a jaqueta oferece proteção contra ventos fortes e chuvas leves, mantendo seu corpo aquecido e seco."
+            "text": "Com um design minimalista e clean, esta peça é um convite para explorar o conforto em sua forma mais simples. O tecido corta-vento oferece proteção contra vento e chuva, enquanto a simplicidade do visual permite versatilidade em combinações."
           }
         },
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/dry.webp",
-            "heading": "Proteção e Conforto",
+            "image": "shopify://shop_images/Atoomic_1_a5fcd675-3a8e-44c9-b572-6a4680d30690.png",
+            "heading": "Ultraleve e Impermeável",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "Com um design minimalista e clean, esta peça é um convite para explorar o conforto em sua forma mais simples. O tecido corta-vento oferece proteção contra vento e chuva, enquanto a simplicidade do visual permite versatilidade em combinações."
+            "text": "Projetada para acompanhar o seu ritmo. Feita com tecido ultraleve e impermeável, a jaqueta oferece proteção contra ventos fortes e chuvas leves, mantendo seu corpo aquecido e seco."
           }
         }
       },
