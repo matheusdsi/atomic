@@ -1,0 +1,977 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "75d0263f-6b34-417b-b59b-f08719a890c3": {
+      "type": "slideshow",
+      "blocks": {
+        "b3480c7f-361f-4170-96a5-7f39f38265d0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_16_21_59.png",
+            "mobile_image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_11_21_37.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/black-friday",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_MjnrPR": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banner_de_site_para_loja_de_moda_masculina.png",
+            "mobile_image": "shopify:\/\/shop_images\/banner_8000x999_1.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/camiseta-curta-cyber-termica-uv",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "image_XQmyix": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_16_39_55.png",
+            "mobile_image": "shopify:\/\/shop_images\/Camiseta_compressao.png",
+            "text_position": "bottom_right",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "teste botão",
+            "button_1_link": "shopify:\/\/collections\/camisa-peluciada-manga-longa-masculina",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--20594189926423__75d0263f-6b34-417b-b59b-f08719a890c3-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_10_53_43.png",
+            "mobile_image": "shopify:\/\/shop_images\/ChatGPT_Image_3_de_mai._de_2025_10_52_47.png",
+            "text_position": "bottom_left",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "teste botao 2",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "image_KJ74kd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_16_39_51.png",
+            "mobile_image": "shopify:\/\/shop_images\/corta_vento.png",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/camiseta-curta-treino",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "b3480c7f-361f-4170-96a5-7f39f38265d0",
+        "image_MjnrPR",
+        "image_XQmyix",
+        "template--20594189926423__75d0263f-6b34-417b-b59b-f08719a890c3-image-2",
+        "image_KJ74kd"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "card_collections_7BYVR6": {
+      "type": "card-collections",
+      "blocks": {
+        "card_G8nAqU": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_15_44_45.png",
+            "subheading": "",
+            "heading": "",
+            "link": "shopify:\/\/collections\/camiseta-curta-termica-uv"
+          }
+        },
+        "card_77dXry": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_15_43_24.png",
+            "subheading": "",
+            "heading": "",
+            "link": "shopify:\/\/collections\/camiseta-uv50"
+          }
+        },
+        "card_pqUT43": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_11_22_38.png",
+            "subheading": "",
+            "heading": "",
+            "link": "shopify:\/\/collections\/camiseta-oversized"
+          }
+        },
+        "card_86YXt6": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ChatGPT_Image_2_de_mai._de_2025_15_32_17.png",
+            "subheading": "",
+            "heading": "",
+            "link": "shopify:\/\/collections\/corta-vento"
+          }
+        }
+      },
+      "block_order": [
+        "card_G8nAqU",
+        "card_77dXry",
+        "card_pqUT43",
+        "card_86YXt6"
+      ],
+      "name": "Cards Carrossel",
+      "settings": {
+        "title": "Coleções em destaque",
+        "subtitle": "",
+        "heading_alignment": "center",
+        "background_color": "#ffffff",
+        "columns_desktop": 4,
+        "card_width_mobile": 80,
+        "gap": 16,
+        "show_controls": false,
+        "image_ratio": "133.33%",
+        "border_radius": 8,
+        "overlay_opacity": 15,
+        "overlay_color": "#000000",
+        "text_color": "#ffffff",
+        "zoom_scale": 5,
+        "hover_effect": "translateY(-5px)",
+        "transition_duration": 300,
+        "shadow_opacity": 10,
+        "shadow_blur": 10,
+        "shadow_offset": 4,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "88ccb0c5-4011-44e5-b0bc-6ff8a25399ab": {
+      "type": "collection-list",
+      "blocks": {
+        "template--20594189926423__88ccb0c5-4011-44e5-b0bc-6ff8a25399ab-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "oversized-estampa-drop-atoomic",
+            "image": "shopify:\/\/shop_images\/capinha_siteaaaaaaa_2.png",
+            "subheading": "",
+            "title": "Camisas Oversized",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--20594189926423__88ccb0c5-4011-44e5-b0bc-6ff8a25399ab-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-uv50",
+            "image": "shopify:\/\/shop_images\/C1_-_Camisa_Termica_UV50.jpg",
+            "subheading": "",
+            "title": "Camiseta UV 50+",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--20594189926423__88ccb0c5-4011-44e5-b0bc-6ff8a25399ab-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-curta-cyber-termica-uv",
+            "image": "shopify:\/\/shop_images\/4baeba474b000b3f5dfd3a2f28af635b_1cef6b1e-5d89-4c0b-9013-94feec75426e.png",
+            "subheading": "",
+            "title": "Camiseta Curta Térmica",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "#282828",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--20594189926423__88ccb0c5-4011-44e5-b0bc-6ff8a25399ab-collection-3",
+        "template--20594189926423__88ccb0c5-4011-44e5-b0bc-6ff8a25399ab-collection-2",
+        "template--20594189926423__88ccb0c5-4011-44e5-b0bc-6ff8a25399ab-collection-1"
+      ],
+      "settings": {
+        "radius": false,
+        "reveal_on_scroll": false,
+        "layout": "grid",
+        "subheading": "",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "e788eef9-ffef-44cb-bca8-e2d079bd7a59": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--20594189926423__e788eef9-ffef-44cb-bca8-e2d079bd7a59-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-curta-cyber-termica-uv",
+            "label": "Camiseta Térmica Compressão CYBER",
+            "button_text": "Ver mais",
+            "button_url": "shopify:\/\/collections\/camiseta-oversized"
+          }
+        },
+        "collection_mqE9DY": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-curta-estampada-termica-uv",
+            "label": "",
+            "button_text": "",
+            "button_url": "shopify:\/\/collections\/camiseta-gola-alta-segunda-pele"
+          }
+        }
+      },
+      "block_order": [
+        "template--20594189926423__e788eef9-ffef-44cb-bca8-e2d079bd7a59-collection-1",
+        "collection_mqE9DY"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Lançamentos",
+        "content": "",
+        "products_count": 10,
+        "products_per_row": 5,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "ae51efcc-b4da-4994-95d2-75b73575a563": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--20594189926423__ae51efcc-b4da-4994-95d2-75b73575a563-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-uv50",
+            "label": "Camisa Térmica Uv+",
+            "button_text": "Ver mais",
+            "button_url": "shopify:\/\/collections\/camiseta-uv50"
+          }
+        }
+      },
+      "block_order": [
+        "template--20594189926423__ae51efcc-b4da-4994-95d2-75b73575a563-collection-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Camisa Térmica UV+",
+        "content": "",
+        "products_count": 10,
+        "products_per_row": 5,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "tab_label": "Text 1",
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "tab_label": "Text 2",
+            "subheading": "Subheading",
+            "title": "Image with text",
+            "content": "<p>Use image with text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "dot_type": "inverted",
+            "product_1": "",
+            "product_1_horizontal_position": 41,
+            "product_1_vertical_position": 41,
+            "product_1_horizontal_position_mobile": 30,
+            "product_1_vertical_position_mobile": 30,
+            "product_2": "",
+            "product_2_horizontal_position": 46,
+            "product_2_vertical_position": 64,
+            "product_2_horizontal_position_mobile": 50,
+            "product_2_vertical_position_mobile": 50,
+            "product_3": "",
+            "product_3_horizontal_position": 62,
+            "product_3_vertical_position": 50,
+            "product_3_horizontal_position_mobile": 70,
+            "product_3_vertical_position_mobile": 70
+          }
+        }
+      },
+      "block_order": [
+        "look-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "label": "Shop the looks"
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "blog": "",
+        "subheading": "Stay up-to-date",
+        "title": "Blog posts",
+        "articles_count": 3,
+        "stack_mobile": false,
+        "show_category": true,
+        "show_excerpt": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "image-with-text-block": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Subheading",
+        "title": "Image with text block",
+        "content": "<p>Use block text to give your customers insight into your brand. Select impactful text that relates to your brand and story.<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_position": "left",
+        "text_alignment": "center",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Write some content about what they are saying about your store.",
+            "author": "John S."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "timeline": {
+      "type": "timeline",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "label": "2000",
+            "title": "Your heading",
+            "content": "<p>Write content about your store<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "label": "2010",
+            "title": "Your heading",
+            "content": "<p>Write content about your store<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "label": "2020",
+            "title": "Your heading",
+            "content": "<p>Write content about your store<\/p>",
+            "button_text": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "Subheading",
+        "title": "Timeline",
+        "text_position": "middle",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "item_background": "rgba(0,0,0,0)",
+        "item_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "variant-picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity-selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy-buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "variant-picker",
+        "quantity-selector",
+        "buy-buttons"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "",
+        "subheading": "Subheading",
+        "title": "Featured product",
+        "show_vendor": true,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": true,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "bottom",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Receba promoções exclusivas",
+        "content": "<p>Promoções e lançamentos exclusivos. Assine abaixo:<\/p>",
+        "text_position": "right",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "7fe52de5-828d-49df-b8d9-5d1ba575ea83": {
+      "type": "slideshow",
+      "blocks": {
+        "image_gPMmXL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_-_4_a4272d59-ff51-48b4-8f22-6b596aa30c9c.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_-_4_caf3acfa-1f5a-44c3-aa0d-1577b9e1294f.webp",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--20594189926423__7fe52de5-828d-49df-b8d9-5d1ba575ea83-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_-_5.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_-_5_bfa224ae-e80d-405c-9cc1-a2789473669c.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_gPMmXL",
+        "template--20594189926423__7fe52de5-828d-49df-b8d9-5d1ba575ea83-image-1"
+      ],
+      "settings": {
+        "section_height": "auto",
+        "transition_type": "fade",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "b5528542-2874-4b46-8696-0f91adf3ab80": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--20594189926423__b5528542-2874-4b46-8696-0f91adf3ab80-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "camisa-peluciada-manga-longa-masculina",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "2b349333-8474-4e82-b1da-c8aebd93187a": {
+          "type": "collection",
+          "settings": {
+            "collection": "calca-moletom-1",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "f11896ec-d776-4683-90ec-611e26717562": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-uv50",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "30372dba-e0c8-490b-ba41-1115e62eeaac": {
+          "type": "collection",
+          "settings": {
+            "collection": "peluciados",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        },
+        "9a162915-2e3d-48be-b13b-277edc555b2d": {
+          "type": "collection",
+          "settings": {
+            "collection": "camisa-modeladora-compressao",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20594189926423__b5528542-2874-4b46-8696-0f91adf3ab80-collection-1",
+        "2b349333-8474-4e82-b1da-c8aebd93187a",
+        "f11896ec-d776-4683-90ec-611e26717562",
+        "30372dba-e0c8-490b-ba41-1115e62eeaac",
+        "9a162915-2e3d-48be-b13b-277edc555b2d"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "products_count": 10,
+        "products_per_row": 5,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "collection_list_iqimdD": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_fEV7Yh": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-curta-treino",
+            "image": "shopify:\/\/shop_images\/C4_-_Camisa_Curta_36cb7635-9835-428d-bb5f-5741da6be01e.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_xJJitC": {
+          "type": "collection",
+          "settings": {
+            "collection": "kit-camisetas-uv50",
+            "image": "shopify:\/\/shop_images\/C11_-_Kit_Camisa_UV50_96ea282e-8e5c-43d4-b755-4778cf406677.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_3gCLGH": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-gola-alta-segunda-pele",
+            "image": "shopify:\/\/shop_images\/C3_-_Camisa_Gola_Alta_b95b4ec1-1619-4c81-acb0-41adbaaf0236.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_DPQUmV": {
+          "type": "collection",
+          "settings": {
+            "collection": "camiseta-regata",
+            "image": "shopify:\/\/shop_images\/C5_-_Camisa_Regata_a0a6b44c-4018-496e-8994-5111780182e5.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_3qLhij": {
+          "type": "collection",
+          "settings": {
+            "collection": "camisa-viscose",
+            "image": "shopify:\/\/shop_images\/C6_-_Cmisa_Viscose_60ff3c09-84b1-47d1-bf02-2b649b148035.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_hU6m3F": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts-e-bermuda",
+            "image": "shopify:\/\/shop_images\/C7_-_Shorts_e_Bermudas_2db7460f-9bf0-466c-9da8-e9cbf47eade4.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_aUccbF": {
+          "type": "collection",
+          "settings": {
+            "collection": "sungas",
+            "image": "shopify:\/\/shop_images\/C8_-_Sungas_72497c97-20a6-4d32-93eb-ea0fb771811a.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_h4VGPL": {
+          "type": "collection",
+          "settings": {
+            "collection": "kits",
+            "image": "shopify:\/\/shop_images\/C9_-_Kits_af516dd2-6b40-4d88-904f-d0d6719c4d21.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_eQWKgg": {
+          "type": "collection",
+          "settings": {
+            "collection": "kit-camiseta-curta-treino",
+            "image": "shopify:\/\/shop_images\/C10_-_Kit_Camisa_Curta_2d04c4c5-eb9c-4de6-b823-36ab75b7879d.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_JDMcax": {
+          "type": "collection",
+          "settings": {
+            "collection": "kit-camisetas-uv50",
+            "image": "shopify:\/\/shop_images\/C11_-_Kit_Camisa_UV50_96ea282e-8e5c-43d4-b755-4778cf406677.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_8Xyqzz": {
+          "type": "collection",
+          "settings": {
+            "collection": "kit-sungas",
+            "image": "shopify:\/\/shop_images\/C12_-_Kit_Sungas_ab453c28-9ffd-4a0a-9e21-9032f5b027e4.jpg",
+            "subheading": "",
+            "title": "",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "collection_fEV7Yh",
+        "collection_xJJitC",
+        "collection_3gCLGH",
+        "collection_DPQUmV",
+        "collection_3qLhij",
+        "collection_hU6m3F",
+        "collection_aUccbF",
+        "collection_h4VGPL",
+        "collection_eQWKgg",
+        "collection_JDMcax",
+        "collection_8Xyqzz"
+      ],
+      "settings": {
+        "radius": false,
+        "reveal_on_scroll": false,
+        "layout": "grid",
+        "subheading": "Nossas Coleções",
+        "title": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "4a033b6d-2715-4ebc-9e9e-96611f4d0a0c": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "Receba novidades",
+        "content": "<p>Inscreva-se e receba novidades exclusivas!<\/p>",
+        "text_position": "right",
+        "text_alignment": "left",
+        "text_background": "#000000",
+        "text_color": "#ffffff",
+        "button_background": "#9a19de",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon_width": 50,
+            "title": "Frete",
+            "content": "<p>FRETE R$19,90 para todo o Brasil <\/p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "custom_icon_width": 50,
+            "title": "Atendimento",
+            "content": "<p>Horario de Atendimento: Segunda à Sexta: 8:00 AM | 18:00 PM<\/p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon_width": 50,
+            "title": "Pagamento seguro",
+            "content": "<p>Utilizamos a mesma segurança de dados dos maiores bancos nacionais e internacionais (SSL).<\/p>"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "icon": "picto-return-box",
+            "custom_icon_width": 50,
+            "title": "Contact us",
+            "content": "<p>Need to contact us ? Just send us an e-mail at info@yourstore.com<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4"
+      ],
+      "settings": {
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "75d0263f-6b34-417b-b59b-f08719a890c3",
+    "card_collections_7BYVR6",
+    "88ccb0c5-4011-44e5-b0bc-6ff8a25399ab",
+    "e788eef9-ffef-44cb-bca8-e2d079bd7a59",
+    "ae51efcc-b4da-4994-95d2-75b73575a563",
+    "image-with-text",
+    "shop-the-look",
+    "blog-posts",
+    "image-with-text-block",
+    "testimonials",
+    "timeline",
+    "featured-product",
+    "newsletter",
+    "7fe52de5-828d-49df-b8d9-5d1ba575ea83",
+    "b5528542-2874-4b46-8696-0f91adf3ab80",
+    "collection_list_iqimdD",
+    "4a033b6d-2715-4ebc-9e9e-96611f4d0a0c",
+    "text-with-icons"
+  ]
+}
