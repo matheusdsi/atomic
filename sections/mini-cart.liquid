@@ -1,4 +1,18 @@
+{% liquid
+  assign product_variant = item.variant
+  assign quantity_id = 'quantity_' | append: key
+  assign final_price = item.quantity | times: item.original_price
 
+  assign gift = ''
+  assign send_as_gift = item.properties.Obs
+  assign image_classes = 'product-image w-24 h-auto image border-solid'
+
+  assign kit = item.properties.Kit
+
+  if item.final_line_price == 0
+    assign gift = 'Brinde'
+  endif
+%}
 <cart-drawer section="{{ section.id }}" id="mini-cart" class="mini-cart drawer drawer--large">
   <span class="drawer__overlay"></span>
 
@@ -122,36 +136,6 @@
                 <span class="price {% if line_item.original_line_price > line_item.final_line_price or line_item.final_line_price == 0 or line_item.variant.compare_at_price > line_item.variant.price %}price--highlight{% endif %}">
                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
-                {% liquid
-  assign product_variant = item.variant
-  assign quantity_id = 'quantity_' | append: key
-  assign final_price = item.quantity | times: item.original_price
-
-  assign gift = ''
-  assign send_as_gift = item.properties.Obs
-  assign image_classes = 'product-image w-24 h-auto image border-solid'
-
-  assign kit = item.properties.Kit
-
-  if item.final_line_price == 0
-    assign gift = 'Brinde'
-  endif
-%}
-                 {% if final_price > 0 %}
-          {% if product_variant.compare_at_price > product_variant.price %}
-            <p class="compare-at-price text-neutral-600 line-through">
-              {{ item.quantity | times: product_variant.compare_at_price | money }}
-            </p>
-          {% elsif product_variant.price > item.original_price %}
-            <p class="compare-at-price text-neutral-600 line-through">
-              {{ item.quantity | times: product_variant.price | money }}
-            </p>
-          {% elsif item.original_price > item.price %}
-            <p class="compare-at-price text-neutral-600 line-through">
-              {{ item.quantity | times: item.original_price | money }}
-            </p>
-          {% endif %}
-        {% endif %}
                 
                   {%- if line_item.final_line_price == 0 -%}
                     {{- 'cart.general.free' | t -}}
