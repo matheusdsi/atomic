@@ -421,7 +421,7 @@ span.shipping-bar__text.text--small {
   color: red;
 }
 
-.bundler-volume-target-element {
+.bundler-volume-target-element, .bundler-target-element  {
     display: none!important;
 }
 
