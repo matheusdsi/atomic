@@ -147,7 +147,32 @@
               "image_3_heading": "",
               "image_3_text": "",
               "image_3_link": "",
-              "image_4": "shopify://shop_images/dry-fit-secagem-rapida.jpg",
+              "image_4": "shopify://shop_images/Atoomic_4_b9eae968-7fba-4840-993c-ce9cfb50fba0.png",
+              "image_4_heading": "",
+              "image_4_text": "",
+              "image_4_link": "",
+              "image_5_heading": "",
+              "image_5_text": "",
+              "image_5_link": "",
+              "image_6_heading": "",
+              "image_6_text": "",
+              "image_6_link": ""
+            }
+          },
+          "mega_menu_Htz6zA": {
+            "type": "mega_menu",
+            "settings": {
+              "menu_item": "",
+              "images_position": "right",
+              "image_1_heading": "",
+              "image_1_text": "",
+              "image_1_link": "",
+              "image_2_heading": "",
+              "image_2_text": "",
+              "image_2_link": "",
+              "image_3_heading": "",
+              "image_3_text": "",
+              "image_3_link": "",
               "image_4_heading": "",
               "image_4_text": "",
               "image_4_link": "",
@@ -161,7 +186,8 @@
           }
         },
         "block_order": [
-          "mega_menu_gGpzqp"
+          "mega_menu_gGpzqp",
+          "mega_menu_Htz6zA"
         ],
         "settings": {
           "enable_sticky_header": true,
