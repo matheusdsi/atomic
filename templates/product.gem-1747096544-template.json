@@ -1,0 +1,201 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "block",
+            "color_mode": "variant_image",
+            "size_chart_page": ""
+          }
+        },
+        "d0feabe5-1277-497e-b602-894db3fe8857": {
+          "type": "size-guide",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+            "show_qtd": true
+          }
+        },
+        "45f1945b-87ce-48e7-80f7-db4f89171a60": {
+          "type": "views",
+          "settings": {
+            "titulo-views": "Pessoas interessadas"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        },
+        "57a88283-73b7-4831-b019-1d6fa6c71d0b": {
+          "type": "bandeiras-de-pagamento",
+          "settings": {
+            "title-flags": "FORMAS DE PAGAMENTO",
+            "master": true,
+            "visa": true,
+            "elo": true,
+            "hypercard": true,
+            "american": true,
+            "diners": true,
+            "boleto": true,
+            "pix-fg": true
+          }
+        },
+        "2670ae9d-ea14-4b4f-89c0-bd48f7aec69c": {
+          "type": "pix",
+          "settings": {
+            "pix-svg": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" x=\"0px\" y=\"0px\" width=\"30\" height=\"30\" viewbox=\"0 0 48 48\">\n<path fill=\"#4db6ac\" d=\"M11.9,12h-0.68l8.04-8.04c2.62-2.61,6.86-2.61,9.48,0L36.78,12H36.1c-1.6,0-3.11,0.62-4.24,1.76\tl-6.8,6.77c-0.59,0.59-1.53,0.59-2.12,0l-6.8-6.77C15.01,12.62,13.5,12,11.9,12z\"><\/path><path fill=\"#4db6ac\" d=\"M36.1,36h0.68l-8.04,8.04c-2.62,2.61-6.86,2.61-9.48,0L11.22,36h0.68c1.6,0,3.11-0.62,4.24-1.76\tl6.8-6.77c0.59-0.59,1.53-0.59,2.12,0l6.8,6.77C32.99,35.38,34.5,36,36.1,36z\"><\/path><path fill=\"#4db6ac\" d=\"M44.04,28.74L38.78,34H36.1c-1.07,0-2.07-0.42-2.83-1.17l-6.8-6.78c-1.36-1.36-3.58-1.36-4.94,0\tl-6.8,6.78C13.97,33.58,12.97,34,11.9,34H9.22l-5.26-5.26c-2.61-2.62-2.61-6.86,0-9.48L9.22,14h2.68c1.07,0,2.07,0.42,2.83,1.17\tl6.8,6.78c0.68,0.68,1.58,1.02,2.47,1.02s1.79-0.34,2.47-1.02l6.8-6.78C34.03,14.42,35.03,14,36.1,14h2.68l5.26,5.26\tC46.65,21.88,46.65,26.12,44.04,28.74z\"><\/path>\n<\/svg>",
+            "pix": "<p><strong>3% OFF<\/strong> via Pix <strong>+ Envio imediato<\/strong><\/p>",
+            "pix-bg": "#f5f5f5"
+          }
+        },
+        "bundler_volume_target_element_4eJamW": {
+          "type": "shopify:\/\/apps\/bundler\/blocks\/volume-target-element\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "d0feabe5-1277-497e-b602-894db3fe8857",
+        "quantity_selector",
+        "45f1945b-87ce-48e7-80f7-db4f89171a60",
+        "buy_buttons",
+        "57a88283-73b7-4831-b019-1d6fa6c71d0b",
+        "2670ae9d-ea14-4b4f-89c0-bd48f7aec69c",
+        "bundler_volume_target_element_4eJamW"
+      ],
+      "settings": {
+        "font_size": 32,
+        "avaliacao": "",
+        "enable-parcel": true,
+        "show_vendor": false,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_sticky_add_to_cart": true,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": true,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "fade"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "109bc139-fc39-4a47-a8ee-f19b493b6eca": {
+          "type": "content",
+          "settings": {
+            "title": "Entrega & Troca Fácil",
+            "content": "<p><strong>Descrição<br\/><\/strong><br\/><\/p>",
+            "page": ""
+          }
+        },
+        "32a37fbf-4dd1-4110-9953-e2df1cd36b49": {
+          "type": "trust",
+          "settings": {
+            "icon_1": "picto-fast-delivery",
+            "title_1": "Frete grátis Acima de R$199",
+            "content_1": "<p>Aproveite Agora<\/p>",
+            "icon_2": "picto-warranty",
+            "title_2": "Satisfação garantida",
+            "content_2": "<p>Fique satisfeito ou devolva o produto, em até 7 dias após o recebimento.<\/p>",
+            "icon_3": "picto-secure-payment",
+            "title_3": "Pagamento seguro",
+            "content_3": "<p>Suas informações de pagamento são processadas com segurança. Nós não armazenamos dados do cartão de crédito nem temos acesso aos números do seu cartão.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "109bc139-fc39-4a47-a8ee-f19b493b6eca",
+        "32a37fbf-4dd1-4110-9953-e2df1cd36b49"
+      ],
+      "settings": {}
+    },
+    "01a86a23-bd62-446a-8ef5-c7c280f0655c": {
+      "type": "areviews-section",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Produtos relacionados",
+        "recommendations_count": 4,
+        "products": [],
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "cbf59905-7a41-4ab9-9f25-68c215e68e5f": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "subheading": "",
+        "title": "Você viu recentemente",
+        "products_count": 4,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "17193272219638bd77": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_pDLHga": {
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_pDLHga"
+      ],
+      "settings": {
+        "include_horizontal_margins": true,
+        "include_vertical_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-content",
+    "01a86a23-bd62-446a-8ef5-c7c280f0655c",
+    "product-recommendations",
+    "cbf59905-7a41-4ab9-9f25-68c215e68e5f",
+    "17193272219638bd77"
+  ]
+}
