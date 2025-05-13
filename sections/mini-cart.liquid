@@ -1,3 +1,18 @@
+{% liquid
+  assign product_variant = item.variant
+  assign quantity_id = 'quantity_' | append: key
+  assign final_price = item.quantity | times: item.original_price
+
+  assign gift = ''
+  assign send_as_gift = item.properties.Obs
+  assign image_classes = 'product-image w-24 h-auto image border-solid'
+
+  assign kit = item.properties.Kit
+
+  if item.final_line_price == 0
+    assign gift = 'Brinde'
+  endif
+%}
 <cart-drawer section="{{ section.id }}" id="mini-cart" class="mini-cart drawer drawer--large">
   <span class="drawer__overlay"></span>
 
