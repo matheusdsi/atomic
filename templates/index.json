@@ -15,7 +15,7 @@
         "b3480c7f-361f-4170-96a5-7f39f38265d0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_f87094ba-c3a8-4eae-ab17-3d9f0b0be7f9.png",
+            "image": "shopify://shop_images/2_94b9b53e-84aa-47df-9e62-3a19b0872e30.png",
             "mobile_image": "shopify://shop_images/2_4b45c935-4220-4dd2-a9d4-17c6e29aa609.png",
             "text_position": "middle_center",
             "subheading": "",
@@ -53,7 +53,7 @@
         "image_XQmyix": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_da18cd6b-5857-441c-b988-3b26cbd2bb58.png",
+            "image": "shopify://shop_images/3_0091cf52-58ea-4fb4-ae2c-cc9eb785dae4.png",
             "mobile_image": "shopify://shop_images/3_ceb18240-6024-4578-b3f8-8323f2fdc2b5.png",
             "text_position": "bottom_right",
             "subheading": "",
@@ -72,8 +72,8 @@
         "template--20594189926423__75d0263f-6b34-417b-b59b-f08719a890c3-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/5_c115fb3d-fdfc-438c-8410-c00249b06fae.png",
-            "mobile_image": "shopify://shop_images/4_9b2d7ecf-fc66-4810-8e14-ba076ef94b96.png",
+            "image": "shopify://shop_images/4_6740ee61-bdd1-4888-8f1a-d0a78e94a6a1.png",
+            "mobile_image": "shopify://shop_images/Banner_de_site_Atoomic_Mobile.png",
             "text_position": "bottom_left",
             "subheading": "",
             "title": "",
@@ -91,7 +91,7 @@
         "image_KJ74kd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/6_b2319876-d4f0-4dd8-9fe5-2585791ac0df.png",
+            "image": "shopify://shop_images/5_a074c791-e244-4dfd-a71c-af59b7a3058c.png",
             "mobile_image": "shopify://shop_images/5_0aeaed33-9e52-473a-8a3c-9be9d53b6617.png",
             "text_position": "middle_center",
             "subheading": "",
