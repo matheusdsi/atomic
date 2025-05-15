@@ -33,7 +33,6 @@
         },
         "image_MjnrPR": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_e74f49f5-b4dd-4a61-8095-bbd68cf7cc07.png",
             "mobile_image": "shopify://shop_images/1_74d92e05-1beb-41d5-80d7-e97f8073721a.png",
