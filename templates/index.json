@@ -12,49 +12,11 @@
     "75d0263f-6b34-417b-b59b-f08719a890c3": {
       "type": "slideshow",
       "blocks": {
-        "b3480c7f-361f-4170-96a5-7f39f38265d0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/2_94b9b53e-84aa-47df-9e62-3a19b0872e30.png",
-            "mobile_image": "shopify://shop_images/2_4b45c935-4220-4dd2-a9d4-17c6e29aa609.png",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify://collections/longa-uv-lisa",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "image_MjnrPR": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/1_e74f49f5-b4dd-4a61-8095-bbd68cf7cc07.png",
-            "mobile_image": "shopify://shop_images/1_74d92e05-1beb-41d5-80d7-e97f8073721a.png",
-            "text_position": "middle_center",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify://collections/camiseta-curta-estampada-termica-uv",
-            "button_2_text": "",
-            "button_2_link": "",
-            "text_color": "#ffffff",
-            "button_background": "#ffffff",
-            "button_text_color": "#000000",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "image_XQmyix": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3_0091cf52-58ea-4fb4-ae2c-cc9eb785dae4.png",
-            "mobile_image": "shopify://shop_images/3_ceb18240-6024-4578-b3f8-8323f2fdc2b5.png",
+            "image": "shopify://shop_images/Desktop_-_3_20dcc6b0-7db5-41be-ac09-25e81f3322ac.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_-_3_526293d6-4019-4642-bb86-cff90660fe24.jpg",
             "text_position": "bottom_right",
             "subheading": "",
             "title": "",
@@ -69,11 +31,30 @@
             "overlay_opacity": 0
           }
         },
+        "b3480c7f-361f-4170-96a5-7f39f38265d0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Desktop_-_2_093c6a91-5d0e-4ffb-8554-29023bfe87be.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_-_2_6368f95f-9266-4ec1-a6a4-b36a5a35677a.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify://collections/longa-uv-lisa",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
         "template--20594189926423__75d0263f-6b34-417b-b59b-f08719a890c3-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/4_6740ee61-bdd1-4888-8f1a-d0a78e94a6a1.png",
-            "mobile_image": "shopify://shop_images/Banner_de_site_Atoomic_Mobile.png",
+            "image": "shopify://shop_images/Desktop_-_1_5b9c749c-ec18-462d-8990-27d8578464f5.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_-_1_2b620d00-a8e9-4bd1-93a0-3bdce50c9457.jpg",
             "text_position": "bottom_left",
             "subheading": "",
             "title": "",
@@ -88,11 +69,30 @@
             "overlay_opacity": 0
           }
         },
+        "image_MjnrPR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Desktop_-_5_03bb5a2a-9bde-46dd-9488-1c4e3288a6ea.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_-_5_1fd083d0-685d-4846-ae63-92387ff72c9f.jpg",
+            "text_position": "middle_center",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify://collections/camiseta-curta-estampada-termica-uv",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "image_KJ74kd": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/5_a074c791-e244-4dfd-a71c-af59b7a3058c.png",
-            "mobile_image": "shopify://shop_images/Banner_de_site_Atoomic_Mobile_1.png",
+            "image": "shopify://shop_images/Desktop_-_4_edaeb525-2774-4f41-bab5-e15b88d4a3cf.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_-_4_f1fa4031-9fb1-4cc6-af7c-75c1b596d412.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -109,10 +109,10 @@
         }
       },
       "block_order": [
-        "b3480c7f-361f-4170-96a5-7f39f38265d0",
-        "image_MjnrPR",
         "image_XQmyix",
+        "b3480c7f-361f-4170-96a5-7f39f38265d0",
         "template--20594189926423__75d0263f-6b34-417b-b59b-f08719a890c3-image-2",
+        "image_MjnrPR",
         "image_KJ74kd"
       ],
       "settings": {
