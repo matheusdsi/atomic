@@ -129,7 +129,7 @@
         "card_G8nAqU": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_15_44_45.png",
+            "image": "shopify://shop_images/C2_-_Compressao_02ea6cae-2a14-44f1-ad2a-f290e5417a01.jpg",
             "subheading": "",
             "heading": "",
             "link": "shopify://collections/camiseta-curta-termica-uv"
@@ -138,7 +138,7 @@
         "card_77dXry": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_15_43_24.png",
+            "image": "shopify://shop_images/C1_-_UV_9046c933-f93c-4377-9c9a-b663e457b3ed.jpg",
             "subheading": "",
             "heading": "",
             "link": "shopify://collections/camiseta-uv50"
@@ -147,7 +147,7 @@
         "card_pqUT43": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_11_22_38.png",
+            "image": "shopify://shop_images/C3_-_Oversized_6c22d04a-da5b-4350-bc82-a9f42ede483c.jpg",
             "subheading": "",
             "heading": "",
             "link": "shopify://collections/camiseta-oversized"
@@ -156,7 +156,7 @@
         "card_86YXt6": {
           "type": "card",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2_de_mai._de_2025_15_32_17.png",
+            "image": "shopify://shop_images/C4_-_Corta_Vento_eccf9841-b1d7-429c-985d-48d26b41b003.jpg",
             "subheading": "",
             "heading": "",
             "link": "shopify://collections/corta-vento"
@@ -179,7 +179,7 @@
         "card_width_mobile": 80,
         "gap": 16,
         "show_controls": false,
-        "image_ratio": "133.33%",
+        "image_ratio": "100%",
         "border_radius": 8,
         "overlay_opacity": 15,
         "overlay_color": "#000000",
