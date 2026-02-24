@@ -34,8 +34,8 @@
         "b3480c7f-361f-4170-96a5-7f39f38265d0": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Desktop_-_2_093c6a91-5d0e-4ffb-8554-29023bfe87be.jpg",
-            "mobile_image": "shopify://shop_images/Mobile_-_2_6368f95f-9266-4ec1-a6a4-b36a5a35677a.jpg",
+            "image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_2.jpg",
+            "mobile_image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_2.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -53,8 +53,8 @@
         "template--20594189926423__75d0263f-6b34-417b-b59b-f08719a890c3-image-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Desktop_-_1_5b9c749c-ec18-462d-8990-27d8578464f5.jpg",
-            "mobile_image": "shopify://shop_images/Mobile_-_1_2b620d00-a8e9-4bd1-93a0-3bdce50c9457.jpg",
+            "image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_3.jpg",
+            "mobile_image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_3.jpg",
             "text_position": "bottom_left",
             "subheading": "",
             "title": "",
@@ -72,8 +72,8 @@
         "image_MjnrPR": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Desktop_-_5_03bb5a2a-9bde-46dd-9488-1c4e3288a6ea.jpg",
-            "mobile_image": "shopify://shop_images/Mobile_-_5_1fd083d0-685d-4846-ae63-92387ff72c9f.jpg",
+            "image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_4.jpg",
+            "mobile_image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_4.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -90,6 +90,7 @@
         },
         "image_KJ74kd": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Desktop_-_4_edaeb525-2774-4f41-bab5-e15b88d4a3cf.jpg",
             "mobile_image": "shopify://shop_images/Mobile_-_4_f1fa4031-9fb1-4cc6-af7c-75c1b596d412.jpg",
