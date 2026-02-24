@@ -263,8 +263,8 @@
           "type": "collection",
           "settings": {
             "collection": "camiseta-curta-cyber-termica-uv",
-            "label": "Camiseta Térmica Compressão CYBER",
-            "button_text": "Ver mais",
+            "label": "Camiseta Curta CYBER",
+            "button_text": "",
             "button_url": "shopify://collections/camiseta-curta-cyber-termica-uv"
           }
         },
@@ -272,9 +272,9 @@
           "type": "collection",
           "settings": {
             "collection": "camiseta-curta-estampada-termica-uv",
-            "label": "",
+            "label": "Mais vendidos",
             "button_text": "",
-            "button_url": "shopify://collections/camiseta-gola-alta-segunda-pele"
+            "button_url": "shopify://collections/mais-vendidos"
           }
         }
       },
