@@ -213,7 +213,7 @@
             "type": "text",
             "settings": {
               "title": "Contato",
-              "content": "<p>E-mail: <a href=\"https://atoomic.com.br/\">suporte@atoomic.com.br</a></p><p>WhatsApp: <a href=\"https://atoomic.com.br/\">+55 </a>(11) 93955-0986 / <br/>                    +55 (11) 97687-0061<a href=\"https://atoomic.com.br/\"><br/></a>Sac: +55 11 2667-6913</p><p>Horario de Atendimento: Segunda à Sexta: 8:00 AM | 18:00 PM</p>"
+              "content": "<p>E-mail: <a href=\"https://atoomic.com.br/\">suporte@atoomic.com.br</a></p><p>WhatsApp: <a href=\"https://atoomic.com.br/\">+55 </a>(11) 93955-0986 <br/>                Sac: +55 11 2667-6913</p><p>Horario de Atendimento: Segunda à Sexta: 8:00 AM | 18:00 PM</p>"
             }
           },
           "links": {
