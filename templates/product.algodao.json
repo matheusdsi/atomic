@@ -147,8 +147,8 @@
         "image_text_block_9Uc7VL": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/ELASTANO_FOGO.png",
-            "heading": "Tamanho Grande",
+            "image": "shopify://shop_images/ELASTANO_FOGO_1.png",
+            "heading": "Descrição",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
             "text": "A Camiseta Oversized da Atoomic foi desenvolvida para quem busca presença, conforto e qualidade acima da média. Produzida em malhão premium de gramatura 210g e composição mínima de 85% algodão, ela entrega toque superior, caimento impecável e resistência para acompanhar sua rotina da rua ao treino.\n\nMalha 210g Premium: Tecido mais encorpado, estruturado e durável, garantindo presença e caimento perfeito no corpo.\n\nAlgodão de Alta Qualidade: Macia, respirável e resistente, oferecendo conforto real em qualquer clima."
           }
