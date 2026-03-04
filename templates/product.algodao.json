@@ -148,7 +148,6 @@
           "type": "image_text_block",
           "settings": {
             "image": "shopify://shop_images/b9c7e665933ab9eff5d432f9c84b60ed_0c7baafc-dbc9-4cc8-aef8-3f90743f29ce.png",
-            "icon": "shopify://shop_images/Design_sem_nome_1_f63bb91c-b146-4529-96b7-1e3e7c6e72ef.png",
             "heading": "Tamanho Grande",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
             "text": "A Camiseta Oversized da Atoomic foi desenvolvida para quem busca presença, conforto e qualidade acima da média. Produzida em malhão premium de gramatura 210g e composição mínima de 85% algodão, ela entrega toque superior, caimento impecável e resistência para acompanhar sua rotina da rua ao treino.\n\nMalha 210g Premium: Tecido mais encorpado, estruturado e durável, garantindo presença e caimento perfeito no corpo.\n\nAlgodão de Alta Qualidade: Macia, respirável e resistente, oferecendo conforto real em qualquer clima."
@@ -157,10 +156,10 @@
         "image_text_block_PTxg7U": {
           "type": "image_text_block",
           "settings": {
-            "image": "shopify://shop_images/dry.webp",
-            "heading": "Tecnologia Dry",
+            "image": "shopify://shop_images/ChatGPT_Image_4_de_mar._de_2026_11_56_18.png",
+            "heading": "Tecido Grosso estruturado",
             "heading_gradient": "linear-gradient(180deg, rgba(255, 0, 0, 1), rgba(255, 80, 80, 1) 100%)",
-            "text": "A tecnologia Dry Fit é uma inovação no desenvolvimento de tecidos que proporciona conforto e alto desempenho. Feita a partir de materiais sintéticos leves e respiráveis, como poliéster, ela é projetada para absorver e evaporar rapidamente o suor, mantendo o corpo seco durante atividades físicas."
+            "text": "- Gramatura de 210g: Um tecido mais encorpado que proporciona durabilidade e conforto superior.\n- Alta Qualidade de Algodão: Composta por pelo menos 85% de algodão, garantindo maciez e resistência.\n- Reforço Ombro a Ombro e na Gola: Proporciona maior durabilidade e um ajuste perfeito.\n- Não Desbota: Mantém as cores vibrantes mesmo após várias lavagens.\n- Não Encolhe: Preserva o tamanho original, garantindo um ajuste consistente ao longo do tempo"
           }
         }
       },
@@ -249,6 +248,8 @@
         "loox_reviews_loox_dynamic_section_pDLHga": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
             "only_photos": false,
             "aggregated": false,
             "limit": 20,
