@@ -16,7 +16,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_1.jpg",
-            "mobile_image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_1.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE_1.jpg",
             "text_position": "bottom_right",
             "subheading": "",
             "title": "",
@@ -35,7 +35,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_2.jpg",
-            "mobile_image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_2.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE_2.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
@@ -54,7 +54,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_3.jpg",
-            "mobile_image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_3.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE_3.jpg",
             "text_position": "bottom_left",
             "subheading": "",
             "title": "",
@@ -73,7 +73,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_4.jpg",
-            "mobile_image": "shopify://shop_images/BANNER_SITE_ATOOMIC_-_4.jpg",
+            "mobile_image": "shopify://shop_images/MOBILE_4.jpg",
             "text_position": "middle_center",
             "subheading": "",
             "title": "",
